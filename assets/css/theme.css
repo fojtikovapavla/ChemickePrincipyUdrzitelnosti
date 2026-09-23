@@ -30,10 +30,11 @@
   --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
 }
 
-html, body { background: var(--bg); }
+html, body { background: var(--bg); max-width: 100%; overflow-x: hidden; }
 
 .reveal { font-family: var(--font-body); color: var(--ink); font-size: 30px; }
 .reveal .slides section {
+  box-sizing: border-box;
   text-align: left;
   background: var(--bg);
   padding: 64px 84px;
@@ -94,6 +95,7 @@ html, body { background: var(--bg); }
 .goal-list { display:flex; flex-direction:column; gap: 16px; margin-top: 10px; }
 .goal-list .item { display:flex; gap: 16px; align-items:flex-start; font-size: 30px; }
 .goal-list .dot { flex:none; width: 14px; height: 14px; border-radius: 3px; background: var(--primary); margin-top: 10px; }
+.goal-list .item span:last-child { flex: 1; min-width: 0; }
 
 /* ---------- Panels ---------- */
 .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 30px 34px; }
@@ -130,6 +132,7 @@ html, body { background: var(--bg); }
 .diagram-wrap svg { width: 100%; height: auto; display: block; overflow: visible; }
 .diagram-legend { display:flex; flex-direction:column; gap: 12px; margin-top: 6px; }
 .diagram-legend .row2 { display:flex; align-items:flex-start; gap: 16px; font-size: 26px; line-height: 1.4; }
+.diagram-legend .row2 span:last-child { flex: 1; min-width: 0; }
 .diagram-legend .badge {
   flex:none; width: 34px; height: 34px; border-radius: 50%; display:flex; align-items:center; justify-content:center;
   font-family: var(--font-mono); font-size: 18px; font-weight: 700; color: #fff; margin-top: 2px;
