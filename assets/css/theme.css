@@ -1,0 +1,184 @@
+/* ===========================================================
+   Chemie ekosystémů — sdílený vzhled pro slide decky (reveal.js)
+   =========================================================== */
+
+:root {
+  --bg: #F3F4EE;
+  --surface: #FFFFFF;
+  --surface-2: #EAEDE2;
+  --surface-3: #E0E4D5;
+  --ink: #182620;
+  --ink-soft: #46564C;
+  --ink-muted: #6E7B72;
+  --primary: #2F5D50;
+  --primary-strong: #1B3931;
+  --on-primary: #F3F4EE;
+  --accent: #B96A2C;
+  --accent-soft: #F1E3D3;
+  --water: #2E6684;
+  --water-soft: #DCEAF0;
+  --line: #D8DCCD;
+  --danger: #A03A2C;
+
+  --chart-1: #2a78d6;
+  --chart-2: #eb6834;
+  --chart-3: #1baf7a;
+  --chart-4: #eda100;
+
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+}
+
+html, body { background: var(--bg); }
+
+.reveal { font-family: var(--font-body); color: var(--ink); font-size: 30px; }
+.reveal .slides section {
+  text-align: left;
+  background: var(--bg);
+  padding: 64px 84px;
+  height: 100%;
+}
+.reveal .slides { text-align: left; }
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  font-family: var(--font-display); color: var(--ink); text-transform: none;
+  text-shadow: none; letter-spacing: 0; margin: 0 0 .35em 0;
+}
+.reveal p { margin: 0 0 .6em 0; line-height: 1.5; }
+.reveal ul, .reveal ol { display: block; margin: 0 0 0 .1em; }
+.reveal li { margin-bottom: 10px; line-height: 1.5; }
+.reveal a { color: var(--primary); }
+.reveal b, .reveal strong { color: var(--ink); font-weight: 700; }
+.reveal small { font-size: .7em; }
+
+/* ---------- Layout helpers ---------- */
+.slide-flex { display: flex; flex-direction: column; height: 100%; gap: 26px; }
+.slide-flex.center { justify-content: center; }
+.row { display: flex; gap: 40px; align-items: flex-start; }
+.row.middle { align-items: center; }
+.col { flex: 1; min-width: 0; }
+
+.kicker {
+  font-family: var(--font-mono); font-size: 22px; letter-spacing: .05em; text-transform: uppercase;
+  color: var(--primary-strong); background: var(--surface-2); display: inline-flex; align-items:center;
+  padding: 8px 18px; border-radius: 999px; width: fit-content; margin-bottom: 18px;
+}
+
+.prose { font-size: 30px; line-height: 1.5; max-width: 100%; }
+.prose.tight { font-size: 27px; }
+.formula {
+  font-family: var(--font-mono); background: var(--surface-2); padding: 16px 20px; border-radius: 10px;
+  font-size: .82em; line-height: 1.7; display:block; margin: 14px 0;
+}
+
+/* ---------- Cover & dividers ---------- */
+.reveal .slides section.cover-slide {
+  background: linear-gradient(155deg, #1B3931 0%, #234A3D 55%, #2C5C49 100%);
+  color: #F3F4EE; display: flex; flex-direction: column; justify-content: space-between;
+}
+.cover-slide .eyebrow { font-family: var(--font-mono); font-size: 22px; letter-spacing:.16em; text-transform:uppercase; color:#AFCBBC; }
+.cover-slide h1 { font-size: 78px; color: #fff; line-height: 1.05; max-width: 16ch; }
+.cover-slide .sub { font-size: 30px; color: #D8E6DC; margin-top: 12px; }
+.cover-slide .foot { display:flex; align-items:center; gap: 22px; }
+.cover-slide .bar { width: 84px; height: 6px; background: var(--accent); border-radius: 4px; }
+.cover-slide .foot span { font-size: 24px; color: #BFD0C6; }
+
+.reveal .slides section.divider-slide {
+  background: #1B3931; color: #F3F4EE; display:flex; flex-direction: column; justify-content: center;
+}
+.divider-slide .num { font-family: var(--font-display); font-size: 210px; font-weight: 700; color: #3E6E5A; line-height: 1; }
+.divider-slide h2 { font-size: 68px; color: #fff; }
+.divider-slide p { font-size: 28px; color: #BFD0C6; max-width: 26ch; }
+
+/* ---------- Goal / agenda list ---------- */
+.goal-list { display:flex; flex-direction:column; gap: 16px; margin-top: 10px; }
+.goal-list .item { display:flex; gap: 16px; align-items:flex-start; font-size: 30px; }
+.goal-list .dot { flex:none; width: 14px; height: 14px; border-radius: 3px; background: var(--primary); margin-top: 10px; }
+
+/* ---------- Panels ---------- */
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 30px 34px; }
+.panel.soft { background: var(--surface-2); border: none; }
+
+.tag-label {
+  font-family: var(--font-mono); font-size: 21px; letter-spacing: .05em; text-transform: uppercase;
+  display:inline-block; margin-bottom: 10px;
+}
+.tag-label.chem { color: var(--water); }
+.tag-label.example { color: var(--primary-strong); }
+.tag-label.calc { color: var(--water); }
+.tag-label.think { color: var(--primary); }
+
+.chem-slide-panel { border-left: 8px solid var(--water); background: var(--surface); border-radius: 0 18px 18px 0; padding: 30px 38px; }
+.example-panel { background: var(--surface-2); border-radius: 18px; padding: 30px 38px; }
+.calc-panel { background: var(--water-soft); border-radius: 18px; padding: 30px 38px; }
+.src-line { font-size: 22px; color: var(--ink-muted); margin-top: 10px; }
+
+/* ---------- Think / discussion slides ---------- */
+.reveal .slides section.think-slide {
+  background: var(--surface-2); display:flex; flex-direction:column; justify-content:center;
+}
+.think-slide .tag-label { font-size: 24px; }
+.think-slide .question {
+  font-family: var(--font-display); font-size: 48px; line-height: 1.3; color: var(--ink); max-width: 22ch;
+}
+.think-slide .facilitate {
+  margin-top: 34px; font-size: 22px; color: var(--ink-muted); border-top: 1px dashed var(--line); padding-top: 18px; max-width: 46ch;
+}
+
+/* ---------- Diagrams ---------- */
+.diagram-wrap { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 26px 30px; }
+.diagram-wrap svg { width: 100%; height: auto; display: block; overflow: visible; }
+.diagram-legend { display:flex; flex-direction:column; gap: 12px; margin-top: 6px; }
+.diagram-legend .row2 { display:flex; align-items:flex-start; gap: 16px; font-size: 26px; line-height: 1.4; }
+.diagram-legend .badge {
+  flex:none; width: 34px; height: 34px; border-radius: 50%; display:flex; align-items:center; justify-content:center;
+  font-family: var(--font-mono); font-size: 18px; font-weight: 700; color: #fff; margin-top: 2px;
+}
+.caption { font-size: 22px; color: var(--ink-muted); margin-top: 10px; }
+
+/* ---------- Charts reused ---------- */
+.stackbar { display: flex; min-height: 66px; border-radius: 12px; overflow: hidden; }
+.stackbar > div { display: flex; align-items: center; justify-content: center; padding: 4px; }
+.stackbar .sv { color: #fff; font-size: 24px; font-weight: 700; text-align:center; line-height:1.2; }
+.stack-legend { display: flex; flex-wrap: wrap; gap: 14px 30px; margin-top: 18px; }
+.stack-legend .li2 { display: flex; align-items: center; gap: 10px; font-size: 24px; color: var(--ink-soft); }
+.stack-legend .sw { width: 16px; height: 16px; border-radius: 4px; flex: none; }
+
+.hbars { display: grid; grid-template-columns: 300px 1fr 110px; row-gap: 14px; column-gap: 16px; align-items: center; }
+.hbars .lbl2 { font-size: 24px; color: var(--ink-soft); text-align: right; }
+.hbars .track { background: var(--surface-2); border-radius: 7px; height: 26px; }
+.hbars .fill { background: var(--chart-1); border-radius: 7px; height: 100%; }
+.hbars .val2 { font-family: var(--font-mono); font-size: 22px; color: var(--ink-muted); }
+
+table.data-table { width: 100%; border-collapse: collapse; font-size: 24px; }
+table.data-table th, table.data-table td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+table.data-table th { color: var(--ink-muted); font-family: var(--font-mono); font-size: 19px; text-transform: uppercase; }
+
+/* ---------- Quiz slides ---------- */
+.quiz-q { font-size: 34px; margin-bottom: 26px; }
+.quiz-q .qn { font-family: var(--font-mono); color: var(--accent); margin-right: 12px; }
+.quiz-opt2 { font-size: 28px; color: var(--ink-soft); padding: 14px 20px; border-radius: 12px; margin-bottom: 12px; background: var(--surface); border: 1px solid var(--line); }
+.quiz-opt2.correct { background: var(--water-soft); color: var(--ink); font-weight: 700; border-color: var(--water); }
+.quiz-why2 { font-size: 24px; color: var(--ink-muted); margin-top: 16px; padding-top: 16px; border-top: 1px dashed var(--line); }
+
+/* ---------- Task slides ---------- */
+.task-slide-head { display:flex; align-items:center; gap: 18px; margin-bottom: 18px; }
+.task-swatch { width: 46px; height: 46px; border-radius: 12px; flex: none; }
+.task-kind { font-family: var(--font-mono); font-size: 21px; text-transform: uppercase; color: var(--ink-muted); }
+.scenario-text { font-size: 28px; color: var(--ink-soft); line-height: 1.5; margin-bottom: 18px; }
+.task-steps { font-size: 27px; }
+.data-hint2 { font-size: 21px; color: var(--ink-muted); border-top: 1px solid var(--line); padding-top: 14px; margin-top: 16px; }
+
+/* ---------- Timing table ---------- */
+table.timing2 { width: 100%; border-collapse: collapse; font-size: 26px; }
+table.timing2 td, table.timing2 th { padding: 12px 14px; border-bottom: 1px solid var(--line); text-align:left; }
+table.timing2 th { font-family: var(--font-mono); font-size: 19px; text-transform: uppercase; color: var(--ink-muted); }
+table.timing2 td:first-child { font-family: var(--font-mono); color: var(--accent); white-space: nowrap; }
+
+/* ---------- Progress / controls tweak ---------- */
+.reveal .progress { color: var(--primary); height: 6px; }
+.reveal .controls { color: var(--primary-strong); }
+.reveal .slide-number {
+  font-family: var(--font-mono); background: var(--surface); color: var(--ink-muted);
+  border: 1px solid var(--line); border-radius: 8px;
+}

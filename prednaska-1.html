@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Přednáška 1 — Abiotické složky ekosystému</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <!-- 1 -->
+    <section class="cover-slide">
+      <div>
+        <div class="eyebrow">Chemické principy a udržitelnost</div>
+        <h1>Abiotické složky ekosystému</h1>
+        <p class="sub">Energie · Atmosféra · Hydrosféra · Pedosféra</p>
+      </div>
+      <div class="foot"><div class="bar"></div><span>Přednáška 1 · Blok 1</span></div>
+      <aside class="notes">
+        Úvodní slide. Než začnete: krátce zopakujte, na co navazujeme z úvodního bloku (opakování středoškolské chemie), a řekněte, že se dnes budeme celou dobu ptát „a co s tím manažer?" — přednáška je stavěná jako střídání výkladu a krátkých zastavení, ne čistě frontálně.
+      </aside>
+    </section>
+
+    <!-- 2 -->
+    <section>
+      <div class="kicker">Cíle přednášky</div>
+      <div class="goal-list">
+        <div class="item"><span class="dot"></span><span>Popsat, co drží energetickou bilanci ekosystému v rovnováze</span></div>
+        <div class="item"><span class="dot"></span><span>Vysvětlit mechanismus skleníkového jevu, kyselých dešťů, smogu a okyselování oceánů</span></div>
+        <div class="item"><span class="dot"></span><span>Popsat hydrologický cyklus a vlastnosti vody</span></div>
+        <div class="item"><span class="dot"></span><span>Vysvětlit, z čeho se skládá půda a co určuje její vlastnosti</span></div>
+        <div class="item"><span class="dot"></span><span>U každé složky uvést konkrétní příklad z praxe managera udržitelnosti</span></div>
+      </div>
+      <aside class="notes">
+        Řekněte, že u čtyř bílých značek (Zamyšlení) se zastavíme a nechte studenty samotné chvíli přemýšlet nebo diskutovat — signalizujte to hned na začátku, ať to nepřekvapí.
+      </aside>
+    </section>
+
+    <!-- 3 divider Energie -->
+    <section class="divider-slide">
+      <div class="num">01</div>
+      <h2>Energie</h2>
+      <p>Sluneční záření jako zdroj energie ekosystému a energetická bilance</p>
+      <aside class="notes">Čas na celé téma Energie: cca 20 minut.</aside>
+    </section>
+
+    <!-- 4 -->
+    <section>
+      <div class="kicker">Energie</div>
+      <div class="prose">
+        <p>Sluneční záření je primárním zdrojem energie pro procesy v ekosystému — fotosyntézu, koloběh vody i proudění vzduchu.</p>
+        <p>Množství energie, které Země od Slunce přijímá, a množství, které sama vyzařuje zpět do vesmíru, musí být v dlouhodobém průměru vyrovnané — tomu se říká <b>energetická bilance</b>.</p>
+      </div>
+      <aside class="notes">Zdůrazněte, že tento pojem se za chvíli vrátí u skleníkového jevu — je to jeden z konceptů, které drží celou přednášku pohromadě.</aside>
+    </section>
+
+    <!-- 5 diagram -->
+    <section>
+      <div class="kicker">Energie · zpětná vazba</div>
+      <div class="row middle">
+        <div class="col" style="flex:1.1">
+          <div class="diagram-wrap">
+            <svg viewBox="0 0 560 560" role="img" aria-label="Schéma zpětné vazby sníh–albedo–teplota">
+              <defs><marker id="a1" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="var(--ink-soft)"/></marker></defs>
+              <rect x="20" y="10" width="520" height="100" rx="14" fill="var(--water-soft)" stroke="var(--water)" stroke-width="2"/>
+              <text x="280" y="55" text-anchor="middle" font-size="26" font-weight="700" fill="var(--ink)" font-family="var(--font-body)">Méně sněhu a ledu</text>
+              <text x="280" y="86" text-anchor="middle" font-size="18" fill="var(--ink-soft)" font-family="var(--font-body)">bílá plocha ubývá</text>
+              <path d="M280,110 L280,168" stroke="var(--ink-soft)" stroke-width="3" fill="none" marker-end="url(#a1)"/>
+              <rect x="20" y="172" width="520" height="100" rx="14" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/>
+              <text x="280" y="217" text-anchor="middle" font-size="26" font-weight="700" fill="var(--ink)" font-family="var(--font-body)">Nižší albedo</text>
+              <text x="280" y="248" text-anchor="middle" font-size="18" fill="var(--ink-soft)" font-family="var(--font-body)">odráží se méně záření</text>
+              <path d="M280,272 L280,330" stroke="var(--ink-soft)" stroke-width="3" fill="none" marker-end="url(#a1)"/>
+              <rect x="20" y="334" width="520" height="100" rx="14" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2"/>
+              <text x="280" y="379" text-anchor="middle" font-size="26" font-weight="700" fill="var(--ink)" font-family="var(--font-body)">Víc pohlceného tepla</text>
+              <text x="280" y="410" text-anchor="middle" font-size="18" fill="var(--ink-soft)" font-family="var(--font-body)">povrch se zahřívá</text>
+              <path d="M280,434 C 280,470 90,470 90,500" stroke="var(--ink-soft)" stroke-width="3" fill="none" marker-end="url(#a1)"/>
+              <text x="90" y="530" text-anchor="middle" font-size="20" fill="var(--ink-muted)" font-family="var(--font-body)">→ vyšší teplota → cyklus se opakuje</text>
+            </svg>
+          </div>
+        </div>
+        <div class="col">
+          <p class="prose">Pozitivní zpětná vazba <b>prohlubuje</b> počáteční změnu — každý krok posiluje ten následující.</p>
+          <p class="prose tight" style="margin-top:20px; color:var(--ink-soft)">Existuje i opačná, negativní (tlumící) vazba.</p>
+        </div>
+      </div>
+      <aside class="notes">Nechte studenty samotné navrhnout, co by se stalo, kdyby se řetězec přerušil (např. umělé zvýšení albeda) — dobrý aktivizační prvek.</aside>
+    </section>
+
+    <!-- 6 chem -->
+    <section>
+      <div class="tag-label chem">Rozšíření</div>
+      <h3 style="font-size:44px; margin-bottom:20px;">Zpětné vazby v klimatickém systému</h3>
+      <div class="chem-slide-panel">
+        <p class="prose tight">Kromě pozitivní vazby sníh–albedo–teplota existuje i <b>negativní</b> (tlumící) vazba: tání ledovců naředí slanou oceánskou vodu. Jak to ovlivní bod tuhnutí vody v oceánech a velikost ledové pokrývky na povrchu Země?</p>
+        <p class="prose tight" style="margin-top:18px;">V klimatickém systému existuje velké množství vazeb současně; pozitivní systém spíše destabilizují, negativní stabilizují. Přesný souhrnný efekt nelze s jistotou předpovědět — proto se klimatické projekce udávají jako rozmezí.</p>
+      </div>
+      <aside class="notes">Volitelné prohloubení — lze přeskočit, pokud je čas napjatý.</aside>
+    </section>
+
+    <!-- 7 calc -->
+    <section>
+      <div class="tag-label calc">Krátký výpočet</div>
+      <div class="calc-panel">
+        <p class="prose tight">Střecha výrobní haly je pokryta fotovoltaickými panely o ploše 2 000 m² a účinnosti 20 %. V&nbsp;jižních Čechách je roční ozáření ~1 100 kWh/m².</p>
+        <p class="prose tight">Vypočítejte vyrobenou energii za rok.</p>
+        <p class="formula">2 000 × 1 100 × 0,20 ≈ 440 000 kWh/rok = 440 MWh/rok</p>
+        <p class="prose tight">Vyrobená energie pokryje spotřebu přibližně 100 domácností.</p>
+        <p class="prose tight">V případě výrobní haly nemusí nutně pokrýt celý provoz, ale sníží závislost na spotové ceně.</p>
+      </div>
+      <aside class="notes">Nechte studenty nejdřív odhadnout řád velikosti sami, pak dopočítejte společně.</aside>
+    </section>
+
+    <!-- 8 think -->
+    <section class="think-slide">
+      <div class="tag-label think">Zamyšlení</div>
+      <p class="question">Které odvětví ve vašem okolí je nejvíc závislé na stabilní ceně energie? Co by se stalo, kdyby cena elektřiny na rok ztrojnásobila?</p>
+      
+      <aside class="notes">Typické odpovědi: energeticky náročná výroba (sklo, cement, hutě), datacentra, chladírenství — dobrý most k dalšímu tématu.</aside>
+    </section>
+
+    <!-- 9 example -->
+    <section>
+      <div class="tag-label example">Příklad z praxe</div>
+      <div class="example-panel">
+        <p class="prose tight">Energetika je významný zdroj emisí skleníkových plynů v EU — spotřeba a zdroj energie přímo ovlivňují uhlíkovou stopu firmy.</p>
+        
+      </div>
+      <div class="example-panel">
+        <p class="prose tight"><a href="https://faktaoklimatu.cz/infografiky/emise-eu-prumysl" target="_blank">Fakta o klimatu</a></p>
+        
+      </div>
+      <aside class="notes">Návaznost: energetika = 31,7 % emisí EU, uvidíme přesné číslo za chvíli u Atmosféry.</aside>
+    </section>
+
+    <!-- 10 divider Atmosfera -->
+    <section class="divider-slide">
+      <div class="num">02</div>
+      <h2>Atmosféra</h2>
+      <p>Složení, reakce, skleníkový jev, kyselé deště, smog</p>
+      <aside class="notes">Nejnáročnější téma bloku — počítejte s cca 40 minutami.</aside>
+    </section>
+
+    <!-- 11 composition -->
+    <section>
+      <div class="kicker">Atmosféra · složení</div>
+      <div class="diagram-wrap">
+        <div class="stackbar">
+          <div style="flex:78; background:var(--chart-1)"><span class="sv">N₂ 78 %</span></div>
+          <div style="flex:21; background:var(--chart-3)"><span class="sv">O₂ 21 %</span></div>
+          <div style="flex:4; background:var(--chart-2)"></div>
+        </div>
+        <div class="stack-legend">
+          <div class="li2"><span class="sw" style="background:var(--chart-1)"></span>Dusík N₂ — 78 %, inertní</div>
+          <div class="li2"><span class="sw" style="background:var(--chart-3)"></span>Kyslík O₂ — 21 %, dýchání a oxidace</div>
+          <div class="li2"><span class="sw" style="background:var(--chart-2)"></span>Argon, CO₂ a další — necelé 1 %</div>
+        </div>
+      </div>
+      <div><img src="Obrazky/atmosféra.png" alt="Složení atmosféry" width=300></div>
+      <aside class="notes">Zdůraznit: byť CO₂ je jen ~0,04 %, jeho vliv na energetickou bilanci je nepoměrně větší, než by odpovídalo podílu.</aside>
+    </section>
+
+    <!-- 12 greenhouse text -->
+    <section>
+      <div class="kicker">Atmosféra · skleníkový jev</div>
+      <div class="prose">
+        <p>Sluneční záření o vlnové délce 300 až 800 nm prochází atmosférou. Část se odráží zpět do vesmíru, ale přibližně 71 % je pohlcována zemským povrchem, který se tím zahřívá. Zahřátý povrch následně vyzařuje tepelnou energii převážně ve formě dlouhovlnného infračerveného záření.</p>
+        <p>Část tohoto záření pohlcují skleníkové plyny a oblaka v atmosféře. Ty pak infračervené záření znovu emitují ve všech směrech – část směřuje zpět k zemskému povrchu a část do vesmíru. Díky tomuto přirozenému skleníkovému efektu je povrch Země výrazně teplejší, než by byl bez atmosférických skleníkových plynů.</p>
+          <p> Přirozený skleníkový efekt zvyšuje průměrnou globální teplotu povrchu přibližně o 33 °C: z hypotetických −18 °C na současných přibližně +15 °C. Nejde tedy o nežádoucí jev – je nezbytnou podmínkou současných podmínek pro život na Zemi. Problém představuje zesilování přirozeného skleníkového efektu v důsledku rostoucí koncentrace skleníkových plynů, zejména v důsledku lidské činnosti.</p>
+      </div>
+      <aside class="notes">Mylná představa č. 1: „skleníkový efekt je vždy špatný" — odlište přirozený jev od jeho antropogenního zesílení.</aside>
+    </section>
+
+    <!-- 13 greenhouse diagram -->
+    <section>
+      <div class="diagram-wrap" style="margin-bottom:0;">
+        <svg viewBox="0 0 980 460" role="img" aria-label="Schéma skleníkového jevu">
+          <defs>
+            <marker id="g1" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="var(--accent)"/></marker>
+            <marker id="g2" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="var(--danger)"/></marker>
+            <marker id="g3" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="var(--water)"/></marker>
+          </defs>
+          <circle cx="110" cy="80" r="50" fill="var(--accent)"/>
+          <text x="110" y="155" text-anchor="middle" font-size="20" fill="var(--ink-soft)" font-family="var(--font-body)">Slunce</text>
+          <rect x="0" y="240" width="980" height="60" fill="var(--water-soft)"/>
+          <text x="490" y="278" text-anchor="middle" font-size="20" fill="var(--ink-soft)" font-family="var(--font-body)">vrstva skleníkových plynů</text>
+          <rect x="410" y="360" width="260" height="52" rx="10" fill="var(--surface-3)"/>
+          <text x="540" y="393" text-anchor="middle" font-size="20" fill="var(--ink-soft)" font-family="var(--font-body)">zemský povrch</text>
+          <path d="M150,120 L500,358" stroke="var(--accent)" stroke-width="4" fill="none" marker-end="url(#g1)"/>
+          <circle cx="330" cy="228" r="24" fill="var(--accent)"/><text x="330" y="236" text-anchor="middle" font-size="22" fill="#fff" font-weight="700" font-family="var(--font-body)">1</text>
+          <path d="M525,360 L420,130" stroke="var(--danger)" stroke-width="4" fill="none" marker-end="url(#g2)"/>
+          <circle cx="463" cy="224" r="24" fill="var(--danger)"/><text x="463" y="232" text-anchor="middle" font-size="22" fill="#fff" font-weight="700" font-family="var(--font-body)">2</text>
+          <path d="M590,300 L650,358" stroke="var(--water)" stroke-width="4" stroke-dasharray="7 6" fill="none" marker-end="url(#g3)"/>
+          <circle cx="650" cy="270" r="24" fill="var(--water)"/><text x="650" y="278" text-anchor="middle" font-size="22" fill="#fff" font-weight="700" font-family="var(--font-body)">3</text>
+          <path d="M640,240 L830,88" stroke="var(--danger)" stroke-width="3.5" opacity=".55" fill="none" marker-end="url(#g2)"/>
+          <circle cx="800" cy="128" r="24" fill="var(--danger)" opacity=".7"/><text x="800" y="136" text-anchor="middle" font-size="22" fill="#fff" font-weight="700" font-family="var(--font-body)">4</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- 14 greenhouse legend -->
+    <section>
+      <div class="kicker">Skleníkový jev · vysvětlení</div>
+      <div class="diagram-legend">
+        <div class="row2"><span class="badge" style="background:var(--accent)">1</span><span><b>Krátkovlnné sluneční záření</b> dopadá na povrch téměř bez pohlcení atmosférou.</span></div>
+        <div class="row2"><span class="badge" style="background:var(--danger)">2</span><span><b>Povrch se ohřívá</b> a vyzařuje teplo zpět jako dlouhovlnné infračervené záření.</span></div>
+        <div class="row2"><span class="badge" style="background:var(--water)">3</span><span><b>Skleníkové plyny</b> část tohoto záření pohltí a vyzáří zpět k povrchu.</span></div>
+        <div class="row2"><span class="badge" style="background:var(--danger); opacity:.7">4</span><span>Zbylá část infračerveného záření je emitována do vesmíru — bilance je uzavřena.</span></div>
+      </div>
+      <div class="diagram-legend"> <br><p>Úkol: Skleníkové plyny se významně liší svou koncentrací, schopností absorbovat infračervené záření i dobou setrvání v atmosféře. Uveďte alespoň čtyři skleníkové plyny a vysvětlete, proč může mít plyn s výrazně nižší koncentrací než CO₂ přesto významný vliv na oteplování. </p></div>
+
+      
+    </section>
+
+     <!-- 15 chem radiative gases -->
+    <section>
+      <div class="tag-label chem">Rozšíření</div>
+      <h3 style="font-size:34px; margin-bottom:20px;">Radiačně aktivní plyny nejsou stejně „silné"</h3>
+      <div class="chem-slide-panel">
+        <p class="prose tight">Metan (CH₄): <b>~21× účinnější</b> než CO₂, ale v atmosféře vydrží jen 10–15 let (CO₂ 100+ let). Oxid dusný (N₂O): přibližně <b>310× účinnější</b> než CO₂. Freony do poloviny 20. století neexistovaly, a přesto patří k nejsilnějším skleníkovým plynům vůbec.</p>
+        <p class="prose tight" style="margin-top:16px;">Proto se v reportingu pracuje s jednotkou <b>CO₂ ekvivalent (CO₂e)</b>.</p>
+      </div>
+    </section>
+
+    <!-- 16 acid rain -->
+    <section>
+      <div class="kicker">Atmosféra · kyselé deště</div>
+      <div class="prose">
+        <p>Oxidy síry (SO₂) a dusíku (NOₓ) reagují se vzdušnou vlhkostí na kyseliny:</p>
+      </div>
+      <p class="formula">SO₂ + H₂O → H₂SO₃ → (oxidací) H₂SO₄<br>NOₓ + H₂O → HNO₃</p>
+      <aside class="notes">Okyselují půdu i vodní toky, poškozují stavby, lesy i infrastrukturu — konkrétní příklad Plešného jezera přijde u Hydrosféry.</aside>
+    </section>
+
+    <!-- 17 smog -->
+    <section>
+      <div class="kicker">Atmosféra · smog</div>
+      <div><img src="Obrazky/Smog_1.png" alt="Smog" width=500></div>
+      <aside class="notes">Okyselují půdu i vodní toky, poškozují stavby, lesy i infrastrukturu — konkrétní příklad Plešného jezera přijde u Hydrosféry.</aside>
+    </section>
+
+
+
+    <!-- 18 ocean acidification -->
+    <section>
+     <div class="kicker">Okyselování oceánů</div>
+     <div><img src="Obrazky/Carbon-Dioxide-and-Ocean-Acidification copy.png" alt="Okyselování oceánů" width=800></div>
+    </section>
+
+    <!-- 19 think ocean -->
+    <section class="think-slide">
+      <div class="tag-label think">Zamyšlení</div>
+      <div class="prose">Firma chovající ústřice pozoruje v posledních letech tenčí a hůře mineralizující skořápky a vyšší úmrtnost mladých jedinců, přestože ve svém provozu nezměnila podmínky.
+
+     <br> 1. Jaký environmentální proces by mohl být jednou z příčin tohoto problému? Vysvětlete chemický mechanismus.
+     <br> 2. Jaké další faktory by bylo vhodné sledovat, aby bylo možné ověřit, zda skutečně souvisejí s acidifikací oceánu?
+     <br> 3. Co může firma udělat na místní úrovni a co naopak nemůže vyřešit sama?</div>
+      <aside class="notes">Klíčový bod: příčinu (globální CO₂) firma sama neovlivní, ale může se adaptovat — odolnější druhy/lokality, diverzifikace, monitoring pH.</aside>
+    </section>
+
+    <!-- 20 divider Hydrosfera -->
+    <section class="divider-slide">
+      <div class="num">03</div>
+      <h2>Hydrosféra</h2>
+      <p>Voda a hydrologický cyklus</p>
+      <aside class="notes">Čas: cca 30–35 minut.</aside>
+    </section>
+
+    <!-- 21 hydro intro -->
+    <section>
+      <div class="kicker">Hydrosféra</div>
+      <div class="prose">
+        <p>Voda pokrývá asi 71 % zemského povrchu. Přibližně 96,5 % vody na Zemi je uloženo v oceánech. Asi 2,5 % tvoří sladká voda. Zbytek představuje především slaná podzemní voda a další menší zásoby slané vody.</p>
+     </div>
+      <aside class="notes">Tuto statistiku nechte vyznít — obvykle vyvolá největší reakci v celé přednášce.</aside>
+    </section>
+
+    <!-- 22 hydro diagram -->
+    <section>
+      <div class="diagram-wrap" style="margin-bottom:0;">
+        <svg viewBox="0 0 1000 480" role="img" aria-label="Schéma hydrologického cyklu">
+          <defs>
+            <marker id="h1" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="var(--water)"/></marker>
+            <marker id="h2" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="var(--primary)"/></marker>
+            <marker id="h3" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="var(--danger)"/></marker>
+          </defs>
+          <rect x="0" y="320" width="280" height="150" rx="12" fill="var(--water-soft)"/>
+          <text x="140" y="404" text-anchor="middle" font-size="20" fill="var(--ink-soft)" font-family="var(--font-body)">oceán / povrchová voda</text>
+          <ellipse cx="620" cy="100" rx="165" ry="58" fill="var(--surface-3)"/>
+          <text x="620" y="106" text-anchor="middle" font-size="20" fill="var(--ink-soft)" font-family="var(--font-body)">kondenzace — mraky</text>
+          <polygon points="680,470 850,190 1000,470" fill="var(--surface-3)" opacity=".6"/>
+          <text x="850" y="440" text-anchor="middle" font-size="20" fill="var(--ink-soft)" font-family="var(--font-body)">půda / infiltrace</text>
+          <path d="M200,330 L560,160" stroke="var(--water)" stroke-width="4" fill="none" marker-end="url(#h1)"/>
+          <circle cx="380" cy="252" r="24" fill="var(--water)"/><text x="380" y="260" text-anchor="middle" font-size="22" fill="#fff" font-weight="700" font-family="var(--font-body)">1</text>
+          <path d="M660,165 L810,280" stroke="var(--water)" stroke-width="4" stroke-dasharray="7 6" fill="none" marker-end="url(#h1)"/>
+          <circle cx="700" cy="220" r="24" fill="var(--water)"/><text x="700" y="228" text-anchor="middle" font-size="22" fill="#fff" font-weight="700" font-family="var(--font-body)">2</text>
+          <path d="M840,300 L310,370" stroke="var(--primary)" stroke-width="4" fill="none" marker-end="url(#h2)"/>
+          <circle cx="560" cy="332" r="24" fill="var(--primary)"/><text x="560" y="340" text-anchor="middle" font-size="22" fill="#fff" font-weight="700" font-family="var(--font-body)">3</text>
+          <path d="M960,300 Q 1000,410 930,460" stroke="var(--danger)" stroke-width="3.5" stroke-dasharray="5 5" fill="none" marker-end="url(#h3)"/>
+          <circle cx="960" cy="400" r="24" fill="var(--danger)"/><text x="960" y="408" text-anchor="middle" font-size="22" fill="#fff" font-weight="700" font-family="var(--font-body)">4</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- 23 hydro legend -->
+    <section>
+      <div class="kicker">Hydrologický cyklus · vysvětlení</div>
+      <div class="diagram-legend">
+        <div class="row2"><span class="badge" style="background:var(--water)">1</span><span><b>Výpar a evapotranspirace</b> — Slunce odpařuje vodu z oceánů i půdy, rostliny ji uvolňují listy.</span></div>
+        <div class="row2"><span class="badge" style="background:var(--water)">2</span><span><b>Kondenzace a srážky</b> — vodní pára kondenzuje na mraky a vrací se jako déšť či sníh.</span></div>
+        <div class="row2"><span class="badge" style="background:var(--primary)">3</span><span><b>Odtok a infiltrace</b> — srážky se vsakují nebo odtékají po povrchu zpět do oceánu.</span></div>
+        <div class="row2"><span class="badge" style="background:var(--danger)">4</span><span><b>Lidský zásah</b> — odlesnění a zpevněné plochy zvyšují odtok, nadměrné čerpání vyčerpává zásoby.</span></div>
+      </div>
+    </section>
+
+    <!-- 24 chem water -->
+    <section>
+      <div class="tag-label chem">Rozšíření</div>
+      <h3 style="font-size:40px; margin-bottom:18px;">Vlastnosti vody</h3>
+      <div class="chem-slide-panel">
+        <p class="prose tight">H₂O je silně polární, mezi molekulami vznikají <b>vodíkové můstky</b> — vysvětlují vysokou tepelnou kapacitu, vysoké skupenské teplo výparu i schopnost rozpouštět polární a iontové látky.</p>
+        <p class="prose tight" style="margin-top:8px;">Voda je <b>amfoterní</b>: H₂O + H₂O ⇌ H₃O⁺ + OH⁻.</p>
+        
+      </div>
+    <div><p></p><img src="Obrazky/voda.png" alt="Voda" width=300></div>
+    </section>
+
+        <!-- 24 chem water -->
+    <section>
+      <div class="tag-label chem">Rozšíření</div>
+      <h3 style="font-size:40px; margin-bottom:18px;">Vlastnosti vody</h3>
+      <div class="chem-slide-panel">
+        <p class="prose tight">H₂O je silně polární, mezi molekulami vznikají <b>vodíkové můstky</b> — vysvětlují vysokou tepelnou kapacitu, vysoké skupenské teplo výparu i schopnost rozpouštět polární a iontové látky.</p>
+        <p class="prose tight" style="margin-top:8px;">Voda je <b>amfoterní</b>: H₂O + H₂O ⇌ H₃O⁺ + OH⁻.</p>
+        
+      </div>
+    <div><p></p><img src="Obrazky/salt_water.png" alt="Salt water" width=300></div>
+    </section>
+
+    <!-- 25 Plesne jezero -->
+    <section>
+      <div class="tag-label example">Příklad z praxe</div>
+      <h3 style="font-size:36px; margin-bottom:18px;">Plešné jezero, Šumava</h3>
+      <div class="example-panel">
+        <p class="prose tight">V 70.–80. letech depozice síry a dusíku z průmyslových emisí (kyselé deště) snížila pH jezera natolik, že vymizely citlivé druhy, např. pstruh obecný. Po odsíření elektráren v 90. letech se kvalita vody postupně zlepšuje.</p>
+        <p class="src-line">Zdroj: Plešné jezero a kůrovec, Biologické centrum AV ČR / PřF JU.</p>
+      </div>
+      <aside class="notes">Regionální příklad blízko JU — propojuje kyselé deště (Atmosféra) s hydrosférou a ukazuje měřitelnou dlouhodobou obnovu ekosystému.</aside>
+    </section>
+
+    <!-- 26 human impact -->
+    <section>
+      <div class="tag-label example">Příklad z praxe</div>
+      <h3 style="font-size:36px; margin-bottom:18px;">Lidský zásah do cyklu</h3>
+      <div class="prose">
+        <ol style="font-size:28px;">
+          <li>Odběr sladké vody rychleji, než ji doplňují přírodní procesy</li>
+          <li>Zpevňování povrchu a odlesňování → víc odtoku, míň infiltrace</li>
+          <li>Odvodňování mokřadů, které jinak fungují jako protipovodňová „houba"</li>
+        </ol>
+      </div>
+      <aside class="notes">Pro firmu: water stress v regionu výroby, kolísavá cena vstupu, riziko omezení odběru chladicí vody při suchu.</aside>
+    </section>
+
+    <!-- 27 think water -->
+    <section class="think-slide">
+      <div class="tag-label think">Případová otázka</div>
+<div><p></p><img src="Obrazky/otázka_voda.png" alt="Otázka voda" width=800></div>
+    </section>
+
+    <!-- 28 divider Pedosfera -->
+    <section class="divider-slide">
+      <div class="num">04</div>
+      <h2>Pedosféra</h2>
+      <p>Složení a vlastnosti půdy</p>
+      <aside class="notes">Čas: cca 20–25 minut + 10 minut na shrnutí celé přednášky.</aside>
+    </section>
+
+    <!-- 29 soil composition -->
+    <section>
+      <div class="kicker">Pedosféra · složení</div>
+      <div class="diagram-wrap">
+        <div class="stackbar">
+          <div style="flex:45; background:var(--chart-4)"><span class="sv">45 %</span></div>
+          <div style="flex:25; background:var(--chart-1)"><span class="sv">25 %</span></div>
+          <div style="flex:25; background:var(--chart-3)"><span class="sv">25 %</span></div>
+          <div style="flex:5; background:var(--chart-2)"></div>
+        </div>
+        <div class="stack-legend">
+          <div class="li2"><span class="sw" style="background:var(--chart-4)"></span>Minerální podíl — 45 %</div>
+          <div class="li2"><span class="sw" style="background:var(--chart-1)"></span>Voda — 25 %</div>
+          <div class="li2"><span class="sw" style="background:var(--chart-3)"></span>Vzduch — 25 %</div>
+          <div class="li2"><span class="sw" style="background:var(--chart-2)"></span>Humus — 5 %</div>
+        </div>
+      </div>
+      <aside class="notes">Vytvoření jen jednoho centimetru úrodné půdy trvá v přírodních podmínkách stovky let — stojí za zmínku.</aside>
+    </section>
+
+    <!-- 30 soil properties -->
+    <section>
+      <div class="kicker">Pedosféra · vlastnosti</div>
+      <div class="prose">
+        <p><b>pH půdy</b> ovlivňuje dostupnost živin pro rostliny.</p>
+        <p><b>Sorpční komplex</b> — jílové minerály a humus váží ionty živin (iontová výměna) a brání jejich vyplavení.</p>
+        <p><b>Humus</b> zlepšuje strukturu půdy a schopnost zadržet vodu.</p>
+      </div>
+    </section>
+
+    <!-- 31 chem CEC -->
+    <section>
+      <div class="tag-label chem">Rozšíření</div>
+      <h3 style="font-size:40px; margin-bottom:18px;">Sorpční komplex a iontová výměna</h3>
+      <div class="chem-slide-panel">
+        <p class="prose tight">Povrch jílu a humusu nese záporný náboj, na který se vážou kationty živin (K⁺, Ca²⁺, Mg²⁺, NH₄⁺). Tuto schopnost vyjadřuje <b>kationtová výměnná kapacita (CEC)</b> — čím vyšší, tím lépe půda „drží" živiny proti vyplavení.</p>
+      </div>
+    </section>
+
+    <!-- 32 example soil -->
+    <section>
+      <div class="tag-label example">Příklad z praxe</div>
+      <div class="example-panel">
+        <p class="prose tight">Eroze a úbytek organické hmoty se projeví jako klesající výnos a rostoucí cena suroviny — typicky o několik článků řetězce dál, u zpracovatele, který si degradaci půdy sám nezpůsobil, ale nese její cenové důsledky.</p>
+      </div>
+      <aside class="notes">Land use change je z tohoto pohledu přímo manažerské rozhodnutí s dlouhodobým dopadem na dostupnost surovin.</aside>
+    </section>
+
+   
+
+    <!-- 34 shrnuti -->
+    <section>
+      <div class="kicker">Shrnutí</div>
+      <div class="prose">
+        <p>Energie, atmosféra, hydrosféra a pedosféra netvoří izolované kapitoly — energetická bilance se vrací u skleníkového jevu, kyselé deště se znovu objevují u Plešného jezera, sorpční komplex v půdě funguje na stejném principu jako hydratace iontů ve vodě.</p>
+        <p style="margin-top:14px;"><b>Každá složka je zároveň vstupem, rizikem nebo omezením pro firemní rozhodování.</p>
+      </div>
+      <aside class="notes">Konec přednášky — pokračujte na seminar-1.html.</aside>
+    </section>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/notes/notes.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    width: 1280,
+    height: 720,
+    margin: 0.04,
+    minScale: 0.2,
+    maxScale: 2,
+    controls: true,
+    progress: true,
+    slideNumber: 'c/t',
+    plugins: [ RevealNotes ]
+  });
+</script>
+</body>
+</html>
