@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Přednáška 2 — Biotické složky ekosystému</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <!-- 1 cover -->
+    <section class="cover-slide">
+      <div>
+        <div class="eyebrow">Chemické principy a udržitelnost</div>
+        <h1>Biotické složky ekosystému</h1>
+        <p class="sub">Biogenní prvky · molekuly v živých organismech · biomakromolekuly · nadmolekulární struktury</p>
+      </div>
+      <div class="foot"><div class="bar"></div><span>Přednáška 2 · Blok 1</span></div>
+      <aside class="notes">
+        Navazuje na Přednášku 1(abiotické složky). Dnes se posouváme k tomu, z čeho jsou postavené samotné organismy — od jednotlivých prvků přes malé molekuly a makromolekuly až po nadmolekulární struktury (membrány, buněčnou stěnu). Stejně jako v Bloku 1: střídejte výklad se zastaveními u „Zamyšlení" a datových úloh, ať to není čistě frontální.
+      </aside>
+    </section>
+
+    <!-- 2 goals -->
+    <section>
+      <div class="kicker">Cíle přednášky</div>
+      <div class="goal-list">
+        <div class="item"><span class="dot"></span><span>Vysvětlit, které prvky jsou pro život nezbytné a proč jejich poměr (stechiometrie) v ekosystému něco vypovídá</span></div>
+        <div class="item"><span class="dot"></span><span>Popsat základní stavební molekuly živých organismů a jejich uspořádání do biomakromolekul</span></div>
+        <div class="item"><span class="dot"></span><span>Vysvětlit vztah struktura–funkce u bílkovin, sacharidů, lipidů a nukleových kyselin</span></div>
+        <div class="item"><span class="dot"></span><span>Ukázat, jak se tyto principy uplatňují v nadmolekulárních strukturách (membrány, buněčná stěna)</span></div>
+        <div class="item"><span class="dot"></span><span>U každého tématu propojit chemii a data s konkrétní manažerskou praxí</span></div>
+      </div>
+      <aside class="notes">Stejně jako v Bloku 1 signalizujte hned na začátku, že se u „Zamyšlení" a datových úloh budou studující sami zapojovat.</aside>
+    </section>
+
+    <!-- 3 divider 01 -->
+    <section class="divider-slide">
+      <div class="num">01</div>
+      <h2>Biogenní prvky</h2>
+      <p>Které prvky organismy potřebují a v jakém poměru</p>
+      <aside class="notes">Čas na téma: cca 25 minut.</aside>
+    </section>
+
+    <!-- 4 biogenic elements intro -->
+    <section>
+      <div class="kicker">Biogenní prvky</div>
+      <div class="prose">
+        <p>Biogenní prvky jsou chemické prvky, které jsou součástí živých organismů a podílejí se na jejich stavbě a fungování. Některé jsou pro daný organismus esenciální – bez jejich přítomnosti organismus nemůže normálně růst, vyvíjet se nebo dokončit životní cyklus.</p>
+
+        <p>Podle množství, v jakém jsou obvykle potřebné, se esenciální prvky rozdělují na:</p>
+
+        <p>makroprvky (makrobiogenní prvky) – potřebné v relativně velkém množství:</p>
+        <p>C, H, O, N, P, S, K, Ca, Mg;</p>
+        <p>mikroprvky (mikrobiogenní, stopové prvky) – potřebné v malém až stopovém množství, ale pro daný organismus mohou být nezbytné:</p> 
+        <p>např. Fe, Zn, Cu, Mn, Mo, B, Cl, Ni.</p>
+        </div>
+        <aside class="notes">Mikrobiogenní prvky často fungují jako kofaktory enzymů — dobrý most k tématu 03 (biomakromolekuly/enzymy).</aside>
+      </section>
+
+ <!-- 4 biogenic elements intro -->
+    <section>
+      <div class="kicker">Biogenní prvky</div>
+      <div class="prose">
+      <p>Potřeba a esencialita jednotlivých prvků se mezi skupinami organismů liší.</p>
+
+      <p>Skupina <b>CHNOPS</b></p>
+
+      <p>Zkratka CHNOPS označuje šest významných biogenních prvků:</p>
+            <p>C – H – N – O – P – S.</p>
+
+      <p>Tyto prvky tvoří základní stavební a funkční složky živé hmoty. U rostlinné biomasy tvoří C, H a O přibližně 94–96&nbsp;% sušiny; po zahrnutí N, P a S je podíl ještě vyšší.</p>
+      </div>
+      <aside class="notes">Mikrobiogenní prvky často fungují jako kofaktory enzymů — dobrý most k tématu 03 (biomakromolekuly/enzymy).</aside>
+    </section>
+
+    <!-- 5 composition chart -->
+    <section>
+      <div class="kicker">Prvkové složení sušiny biomasy</div>
+      <div class="diagram-wrap">
+        <div class="stackbar">
+          <div style="flex:48; background:var(--chart-1)"><span class="sv">C 48 %</span></div>
+          <div style="flex:24; background:var(--chart-3)"><span class="sv">O 24 %</span></div>
+          <div style="flex:6; background:var(--chart-4)"><span class="sv">H 6 %</span></div>
+          <div style="flex:15; background:var(--chart-2)"><span class="sv">N/ost. 15 %</span></div>
+        </div>
+        <div class="stack-legend">
+          <div class="li2"><span class="sw" style="background:var(--chart-1)"></span>Uhlík C — cca 45–50 %, kostra všech organických molekul</div>
+          <div class="li2"><span class="sw" style="background:var(--chart-3)"></span>Kyslík O — cca 20–25 %</div>
+          <div class="li2"><span class="sw" style="background:var(--chart-4)"></span>Vodík H — cca 6 %</div>
+          <div class="li2"><span class="sw" style="background:var(--chart-2)"></span>Dusík, fosfor, síra a ostatní — zbytek, ale nepostradatelný</div>
+        </div>
+      </div>
+      <aside class="notes">Orientační hodnoty pro suchou rostlinnou/mikrobiální biomasu — přesný poměr se liší podle druhu a podmínek. Zdůrazněte: N a P jsou v hmotnosti malé, ale často limitující — na to navazuje další slide.</aside>
+    </section>
+
+    <!-- 6 chem redfield -->
+    <section>
+      <div class="tag-label chem">Rozšíření</div>
+      <h3 style="font-size:40px; margin-bottom:18px;">Redfieldův poměr</h3>
+      <div class="chem-slide-panel">
+        <p class="prose tight">U mořského fytoplanktonu a další partikulární organické hmoty v oceánu byl pozorován charakteristický průměrný molární poměr uhlíku, dusíku a fosforu:</p>
+        <p class="formula">C : N : P ≈ 106 : 16 : 1</p>
+        <p class="prose tight">Tzv. <b>Redfieldův poměr</b> je významnou referenční hodnotou pro studium koloběhu živin v oceánech. Vyjadřuje přibližné zastoupení těchto prvků v biomase a souvisí s jejich pohybem mezi živou biomasou, vodou a sedimenty.</p>
+        <p class="prose tight">Poměr není univerzální ani konstantní – liší se mezi druhy a skupinami organismů a mění se také podle dostupnosti živin, světla, teploty a dalších podmínek prostředí.</p>
+        <p class="prose tight">Pokud je některá živina vzhledem k požadavkům organismu nedostupná, může se stát limitujícím faktorem růstu.</p>
+      </div>
+      <aside class="notes">Volitelné prohloubení. Klíčová myšlienka pro další slide: limitující prvek určuje, jak rychle bude ekosystém (nebo řasový/sinicový kvet) růst. Pokud je některá živina vzhledem k požadavkům organismu nedostupná, může se stát limitujícím faktorem růstu. Redfieldův poměr proto může sloužit jako orientační nástroj pro hodnocení potenciálního nedostatku N nebo P, nikoli jako samostatný důkaz limitace. V některých prostředích může být limitující také např. železo a může docházet ke kolimitaci více živin.</aside>
+    </section>
+
+    <!-- 7 data-task limiting nutrient -->
+    <section>
+      <div class="tag-label data">Práce s daty</div>
+      <h3 style="font-size:38px; margin-bottom:18px;">Který prvek limituje růst?</h3>
+      <div class="data-task">
+        <p class="prose tight">Do vodní nádrže přitéká odpadní voda s hmotnostním poměrem N : P = 8 : 1 (po přepočtu na počet atomů/molů přibližně 18 : 1).</p>
+        <p class="prose tight">Redfieldův poměr je C : N : P ≈ 106 : 16 : 1, tedy optimální N : P pro řasy je cca 16 : 1.</p>
+        <ol>
+          <li>Je v přitékající vodě relativně více N, nebo P, vzhledem k potřebě řas?</li>
+          <li>Který prvek bude pravděpodobně limitovat růst řas — a který je tedy „přebytečný" a hromadí se?</li>
+          <li>Co to znamená pro provozovatele čistírny odpadních vod, který musí snížit riziko eutrofizace po vypuštění vody?</li>
+        </ol>
+        <div class="data-hint2">Podklad k dopočtení: skutečný poměr N:P v konkrétním toku lze najít v datech ČHMÚ / správců povodí (Povodí Vltavy, Povodí Labe) — provozní monitoring jakosti vod.</div>
+      </div>
+      <aside class="notes">Řešení: N:P = 18:1 je vyšší než optimum 16:1 → P je relativně vzácnější → P je limitující prvek. Čistírna proto musí primárně snižovat obsah fosforu (srážení fosforu), ne dusíku — to je klíčový manažerský/technologický závěr. Legislativa i provoz čistíren se zaměřují primárně na limity P, ne N< Čistírna by měla prioritně investovat do technologie srážení/odstraňování fosforu, ne dusíku.
+        formy fosforu ve vodě - celkový fosfor je dán množstvím anorganických orthofosforečnanů (PO4(3-)), polyfosforečnanu a organicky vázaného fosforu/aside>
+    </section>
+
+    <!-- 8 example eutrofizace -->
+    <section>
+      <div class="tag-label example">Příklad z praxe</div>
+      <h3 style="font-size:36px; margin-bottom:18px;">Eutrofizace jihočeských rybníků a nádrží</h3>
+      <div class="example-panel">
+        <p class="prose tight">Nadbytek dusíku a fosforu ze zemědělského odtoku a odpadních vod způsobuje přemnožení sinic a řas — eutrofizaci. Ta zvyšuje náklady na úpravu pitné vody, omezuje rekreační využití nádrží a v případě sinicových vodních květů může vést k uzavření koupacích lokalit.</p>
+        <p class="prose tight" style="margin-top:12px;">Legislativa (nařízení vlády o ukazatelích přípustného znečištění) proto stanovuje limity na obsah celkového fosforu a dusíku ve vypouštěné odpadní vodě — přímý regulatorní náklad pro provozovatele čistíren i průmyslové podniky. Dohledejte konkrétní emisní standardy pro N a P a limity pro sinice v koupacích vodách.</p>
+      </div>
+      <aside class="notes">Propojuje se zpět na Blok 1 / Hydrosféru — eutrofizace je typický příklad, kde biotický (růst řas) a abiotický (chemie živin ve vodě) pohled splývají.</aside>
+    </section>
+
+    <!-- 9 think nutrients -->
+    <section class="think-slide">
+      <div class="tag-label think">Zamyšlení</div>
+      <p class="question">Zemědělské družstvo platí pokutu za nadlimitní odtok fosforu z polí do místního potoka. Je efektivnější řešit odtok z pole (čistírna, retenční nádrže), nebo už při hospodaření na poli (hnojení, půda)? Zdůvodněte.</p>
+      <aside class="notes">Dobrá odpověď propojí náklady (čistírna je nákladná provozně, prevence je investičně nákladná, ale trvalejší) i abiotický kontext z Bloku 1 (eroze, sorpční komplex půdy).</aside>
+    </section>
+
+    <!-- 10 divider 02 -->
+    <section class="divider-slide">
+      <div class="num">02</div>
+      <h2>Molekuly v živých organismech</h2>
+      <p>Voda, ionty a malé organické molekuly</p>
+      <aside class="notes">Čas: cca 20 minut.</aside>
+    </section>
+
+    <!-- 11 small molecules -->
+    <section>
+      <div class="kicker">Malé molekuly v buňce</div>
+      <div class="prose">
+        <p>Kromě vody a iontů (K⁺, Na⁺, Ca²⁺, Mg²⁺, Cl⁻ — udržují osmotickou rovnováhu a elektrickou vodivost) obsahuje buňka čtyři hlavní skupiny malých organických „stavebních kamenů":</p>
+      </div>
+      <div class="goal-list" style="margin-top:14px;">
+        <div class="item"><span class="dot" style="background:var(--chart-1)"></span><span><b>Aminokyseliny</b> — stavební jednotky bílkovin</span></div>
+        <div class="item"><span class="dot" style="background:var(--chart-3)"></span><span><b>Monosacharidy</b> (jednoduché cukry) — stavební jednotky sacharidů</span></div>
+        <div class="item"><span class="dot" style="background:var(--chart-4)"></span><span><b>Mastné kyseliny a glycerol</b> — stavební jednotky lipidů</span></div>
+        <div class="item"><span class="dot" style="background:var(--chart-2)"></span><span><b>Nukleotidy</b> — stavební jednotky nukleových kyselin (DNA, RNA)</span></div>
+      </div>
+      <aside class="notes">Tento slide je most k tématu 03 — každá skupina malých molekul se za chvíli spojí do odpovídající biomakromolekuly.</aside>
+    </section>
+
+    <!-- 12 chem chirality -->
+    <section>
+      <div class="tag-label chem">Rozšíření</div>
+      <h3 style="font-size:38px; margin-bottom:18px;">Chiralita — proč na tom záleží</h3>
+      <div class="chem-slide-panel">
+        <p class="prose tight">Živé organismy téměř výhradně používají <b>L-aminokyseliny</b> a <b>D-cukry</b> — jde o zrcadlové (chirální) formy molekul. Enzymy jsou k této „ruce" molekuly extrémně citlivé: rozeznají L-formu od D-formy stejně spolehlivě, jako pravá ruka pozná pravou rukavici od levé.</p>
+        <p class="prose tight" style="margin-top:12px;">To má přímý průmyslový důsledek: při biotechnologické výrobě (fermentaci) aminokyselin nebo léčiv je nutné vyrábět a čistit správnou chirální formu — jinak produkt v organismu nefunguje správně.</p>
+      </div>
+      <aside class="notes">Volitelné prohloubení pro studenty se středoškolskou chemií.</aside>
+    </section>
+
+    <!-- 13 example cell factories -->
+    <section>
+      <div class="tag-label example">Příklad z praxe</div>
+      <h3 style="font-size:32px; margin-bottom:8px;">Mikroorganismy jako „buněčné továrny“</h3>
+      <p class="prose tight" style="margin-bottom:14px;">Fermentace umožňuje průmyslovou výrobu řady chemických látek i nových potravinových ingrediencí.</p>
+      <div class="row" style="align-items:stretch; gap:24px;">
+        <div class="col">
+          <div class="example-panel" style="box-sizing:border-box; padding:18px 22px;">
+            <span class="status-badge done">Průmysl</span>
+            <p class="prose tight" style="margin-top:10px;"><b>L-lysin pro krmiva</b></p>
+            <p class="prose tight">Fermentace cukrů (<i>C.&nbsp;glutamicum</i>) ve velkém měřítku.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="example-panel" style="box-sizing:border-box; padding:18px 22px;">
+            <span class="status-badge done">Průmysl</span>
+            <p class="prose tight" style="margin-top:10px;"><b>Další produkty</b></p>
+            <p class="prose tight">Kyselina citronová, enzymy — etablovaná výrobní platforma.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="example-panel" style="box-sizing:border-box; padding:18px 22px;">
+            <span class="status-badge dev">Rozvoj</span>
+            <p class="prose tight" style="margin-top:10px;"><b>Precision fermentation</b></p>
+            <p class="prose tight">Upravený mikroorganismus cíleně produkuje danou molekulu.</p>
+          </div>
+        </div>
+      </div>
+      <p class="formula" style="margin-top:14px; padding:12px 20px;">zdroj uhlíku → mikroorganismus → cílová molekula</p>
+      <p class="prose tight" style="color:var(--danger); margin-top:2px;">Pozor: methionin je výjimka — vyrábí se převážně chemickou syntézou, nikoli fermentací.</p>
+      <aside class="notes">Zdroje: Liu et al. (2022), Microbiological Research 262, 127101; Current Opinion in Food Science 58 (2024), 101194. Navazuje na chiralitu a fermentaci z předchozích slidů.</aside>
+    </section>
+
+    <!-- 14 example biofuels TRL -->
+    <section>
+      <div class="tag-label example">Příklad z praxe</div>
+      <h3 style="font-size:34px; margin-bottom:10px;">Biopaliva: co už je průmysl a co teprve vzniká?</h3>
+      <p class="prose tight" style="margin-bottom:10px;">Stejný pojem „biopalivo" zahrnuje technologie s velmi rozdílnou technologickou vyspělostí (TRL).</p>
+      <div class="status-row"><div class="info"><b>Bioethanol — 1. generace</b><span>Plně komercializovaná technologie (TRL 9)</span></div><span class="status-badge done">Průmysl</span></div>
+      <div class="status-row"><div class="info"><b>Bioplyn / biometan</b><span>Anaerobní digesce (TRL 9)</span></div><span class="status-badge done">Průmysl</span></div>
+      <div class="status-row"><div class="info"><b>Bioethanol — 2. generace</b><span>Lignocelulózová biomasa (TRL 7–8)</span></div><span class="status-badge dev">Pilot / demo</span></div>
+      <div class="status-row"><div class="info"><b>Biobutanol</b><span>Škálování z pilotních na demonstrační procesy (TRL 6–7)</span></div><span class="status-badge dev">Pilot / demo</span></div>
+      <div class="status-row"><div class="info"><b>Biovodík (H₂)</b><span>Především výzkum a pilotní měřítko (TRL ~3)</span></div><span class="status-badge research">Výzkum</span></div>
+      <p class="prose tight" style="color:var(--danger); margin-top:12px;">Biovodík ≠ průmyslově zavedené biopalivo: biologické cesty k H₂ jsou zatím převážně ve vývoji.</p>
+      <aside class="notes">Zdroj: systematic review, Renewable &amp; Sustainable Energy Reviews (2026), 116818. TRL = Technology Readiness Level. TRL určuje investiční riziko a časový horizont návratnosti — relevantní pro manažerské rozhodování.</aside>
+    </section>
+
+    <!-- 15 chem biological vs chemical route -->
+    <section>
+      <div class="kicker">Biotechnologie · udržitelnost</div>
+      <h3 style="font-size:32px; margin-bottom:10px;">Biologická cesta ≠ automaticky udržitelnější cesta</h3>
+      <p class="prose tight" style="margin-bottom:14px;">O udržitelnosti rozhoduje celý výrobní systém — ne pouze to, zda používáme mikroorganismus.</p>
+      <div class="row" style="align-items:stretch; gap:26px;">
+        <div class="col">
+          <div class="compare-panel">
+            <h4>Biologická / fermentační cesta</h4>
+            <p class="formula" style="margin:0 0 10px 0; font-size:.72em;">obnovitelný zdroj uhlíku → mikroorganismus → cílová molekula</p>
+            <p class="prose tight"><span class="plus">+</span> selektivita, mírnější reakční podmínky<br><span class="minus">−</span> kultivace, separace a čištění produktu</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="compare-panel">
+            <h4>Chemická / petrochemická cesta</h4>
+            <p class="formula" style="margin:0 0 10px 0; font-size:.72em;">fosilní surovina → chemická syntéza → cílová molekula</p>
+            <p class="prose tight"><span class="plus">+</span> vysoká produktivita, zavedené procesy<br><span class="minus">−</span> vysoká surovinová a energetická náročnost</p>
+          </div>
+        </div>
+      </div>
+      <p class="prose tight" style="margin-top:10px;">Hodnotíme celý životní cyklus: suroviny, energii, vodu, výtěžnost, separaci, odpady, dopravu i vedlejší produkty.</p>
+      <p class="calc-panel" style="margin-top:6px; padding:12px 26px; font-size:22px; font-weight:700;">Udržitelnost výrobku posuzujeme podle celého životního cyklu (LCA), ne podle technologie samotné.</p>
+      <aside class="notes">Didaktické propojení: chemická syntéza × biotechnologie × LCA / Safe and Sustainable by Design.</aside>
+    </section>
+
+    <!-- 16 divider 03 -->
+    <section class="divider-slide">
+      <div class="num">03</div>
+      <h2>Biomakromolekuly</h2>
+      <p>Bílkoviny, sacharidy, lipidy, nukleové kyseliny</p>
+      <aside class="notes">Nejobsáhlejší téma bloku — počítejte s cca 45 minutami.</aside>
+    </section>
+
+    <!-- 17 proteins -->
+    <section>
+      <div class="kicker">Biomakromolekuly · bílkoviny</div>
+      <div class="prose">
+        <p>Bílkoviny (proteiny) vznikají spojením aminokyselin peptidovou vazbou do dlouhého řetězce, který se prostorově sbaluje do specifické 3D struktury. Právě tvar určuje funkci — bílkoviny fungují jako <b>enzymy</b> (biokatalyzátory), stavební materiál (kolagen, keratin), transportéry i signální molekuly.</p>
+      </div>
+      <aside class="notes">Klíčová myšlenka: struktura → funkce. Vrátíme se k ní i u sacharidů a lipidů.</aside>
+    </section>
+
+    <!-- 18 enzyme diagram -->
+    <section>
+      <div class="kicker">Enzymy jako biokatalyzátory</div>
+      <div class="row middle">
+        <div class="col" style="flex:1.1">
+          <div class="diagram-wrap">
+            <svg viewBox="0 0 560 320" role="img" aria-label="Schéma snížení aktivační energie enzymem">
+              <path d="M20,260 C 150,260 180,60 280,60 C 380,60 410,260 540,260" stroke="var(--danger)" stroke-width="4" fill="none"/>
+              <path d="M20,260 C 150,260 175,160 280,160 C 385,160 410,260 540,260" stroke="var(--primary)" stroke-width="4" fill="none"/>
+              <text x="330" y="50" font-size="20" fill="var(--danger)" font-family="var(--font-body)">bez enzymu</text>
+              <text x="400" y="150" font-size="20" fill="var(--primary)" font-family="var(--font-body)">s enzymem</text>
+              <text x="20" y="280" font-size="18" fill="var(--ink-muted)" font-family="var(--font-body)">substrát</text>
+              <text x="500" y="280" font-size="18" fill="var(--ink-muted)" font-family="var(--font-body)">produkt</text>
+            </svg>
+          </div>
+        </div>
+        <div class="col">
+          <p class="prose">Enzym snižuje <b>aktivační energii</b> potřebnou pro reakci — reakce proběhne rychleji a za mírnějších podmínek (nižší teplota, tlak, méně agresivní chemikálie), aniž by se sám spotřeboval.</p>
+        </div>
+      </div>
+      <aside class="notes">Enzym mění rychlost reakce, ne její rovnováhu — to je častá mylná představa, stojí za vysvětlení.</aside>
+    </section>
+
+    <!-- 19 chem enzyme specificity -->
+    <section>
+      <div class="tag-label chem">Rozšíření</div>
+      <h3 style="font-size:38px; margin-bottom:18px;">Specifita enzymů</h3>
+      <div class="chem-slide-panel">
+        <p class="prose tight">Aktivní místo enzymu má tvar a chemické vlastnosti „na míru" konkrétnímu substrátu (model zámek–klíč / indukovaný přizpůsobivý model). Díky tomu enzym katalyzuje jen jednu reakci nebo úzkou skupinu reakcí — to umožňuje buňce řídit tisíce reakcí současně bez toho, aby se navzájem rušily.</p>
+      </div>
+      <aside class="notes">Volitelné prohloubení.</aside>
+    </section>
+
+    <!-- 20 example industrial enzymes -->
+    <section>
+      <div class="tag-label example">Příklad z praxe</div>
+      <h3 style="font-size:36px; margin-bottom:18px;">Průmyslové enzymy a úspora energie</h3>
+      <div class="example-panel">
+        <p class="prose tight">Prací prostředky s proteázami a lipázami perou účinně už při 20–30 °C místo 60 °C — přímá úspora energie na ohřev vody v domácnostech i průmyslových prádelnách.</p>
+      </div>
+      <div class="example-panel">
+        <p class="prose tight">V textilním a papírenském průmyslu nahrazují enzymy (celulázy, xylanázy) část agresivních chemických procesů — méně odpadní chemie k likvidaci, mírnější podmínky procesu.</p>
+      </div>
+      <aside class="notes">Přímo navazuje na Blok 1 / Energii — enzymy jsou konkrétní chemický nástroj snižování energetické náročnosti výroby.</aside>
+    </section>
+
+    <!-- 21 carbohydrates -->
+    <section>
+      <div class="kicker">Biomakromolekuly · sacharidy</div>
+      <div class="prose">
+        <p>Polysacharidy vznikají spojováním jednoduchých cukrů. Stejná stavební jednotka (glukóza) může dát vzniknout velmi odlišným materiálům podle typu vazby a uspořádání řetězců:</p>
+      </div>
+      <div class="goal-list" style="margin-top:10px;">
+        <div class="item"><span class="dot"></span><span><b>Škrob</b> — zásobní polysacharid rostlin, snadno štěpitelný</span></div>
+        <div class="item"><span class="dot"></span><span><b>Glykogen</b> — zásobní polysacharid živočichů a hub</span></div>
+        <div class="item"><span class="dot"></span><span><b>Celulóza</b> — strukturní polysacharid buněčné stěny rostlin, pevná a málo štěpitelná</span></div>
+        <div class="item"><span class="dot"></span><span><b>Chitin</b> — strukturní polysacharid buněčné stěny hub a schránek členovců</span></div>
+      </div>
+      <aside class="notes">Opět struktura → funkce: typ vazby (α vs β glykosidická) mění mechanické vlastnosti i stravitelnost.</aside>
+    </section>
+
+    <!-- 22 example bioplastics -->
+    <section>
+      <div class="tag-label example">Příklad z praxe</div>
+      <h3 style="font-size:36px; margin-bottom:18px;">Obaly z mycelia a chitinu</h3>
+      <div class="example-panel">
+        <p class="prose tight">Houbové mycelium (síť buněčných stěn bohatých na chitin a glukany) lze nechat narůst do tvaru obalu — po použití je plně biologicky rozložitelný, na rozdíl od polystyrenu. Firmy jako Ecovative jej nabízejí jako náhradu ochranných obalů v logistice.</p>
+        <p class="prose tight" style="margin-top:12px;">Pro manažera udržitelnosti jde o konkrétní rozhodnutí typu „nahradit obal": nižší uhlíková stopa a plná kompostovatelnost oproti vyšší jednotkové ceně a jiným požadavkům na skladování.</p>
+      </div>
+      <aside class="notes">Dobrý příklad materiálové náhrady vycházející přímo z chemie polysacharidů probrané o slide dřív.</aside>
+    </section>
+
+    <!-- 23 lipids -->
+    <section>
+      <div class="kicker">Biomakromolekuly · lipidy</div>
+      <div class="prose">
+        <p>Lipidy jsou nesourodá skupina látek spojená společnou vlastností — nerozpustností ve vodě (hydrofobicitou). Zahrnují tuky a oleje (zásoba energie), fosfolipidy (stavební jednotka membrán) a steroidy (např. cholesterol, hormony).</p>
+        <p>Triacylglyceroly (tuky) mají nejvyšší energetickou hustotu ze všech biomolekul — přibližně dvojnásobek energie na gram oproti sacharidům nebo bílkovinám.</p>
+      </div>
+      <aside class="notes">Vysoká energetická hustota lipidů je důvod, proč jsou zajímavé jako surovina pro biopaliva — navazuje na další slide.</aside>
+    </section>
+
+    <!-- 24 data-task biodiesel -->
+    <section>
+      <div class="tag-label data">Práce s daty</div>
+      <h3 style="font-size:38px; margin-bottom:18px;">Kolik bionafty dá řasová biomasa?</h3>
+      <div class="data-task">
+        <p class="prose tight">Řasová kultura vyprodukuje 20 tun sušiny biomasy ročně na 1 hektar fotobioreaktoru. Obsah lipidů v sušině je u vybraného kmene 30 %. Při přepočtu lipidů na bionaftu (transesterifikace) je výtěžnost přibližně 90 % hmotnosti lipidů.</p>
+        <ol>
+          <li>Kolik tun lipidů biomasa ročně obsahuje?</li>
+          <li>Kolik tun bionafty lze teoreticky z hektaru ročně vyrobit?</li>
+          <li>Jaké další informace by manažer potřeboval, aby mohl posoudit, zda je projekt ekonomicky i environmentálně smysluplný (nejde jen o výtěžnost)?</li>
+        </ol>
+        <aside class="notes">Řešení: 20 t × 0,30 = 6 t lipidů/ha/rok; 6 t × 0,90 = 5,4 t bionafty/ha/rok. Reálné provozní parametry lze porovnat s daty projektů popsanými např. v přehledech IEA Bioenergy.</aside>
+      </div>
+      <aside class="notes">Bod 3 je záměrně otevřený — cílem je, aby studující sami navrhli, co ještě chybí (náklady na reaktor, spotřeba energie a živin na pěstování řas, cena pozemku/vody, konkurence s potravinovou produkcí).</aside>
+    </section>
+
+    <!-- 25 nucleic acids -->
+    <section>
+      <div class="kicker">Biomakromolekuly · nukleové kyseliny</div>
+      <div class="prose">
+        <p>DNA a RNA jsou polymery nukleotidů, které nesou genetickou informaci. Pořadí čtyř druhů „písmen" (bází) v řetězci DNA jednoznačně určuje sekvenci aminokyselin v bílkovinách, které buňka vytvoří — a tedy nepřímo i vlastnosti celého organismu.</p>
+        <p>Sekvence DNA je zároveň jedinečná pro daný druh (a částečně i jedince) — což z ní dělá využitelný „čárový kód" v přírodě.</p>
+      </div>
+      <aside class="notes">Most k dalšímu slide — DNA jako nástroj identifikace druhu, ne jen jako „návod k výrobě bílkovin".</aside>
+    </section>
+
+    <!-- 26 example DNA barcoding -->
+    <section>
+      <div class="tag-label example">Příklad z praxe</div>
+      <h3 style="font-size:36px; margin-bottom:18px;">DNA čárový kód v dodavatelském řetězci</h3>
+      <div class="example-panel">
+        <p class="prose tight"><b>DNA barcoding</b> — krátký, standardizovaný úsek DNA — umožňuje ověřit, zda dřevo, ryba nebo potravinová surovina skutečně pochází z deklarovaného druhu a případně i regionu. Používá se k odhalování nezákonné těžby dřeva, záměny druhů ryb v prodeji nebo falšování potravin (např. medu, olivového oleje).</p>
+        <p class="prose tight" style="margin-top:12px;">Pro firmu jde o nástroj ověření tvrzení dodavatele („odpovědně vytěžené dřevo", „100% treska") nezávisle na papírové dokumentaci — relevantní pro compliance s nařízením EU o odlesňování (EUDR) i pro ESG reporting hodnotového řetězce.</p>
+      </div>
+      <aside class="notes">
+        Silný příklad propojení „čisté" molekulární biologie s reálným compliance nástrojem, který manažeři udržitelnosti mohou přímo zadávat/objednávat.
+
+        Jak metoda funguje (princip): z odebraného vzorku (kousek dřeva, tkáně ryby, stopové množství DNA v potravině) se izoluje DNA a pomocí PCR se namnoží krátký, standardizovaný úsek genomu — tzv. „barcode" region. U živočichů se nejčastěji používá úsek genu COI (cytochrom c oxidáza I) v mitochondriální DNA, u rostlin kombinace úseků jako rbcL a matK nebo ITS, protože mitochondriální gen rostlin se vyvíjí příliš pomalu. Tento úsek se poté osekvenuje a jeho sekvence se porovná s referenční databází (např. BOLD Systems — Barcode of Life Data System), kde je uložena „referenční" sekvence pro tisíce popsaných druhů.
+
+        Proč to funguje chemicky/biologicky: mutace se v tomto úseku DNA hromadí dostatečně rychle na to, aby se sekvence mezi RŮZNÝMI druhy jasně lišila (velká mezidruhová variabilita), ale dostatečně pomalu na to, aby byla sekvence v RÁMCI jednoho druhu prakticky stejná u všech jedinců (malá vnitrodruhová variabilita). Díky tomuto poměru stačí jeden krátký úsek (obvykle několik set párů bází) k jednoznačné identifikaci druhu — nepotřebujeme sekvenovat celý genom.
+
+        Konkrétní kauzy k použití jako příklad: v USA a EU opakovaně odhaleno, že až 20–30 % ryb prodávaných jako „treska" nebo „platýs" v restauracích a obchodech byly ve skutečnosti levnější, jinak vzácnější nebo i na červeném seznamu ohrožené druhy (tzv. „seafood fraud" / "fish substitution"). Podobně u medu — DNA/pylová analýza odhaluje ředění cizím sirupem nebo nesprávně deklarovaný botanický/geografický původ. U dřeva umožňuje DNA barcoding (v kombinaci se stabilními izotopy pro určení regionu) ověřit, že dovezené dřevo skutečně pochází z deklarovaného druhu stromu, a nikoli z chráněného tropického druhu vydávaného za jiný.
+
+        Proč je to pro manažera udržitelnosti relevantní: nařízení EU o odlesňování (EUDR, Regulation (EU) 2023/1115) vyžaduje od firem prokázat, že dovážené komodity (dřevo, kakao, káva, sója, hovězí, palmový olej, kaučuk) nepocházejí z nedávno odlesněné půdy — DNA testování je jeden z nástrojů „due diligence", kterým lze nezávisle ověřit tvrzení dodavatele, aniž by firma musela spoléhat jen na papírové certifikáty (které lze padělat). Stejně tak v ESG/CSRD reportingu roste tlak na doložitelnost tvrzení o původu suroviny — DNA barcoding je jeden z mála nástrojů, který dá objektivní, laboratorně ověřitelnou odpověď.
+
+        Limity metody, které stojí za zmínku (aby to studenti nebrali jako všelék): (1) cena a čas — laboratorní analýza není zadarmo ani okamžitá, proto se v praxi testuje jen vzorek zásilek, ne každý kus (viz navazující slide „Zamyšlení"); (2) u silně zpracovaných potravin (rafinovaný olej, vařené/fermentované produkty) může být DNA degradovaná a obtížně čitelná; (3) barcoding sám o sobě určí DRUH, ale ne vždy přesnou geografickou lokalitu původu — na to se často kombinuje se stabilní izotopovou analýzou nebo jinými metodami; (4) spolehlivost závisí na kvalitě a úplnosti referenční databáze — pro vzácné nebo nedostatečně prostudované druhy nemusí být referenční sekvence vůbec k dispozici.
+      </aside>
+    </section>
+
+    <!-- 27 think DNA -->
+    <section class="think-slide">
+      <div class="tag-label think">Zamyšlení</div>
+      <p class="question">Firma dovážející tropické dřevo může nechat udělat DNA test původu jen u vzorku zásilek, ne u všech. Jaké je riziko takového výběrového testování — a jak by šlo nastavit, aby dávalo smysl z hlediska nákladů i důvěryhodnosti?</p>
+      <aside class="notes">
+        Vede k úvaze o statistickém vzorkování a riziku „nachytání" vs. skutečném odrazujícím efektu kontroly — manažerské rozhodování s vědeckým podkladem.
+
+        Jádro problému: testovat 100 % zásilek je nejjistější, ale nákladné a časově náročné (laboratorní analýza stojí peníze a trvá dny) — u velkoobjemového dovozu dřeva to může byznys prakticky zablokovat. Testovat 0 % je zadarmo, ale firma nemá žádný nezávislý důkaz o původu a je plně odkázaná na papírové certifikáty dodavatele, které lze padělat. Otázka tedy zní: kde mezi 0 % a 100 % leží rozumný bod?
+
+        Riziko výběrového (vzorkového) testování — na co se studentů zeptat: i při testování např. 10 % zásilek existuje reálná pravděpodobnost, že se podvodná zásilka „nechytí" — čistě náhodou nepadne do vzorku. Pokud dodavatel ví (nebo odhadne), že se testuje jen zlomek zásilek, může sázet na to, že se mu to „vyplatí" — expected value podvodu zůstává kladný, pokud je pravděpodobnost odhalení nízká a postih mírný. To je základní ekonomická logika, kterou lze se studenty rozebrat: odrazující (deterrentní) efekt kontroly nezávisí jen na tom, KOLIK se testuje, ale i na tom, JAK NEPŘEDVÍDATELNĚ se testuje a jak PŘÍSNÝ je postih při odhalení.
+
+        Jak nastavit vzorkování, aby dávalo smysl (náměty pro diskuzi):
+        (1) Rizikově vážené vzorkování — netestovat náhodně rovnoměrně, ale více testovat zásilky od nových dodavatelů, z rizikových zemí/regionů (vysoké riziko odlesňování, slabá vymahatelnost práva, historie porušení), nebo s podezřele nízkou cenou. Přesně tento princip ostatně používá i EUDR (nařízení EU o odlesňování) — země se dělí do kategorií nízké/standardní/vysoké riziko a podle toho se liší minimální intenzita kontrol (u vysoce rizikových zemí musí orgány zkontrolovat výrazně větší podíl dovozů).
+        (2) Náhodnost a nepředvídatelnost — pokud dodavatel neví, KTERÁ konkrétní zásilka bude testována, nemůže do ní cíleně „propašovat" nelegální dřevo a legální nechat netestovanou; pravidelný/predikovatelný vzorek (např. „vždy první zásilka v měsíci") je snadné obejít.
+        (3) Eskalační mechanismus — pokud test u dodavatele odhalí problém, firma automaticky přechází na 100% testování u tohoto dodavatele (nebo ho vyřadí) — to zvyšuje efektivní riziko odhalení pro ty, kdo by chtěli podvádět opakovaně, i když průměrná míra testování zůstává nízká.
+        (4) Statistická úvaha o velikosti vzorku — čím větší vzorek, tím vyšší pravděpodobnost, že se podvodná zásilka odhalí (roste s velikostí vzorku podle hypergeometrického/binomického rozdělení), ale mezní přínos každého dalšího testu klesá — ekonomicky dává smysl zvyšovat vzorek jen do bodu, kde náklad na další test odpovídá snížení očekávané škody z neodhaleného podvodu.
+        (5) Kombinace s dalšími nástroji — DNA test není jediná kontrola; lze ho kombinovat s dokumentární kontrolou, GPS/satelitním sledováním pozemků (EUDR to přímo vyžaduje — geolokace parcel), reputačním hodnocením dodavatele apod., takže DNA testování slouží spíše jako namátková/ověřovací pojistka, ne jako jediná linie obrany.
+
+        Manažerský závěr, ke kterému by diskuze měla směřovat: „kolik testovat" není čistě technická otázka, ale otázka řízení rizika (risk management) — správná odpověď závisí na nákladech testu, výši potenciální škody/pokuty/reputačního rizika při odhalení podvodu regulátorem, historii dodavatele a legislativních minimech (u EUDR jsou navíc dané povinné minimální kontrolní kvóty podle rizikové kategorie země, takže úplná volnost firmy v nastavení vzorku není neomezená).
+      </aside>
+    </section>
+
+    <!-- 28 divider 04 -->
+    <section class="divider-slide">
+      <div class="num">04</div>
+      <h2>Nadmolekulární struktury</h2>
+      <p>Membrány, buněčná stěna a "samo-uspořádání"</p>
+      <aside class="notes">Čas: cca 20–25 minut + shrnutí.</aside>
+    </section>
+
+    <!-- 29 membranes -->
+    <section>
+      <div class="kicker">Buněčná membrána</div>
+      <div class="prose">
+        <p>Fosfolipidy jsou <b>amfipatické (amfifilní)</b> — mají hydrofilní „hlavu" a hydrofobní „ocásky". Ve vodném prostředí se proto samovolně uspořádají do dvouvrstvy, kde hlavy směřují k vodě a ocásky dovnitř, mimo kontakt s vodou. Tak vzniká buněčná membrána — bariéra, která zároveň umožňuje selektivní transport látek (přes membránové proteiny).</p>
+      </div>
+      <aside class="notes">Toto samo-uspořádání (self-assembly) je klíčový koncept pro následující chem rozšíření i příklad z praxe.</aside>
+    </section>
+
+    <!-- 30 chem self-assembly -->
+    <section>
+      <div class="tag-label chem">Rozšíření</div>
+      <h3 style="font-size:38px; margin-bottom:18px;">Samo-uspořádání amfipatických molekul</h3>
+      <div class="chem-slide-panel">
+        <p class="prose tight">Amfipatické molekuly (fosfolipidy, ale i mýdla a povrchově aktivní látky) se ve vodě spontánně organizují do energeticky nejvýhodnějšího uspořádání — dvouvrstvy, micely nebo liposomu — bez jakéhokoliv vnějšího „návodu". Jde o čistě fyzikálně-chemický jev řízený minimalizací kontaktu hydrofobní části s vodou.</p>
+      </div>
+      <aside class="notes">Volitelné prohloubení. Zdůrazněte: totéž chemické chování využívá jak buňka, tak čisticí prostředky (mýdlo obaluje mastnotu).</aside>
+    </section>
+
+    <!-- 31 example biomimicry -->
+    <section>
+      <div class="tag-label example">Příklad z praxe</div>
+      <h3 style="font-size:36px; margin-bottom:18px;">Liposomy a biomimetické materiály</h3>
+      <div class="example-panel">
+        <p class="prose tight">Liposomy (umělé fosfolipidové váčky) se v kosmetice a farmacii používají jako nosiče účinných látek — princip samo-uspořádání membrány umožňuje „zabalit" citlivou látku a řízeně ji uvolnit.</p>
+        <p class="prose tight" style="margin-top:12px;">Podobně buněčná stěna (chitin, celulóza) inspiruje vývoj nových kompozitních a obalových materiálů — biomimetika jako obor cíleně napodobuje řešení, která příroda „vyladila" evolucí.</p>
+      </div>
+      <aside class="notes">Uzavírá téma 04 příkladem, který propojuje membrány (dnešní slide) s polysacharidy (téma 03) — dobrý moment na shrnutí propojenosti.</aside>
+    </section>
+
+    <!-- 32 data-task market -->
+    <section>
+      <div class="tag-label data">Práce s daty</div>
+      <h3 style="font-size:38px; margin-bottom:18px;">Ověřování zdrojů</h3>
+      <div class="data-task">
+        <p class="prose tight">V rámci přípravy na seminář si každý sám dohledá jeden aktuální zdroj (report, databáze nebo článek) k biomateriálům nebo biotechnologiím zmíněným dnes (enzymy v průmyslu, bioplasty z mycelia, DNA barcoding, řasové biopalivo).</p>
+        <ol>
+          <li>Kdo zdroj publikoval a je to instituce/organizace, které lze věřit (recenzovaný časopis, mezinárodní agentura, firemní report)?</li>
+          <li>Jak stará jsou uvedená data a mění se rychle?</li>
+          <li>Jaké jedno číslo nebo zjištění byste použili jako argument v prezentaci pro vedení firmy?</li>
+        </ol>
+        <div class="data-hint2">Tuto přípravu využijeme přímo v semináři.</div>
+      </div>
+      <aside class="notes">Toto je příprava na seminář — cílem je trénovat základní posouzení důvěryhodnosti zdroje dat, ne konkrétní správnou odpověď.</aside>
+    </section>
+
+    <!-- 33 summary -->
+    <section>
+      <div class="kicker">Shrnutí</div>
+      <div class="prose">
+        <p>Od jednotlivých prvků (C, N, P…) přes malé molekuly až po biomakromolekuly a nadmolekulární struktury platí stejný princip: <b>uspořádání určuje funkci</b> — a přesně to je princip, který firmy dnes napodobují nebo využívají v biotechnologiích, materiálech i ve sledovatelnosti dodavatelských řetězců.</p>
+      </div>
+      <aside class="notes">Konec přednášky — pokračujte na seminar-2.html. Připomeňte úkol z předchozího slide (přinést zdroj na seminář).</aside>
+    </section>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/notes/notes.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    width: 1280,
+    height: 720,
+    margin: 0.04,
+    minScale: 0.2,
+    maxScale: 2,
+    controls: true,
+    progress: true,
+    slideNumber: 'c/t',
+    plugins: [ RevealNotes ]
+  });
+</script>
+</body>
+</html>
