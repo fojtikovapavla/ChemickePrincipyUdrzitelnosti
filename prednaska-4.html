@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Přednáška 4 — Toky látek a energie II</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <!-- 1 cover -->
+    <section class="cover-slide">
+      <div>
+        <div class="eyebrow">Chemické principy a udržitelnost</div>
+        <h1>Toky látek a energie II</h1>
+        <p class="sub">Cyklus dusíku, síry a fosforu · případová studie Plešné jezero</p>
+      </div>
+      <div class="foot"><div class="bar"></div><span>Přednáška 4 · Blok 4</span></div>
+      <aside class="notes">
+        Navazuje na Přednášku 3 (hydrologický a uhlíkový cyklus). Dnes doplníme zbylé tři velké biogeochemické cykly a na reálné, dlouhodobě sledované případové studii (Plešné jezero, Šumava) ukážeme, jak spolu všechny probrané cykly — voda, uhlík, dusík, síra, fosfor — fungují současně v jednom ekosystému. Zdroje: Miller/Spoolman, Environmental Science; Kaňa, Porcal, Choma: Plešné jezero a kůrovec (Biologické centrum AV ČR, 2020); Kopáček a kol. (2002, 2017, 2019, 2020); Kaňa a kol. (2013, 2015, 2019).
+      </aside>
+    </section>
+
+    <!-- 2 goals -->
+    <section>
+      <div class="kicker">Cíle přednášky</div>
+      <div class="goal-list">
+        <div class="item"><span class="dot"></span><span>Popsat cyklus dusíku, síry a fosforu a jejich klíčové rozdíly (rychlost, přítomnost v atmosféře)</span></div>
+        <div class="item"><span class="dot"></span><span>Vysvětlit, jak člověk do každého z těchto cyklů zasahuje a s jakým důsledkem</span></div>
+        <div class="item"><span class="dot"></span><span>Na případové studii Plešného jezera ukázat propojení půdní chemie, acidifikace a kvality vody</span></div>
+        <div class="item"><span class="dot"></span><span>Vysvětlit chemický mechanismus acidifikace a toxicity hliníku</span></div>
+        <div class="item"><span class="dot"></span><span>Propojit poznatky s manažerským rozhodováním o přírodních zdrojích a riziku</span></div>
+      </div>
+      <aside class="notes">Signalizujte, že druhá polovina přednášky bude jeden souvislý příběh (Plešné jezero) — dobrá příležitost ukázat, jak se jednotlivé cykly v realitě prolínají.</aside>
+    </section>
+
+    <!-- 3 divider 01 -->
+    <section class="divider-slide">
+      <div class="num">01</div>
+      <h2>Cyklus dusíku</h2>
+      <p>Fixace, nitrifikace, denitrifikace</p>
+      <aside class="notes">Čas na téma: cca 20 minut.</aside>
+    </section>
+
+    <!-- 4 N cycle diagram -->
+    <section>
+      <div class="kicker">Cyklus dusíku</div>
+      <div class="row middle">
+        <div class="col" style="flex:1.1">
+          <div class="diagram-wrap">
+            <svg viewBox="0 0 460 400" role="img" aria-label="Schéma cyklu dusíku">
+              <defs>
+                <marker id="n1" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="var(--water)"/></marker>
+                <marker id="n2" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="var(--primary)"/></marker>
+              </defs>
+              <rect x="130" y="10" width="200" height="56" rx="12" fill="var(--water-soft)" stroke="var(--water)" stroke-width="2"/>
+              <text x="230" y="43" text-anchor="middle" font-size="20" fill="var(--ink)" font-family="var(--font-body)">N₂ v atmosféře</text>
+              <rect x="130" y="122" width="200" height="56" rx="12" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/>
+              <text x="230" y="155" text-anchor="middle" font-size="20" fill="var(--ink)" font-family="var(--font-body)">NH₃ / NH₄⁺ v půdě</text>
+              <rect x="130" y="234" width="200" height="56" rx="12" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/>
+              <text x="230" y="267" text-anchor="middle" font-size="20" fill="var(--ink)" font-family="var(--font-body)">NO₃⁻ v půdě</text>
+              <rect x="130" y="330" width="200" height="56" rx="12" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2"/>
+              <text x="230" y="352" text-anchor="middle" font-size="20" fill="var(--ink)" font-family="var(--font-body)">N v rostlinách</text>
+              <text x="230" y="374" text-anchor="middle" font-size="20" fill="var(--ink)" font-family="var(--font-body)">a živočiších</text>
+              <path d="M230,66 L230,117" stroke="var(--water)" stroke-width="3.5" fill="none" marker-end="url(#n1)"/>
+              <path d="M230,178 L230,229" stroke="var(--water)" stroke-width="3.5" fill="none" marker-end="url(#n1)"/>
+              <path d="M230,290 L230,325" stroke="var(--primary)" stroke-width="3.5" fill="none" marker-end="url(#n2)"/>
+              <path d="M120,358 C 40,358 40,40 120,38" stroke="var(--primary)" stroke-width="3" stroke-dasharray="7 6" fill="none" marker-end="url(#n2)"/>
+            </svg>
+          </div>
+        </div>
+        <div class="col">
+          <div class="goal-list">
+            <div class="item"><span class="dot" style="background:var(--water)"></span><span><b>Fixace</b> — blesky a půdní bakterie přemění vzdušný N₂ na využitelný NH₃/NH₄⁺.</span></div>
+            <div class="item"><span class="dot" style="background:var(--water)"></span><span><b>Nitrifikace</b> — jiné bakterie přemění NH₄⁺ na snadno přijatelné dusičnany (NO₃⁻).</span></div>
+            <div class="item"><span class="dot" style="background:var(--accent)"></span><span><b>Příjem</b> — kořeny rostlin přijmou NO₃⁻ a zabudují dusík do bílkovin, nukleových kyselin a vitamínů.</span></div>
+            <div class="item"><span class="dot" style="background:var(--primary)"></span><span><b>Denitrifikace</b> — bakterie ve vodou nasycené půdě a sedimentech vrátí dusík zpět jako plynný N₂.</span></div>
+          </div>
+        </div>
+      </div>
+      <aside class="notes">Zdroj: Materiál 04_Prezentace přírodní kapitál II, s. 5–6. N₂ tvoří 78 % objemu atmosféry, ale organismy ho v této formě nedovedou přímo využít — proto je fixace „vstupní branou" celého cyklu.</aside>
+    </section>
+
+    <!-- 5 chem haber bosch -->
+    <section>
+      <div class="tag-label chem">Rozšíření</div>
+      <h3 style="font-size:34px; margin-bottom:14px;">Haber–Boschova syntéza</h3>
+      <div class="chem-slide-panel">
+        <p class="prose tight">Člověk dnes fixuje atmosférický dusík průmyslově — stejnou reakcí, kterou jinak zajišťují jen blesky a bakterie:</p>
+        <p class="formula">N₂ + 3 H₂ ⇌ 2 NH₃ &nbsp;(vysoký tlak, teplota, katalyzátor)</p>
+        <p class="prose tight">Vzniklý amoniak je základem téměř všech dusíkatých hnojiv. Proces je ale extrémně energeticky náročný — odhaduje se, že spotřebuje kolem 1–2 % veškeré celosvětové spotřeby energie.</p>
+      </div>
+      <aside class="notes">Volitelné prohloubení. Dobrý most k tématu energetické náročnosti zemědělství a k debatě o „zeleném" amoniaku vyráběném z vodíku z obnovitelných zdrojů jako alternativě k fosilnímu vodíku ze zemního plynu.</aside>
+    </section>
+
+    <!-- 6 example N human impact -->
+    <section>
+      <div class="tag-label example">Příklad z praxe</div>
+      <h3 style="font-size:34px; margin-bottom:14px;">Tři zásahy člověka do cyklu dusíku</h3>
+      <div class="example-panel">
+        <p class="prose tight"><b>1. Spalování paliv</b> — vzniká NO, které se v atmosféře mění na HNO₃ a vrací se jako kyselé srážky (viz Blok 1 / kyselé deště).</p>
+      </div>
+      <div class="example-panel" style="margin-top:12px;">
+        <p class="prose tight"><b>2. Průmyslová fixace</b> — Haber–Boschova syntéza pro výrobu hnojiv odebírá z atmosféry mnohem víc N₂, než by fixovaly přirozené procesy.</p>
+      </div>
+      <div class="example-panel" style="margin-top:12px;">
+        <p class="prose tight"><b>3. Zemědělský odtok</b> — přebytečné dusičnany z hnojiv a hnoje se dostávají do vod a způsobují eutrofizaci (viz Redfieldův poměr, Blok 2).</p>
+      </div>
+      <aside class="notes">Propojuje se zpět na Přednášku 2 (Redfieldův poměr, limitující prvek) — dnes doplňujeme mechanismus, odkud se dusík ve vodě vůbec bere.</aside>
+    </section>
+
+    <!-- 7 divider 02 -->
+    <section class="divider-slide">
+      <div class="num">02</div>
+      <h2>Cyklus síry</h2>
+      <p>Přírodní zdroje, kyselé deště, lidské zásahy</p>
+      <aside class="notes">Čas na téma: cca 12 minut.</aside>
+    </section>
+
+    <!-- 8 S cycle -->
+    <section>
+      <div class="kicker">Cyklus síry</div>
+      <div class="prose">
+        <p>Většina síry je uložena pod zemí v horninách a síranových solích (SO₄²⁻). Do atmosféry se dostává i přirozeně — sirovodík (H₂S) ze sopek a z anaerobního rozkladu v bažinách, oxid siřičitý (SO₂) ze sopek, částice síranů z mořské tříště.</p>
+      </div>
+      <div class="goal-list" style="margin-top:10px;">
+        <div class="item"><span class="dot"></span><span>Kořeny rostlin přijímají síranové ionty a zabudovávají síru do bílkovin</span></div>
+        <div class="item"><span class="dot"></span><span>V prostředí bez kyslíku (mokřady, sedimenty) mění bakterie sírany na sulfidy (S²⁻)</span></div>
+        <div class="item"><span class="dot"></span><span>Sulfidy reagují s kovy a ukládají se jako nerozpustné kovové sulfidy — cyklus se uzavírá</span></div>
+      </div>
+      <aside class="notes">Zdroj: Materiál 04_Prezentace přírodní kapitál II, s. 11–13.</aside>
+    </section>
+
+    <!-- 9 chem acid rain S -->
+    <section>
+      <div class="tag-label chem">Rozšíření</div>
+      <h3 style="font-size:34px; margin-bottom:14px;">Kyselé srážky ze síry</h3>
+      <div class="chem-slide-panel">
+        <p class="prose tight">Lidská činnost uvolňuje do atmosféry SO₂ zejména spalováním uhlí a ropy s obsahem síry, rafinací ropy a tavením kovových rud (Cu, Pb, Zn).</p>
+        <p class="formula">SO₂ + H₂O → H₂SO₃ → (oxidací) H₂SO₄</p>
+        <p class="prose tight">Vzniklá kyselina sírová dopadá jako kyselé srážky — přesně tento mechanismus stojí za acidifikací šumavských povodí, kterou budeme sledovat ve druhé části přednášky.</p>
+      </div>
+      <aside class="notes">Reakce byla probrána už v Bloku 1 (Atmosféra) — zde ji jen krátce připomeňte jako most k případové studii.</aside>
+    </section>
+
+    <!-- 10 divider 03 -->
+    <section class="divider-slide">
+      <div class="num">03</div>
+      <h2>Cyklus fosforu</h2>
+      <p>Pomalý cyklus bez atmosférické fáze</p>
+      <aside class="notes">Čas na téma: cca 12 minut.</aside>
+    </section>
+
+    <!-- 11 P cycle -->
+    <section>
+      <div class="kicker">Cyklus fosforu</div>
+      <div class="prose">
+        <p>Fosfor cirkuluje mezi horninami, půdou, vodou a organismy hlavně jako fosfátový iont (PO₄³⁻) — na rozdíl od dusíku, uhlíku či síry <b>neprochází plynnou fází v atmosféře</b>, a proto je jeho cyklus mnohem pomalejší.</p>
+        <p style="margin-top:12px;">Fosfát erodovaný z hornin je přijímán rostlinami, putuje potravním řetězcem k rozkladačům, a pokud je splaven do oceánu, může zůstat uvězněný v sedimentech miliony let.</p>
+      </div>
+      <aside class="notes">Zdroj: Materiál 04_Prezentace přírodní kapitál II, s. 9–10. Nedostatek fosfátu často limituje růst rostlin na souši i producentů ve sladkovodních tocích — přímá vazba na Redfieldův poměr z Bloku 2.</aside>
+    </section>
+
+    <!-- 12 example P human impact -->
+    <section>
+      <div class="tag-label example">Příklad z praxe</div>
+      <h3 style="font-size:34px; margin-bottom:14px;">Těžba fosfátu a eutrofizace</h3>
+      <div class="example-panel">
+        <p class="prose tight">Člověk těží fosfátové horniny na hnojiva, čímž prudce zrychluje jinak pomalý přirozený cyklus. Erodovaná ornice z hnojených polí a splachy z trávníků a golfových hřišť přinášejí fosfát do potoků, jezer a oceánů.</p>
+        <p class="prose tight" style="margin-top:12px;">Protože je fosfor často limitujícím prvkem (Redfieldův poměr N:P ≈ 16:1), i malý přebytek spustí přemnožení řas — přesně stejný mechanismus jako u dusíku, jen z druhé strany poměru.</p>
+      </div>
+      <aside class="notes">Fosfátové soli jsou navíc ve vodě málo rozpustné, takže i mírný přísun z hnojiv může mít neúměrně velký efekt na producenty v tocích s přirozeně nízkým fosforem.</aside>
+    </section>
+
+    <!-- 13 compare table -->
+    <section>
+      <div class="kicker">Srovnání: N, S, P</div>
+      <table class="data-table">
+        <thead><tr><th>Cyklus</th><th>Plynná fáze v atmosféře</th><th>Rychlost cyklu</th><th>Hlavní lidský zásah</th></tr></thead>
+        <tbody>
+          <tr><td>Dusík (N)</td><td>Ano (N₂, NOₓ)</td><td>Rychlý</td><td>Haber–Bosch, spalování, hnojiva</td></tr>
+          <tr><td>Síra (S)</td><td>Ano (SO₂, H₂S)</td><td>Rychlý až střední</td><td>Spalování uhlí/ropy, tavení rud</td></tr>
+          <tr><td>Fosfor (P)</td><td>Ne</td><td>Velmi pomalý</td><td>Těžba fosfátu, hnojiva, splach</td></tr>
+        </tbody>
+      </table>
+      <aside class="notes">Tento přehled shrnuje tři cykly do jedné tabulky před přechodem na případovou studii, kde se dusík, síra i uhlík znovu objeví společně.</aside>
+    </section>
+
+    <!-- 14 divider 04 -->
+    <section class="divider-slide">
+      <div class="num">04</div>
+      <h2>Případová studie</h2>
+      <p>Kůrovcová kalamita a Plešné jezero, Šumava</p>
+      <aside class="notes">Čas na téma: cca 35 minut. Toto je jádro dnešní přednášky — nechte na něj dostatek prostoru.</aside>
+    </section>
+
+    <!-- 15 case intro -->
+    <section>
+      <div class="kicker">Plešné jezero · úvod</div>
+      <div class="prose">
+        <p>Plešné jezero (1087 m n. m., Národní park Šumava) leží celé v bezzásahové zóně. V roce 2004 napadl kůrovec smrkový les v jeho povodí — proti kůrovci se nijak nezasahovalo, mrtvé dřevo zůstalo na místě.</p>
+        <p style="margin-top:14px;">Tato mimořádná bezzásahovost umožnila vědcům dlouhodobě sledovat, co odumření lesa udělá s chemismem půdy a vody — přirozený experiment, který by se v hospodářském lese nikdy nemohl odehrát.</p>
+      </div>
+      <aside class="notes">Zdroj: Kaňa, Porcal, Choma — Plešné jezero a kůrovec (Biologické centrum AV ČR, v.v.i., 2020). Kontrolní (nenapadené) povodí: Čertovo jezero — použité pro srovnání ve všech následujících grafech.</aside>
+    </section>
+
+    <!-- 16 data tree health -->
+    <section>
+      <div class="tag-label data">Práce s daty</div>
+      <h3 style="font-size:32px; margin-bottom:10px;">Rychlost odumření lesa</h3>
+      <div class="row middle">
+        <div class="col" style="flex:1.2">
+          <div class="diagram-wrap">
+            <svg viewBox="0 0 560 340" role="img" aria-label="Graf podílu zdravých a mrtvých stromů v povodí Plešného jezera 2000-2015">
+              <line x1="60" y1="20" x2="60" y2="290" stroke="var(--line)" stroke-width="2"/>
+              <line x1="60" y1="290" x2="530" y2="290" stroke="var(--line)" stroke-width="2"/>
+              <text x="50" y="296" text-anchor="end" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">0 %</text>
+              <text x="50" y="158" text-anchor="end" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">50 %</text>
+              <text x="50" y="26" text-anchor="end" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">100 %</text>
+              <text x="60" y="313" text-anchor="middle" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">2000</text>
+              <text x="295" y="313" text-anchor="middle" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">2007</text>
+              <text x="530" y="313" text-anchor="middle" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">2015</text>
+              <polyline points="60,45 138,99 216,157 295,199 335,230 373,264 530,268" fill="none" stroke="var(--primary)" stroke-width="4"/>
+              <polyline points="60,265 138,211 216,153 295,111 335,80 373,46 530,42" fill="none" stroke="var(--danger)" stroke-width="4"/>
+            </svg>
+          </div>
+        </div>
+        <div class="col">
+          <div class="diagram-legend">
+            <div class="row2"><span class="badge" style="background:var(--primary)">Z</span><span>Zdravé stromy — z &gt;90 % (2000) na &lt;10 % (2009)</span></div>
+            <div class="row2"><span class="badge" style="background:var(--danger)">M</span><span>Mrtvé stromy — opačný trend, poměr se otočil za cca 9 let</span></div>
+          </div>
+          <div class="data-task" style="margin-top:16px;">
+            <ol>
+              <li>Za jak dlouho po napadení se poměr zdravých a mrtvých stromů otočil?</li>
+              <li>Co to znamená pro množství opadu (jehličí, větví, kůry) padajícího na půdu ve stejném období?</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <aside class="notes">Orientační hodnoty podle Obr. 1 (Kaňa, Porcal, Choma, 2020). Řešení: přibližně 9 let (2000→2009). Množství opadu vzrostlo v „roce nula" po napadení osminásobně (z ~5 t/ha/rok na ~42 t/ha/rok) — to je vstupní bod pro další slide.</aside>
+    </section>
+
+    <!-- 17 decomposition mechanism -->
+    <section>
+      <div class="kicker">Proč odumření lesa mění chemismus půdy</div>
+      <div class="goal-list">
+        <div class="item"><span class="dot" style="background:var(--chart-1)"></span><span><b>Dekompozice</b> — mikroorganismy rozkládají mrtvou biomasu pomocí extracelulárních enzymů.</span></div>
+        <div class="item"><span class="dot" style="background:var(--chart-3)"></span><span><b>Amonifikace (mineralizace)</b> — přebytečný dusík se uvolňuje jako NH₄⁺.</span></div>
+        <div class="item"><span class="dot" style="background:var(--chart-4)"></span><span><b>Nitrifikace</b> — po vyčerpání snadno dostupného uhlíku z opadu bakterie přemění NH₄⁺ na NO₃⁻.</span></div>
+        <div class="item"><span class="dot" style="background:var(--chart-2)"></span><span>Živý strom si živiny před odhozením jehličí „stahuje zpět" — uschlý strom po napadení kůrovcem už tuto realokaci neprovede, takže se do půdy vrací neobvykle výživný opad.</span></div>
+      </div>
+      <aside class="notes">Zdroj: Kaňa, Porcal, Choma (2020), s. 14–17; Kaňa a kol. (2013, 2015). Klíčový bod: bez odběru živin živým stromem se narušuje rovnováha cyklu a živiny se v půdě dočasně hromadí, než je odčerpá obnovující se vegetace.</aside>
+    </section>
+
+    <!-- 18 data no3 -->
+    <section>
+      <div class="tag-label data">Práce s daty</div>
+      <h3 style="font-size:32px; margin-bottom:10px;">Dusičnany v půdě po kalamitě</h3>
+      <div class="row middle">
+        <div class="col" style="flex:1.2">
+          <div class="diagram-wrap">
+            <svg viewBox="0 0 560 340" role="img" aria-label="Graf obsahu dusičnanů v půdě, Plešné vs Čertovo jezero 2008-2018">
+              <line x1="60" y1="20" x2="60" y2="290" stroke="var(--line)" stroke-width="2"/>
+              <line x1="60" y1="290" x2="530" y2="290" stroke="var(--line)" stroke-width="2"/>
+              <text x="50" y="296" text-anchor="end" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">0</text>
+              <text x="50" y="158" text-anchor="end" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">20</text>
+              <text x="50" y="26" text-anchor="end" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">40</text>
+              <text x="60" y="313" text-anchor="middle" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">2008</text>
+              <text x="295" y="313" text-anchor="middle" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">2013</text>
+              <text x="530" y="313" text-anchor="middle" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">2018</text>
+              <polyline points="60,277 138,264 190,60 240,53 295,150 373,178 452,222 530,275" fill="none" stroke="var(--accent)" stroke-width="4"/>
+              <polyline points="60,255 138,240 190,250 240,235 295,238 373,248 452,252 530,258" fill="none" stroke="var(--water)" stroke-width="4"/>
+            </svg>
+          </div>
+        </div>
+        <div class="col">
+          <div class="diagram-legend">
+            <div class="row2"><span class="badge" style="background:var(--accent)">P</span><span>Plešné jezero — vrchol kolem 2011–2012, cca 20× oproti výchozí hodnotě</span></div>
+            <div class="row2"><span class="badge" style="background:var(--water)">Č</span><span>Čertovo jezero (kontrola) — hodnoty stabilní</span></div>
+          </div>
+          <div class="data-task" style="margin-top:10px; padding:20px 26px;">
+            <ol style="font-size:24px;">
+              <li>Proč nárůst nastal až s odstupem cca 3 let po napadení stromů, ne okamžitě?</li>
+              <li>Za jak dlouho se hodnoty vrátily na úroveň před kalamitou?</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <aside class="notes">Orientační hodnoty podle Obr. 4 (Kaňa, Porcal, Choma, 2020). Řešení: zpoždění způsobil konkurenční tlak saprotrofních mikroorganismů (rozkládajících čerstvý opad) vůči nitrifikačním bakteriím — teprve po vyčerpání snadno dostupného uhlíku z opadu nitrifikace zrychlila. Návrat na výchozí hodnoty trval cca 10 let.</aside>
+    </section>
+
+    <!-- 19 chem aluminum -->
+    <section>
+      <div class="tag-label chem">Rozšíření</div>
+      <h3 style="font-size:32px; margin-bottom:12px;">Acidifikace a toxicita hliníku</h3>
+      <div class="chem-slide-panel">
+        <p class="prose tight">Dokud půda dokáže neutralizovat kyselý vstup (z atmosférické depozice i z rozkladu opadu), vody se okyselují jen málo. Po vyčerpání této neutralizační kapacity koncentrace H⁺ v půdním roztoku roste a pH klesá.</p>
+        <p class="formula">Al(OH)₃ (nerozpustný) &nbsp;⇌&nbsp; Al³⁺ (rozpustný, toxický) &nbsp;&nbsp;při pH &lt; 5</p>
+        <p class="prose tight">Hliník je nejrozšířenější kov zemské kůry a v nerozpustné formě neškodný — v kyselém prostředí (pH&lt;5) se ale uvolňuje jako iontový Al³⁺, silně toxický pro kořeny rostlin i pro ryby a zooplankton ve vodě.</p>
+      </div>
+      <aside class="notes">Zdroj: Kaňa, Porcal, Choma (2020), s. 13. Toto je přesně ten mechanismus, který v 70.–80. letech vedl k vymření ryb v Plešném jezeře (viz Přednáška 1 / Hydrosféra).</aside>
+    </section>
+
+    <!-- 20 sorption complex -->
+    <section>
+      <div class="tag-label chem">Rozšíření</div>
+      <h3 style="font-size:32px; margin-bottom:12px;">Neočekávaný účinek: rychlejší zotavení půdy</h3>
+      <div class="chem-slide-panel">
+        <p class="prose tight">Rozkladem odumřelé biomasy se do půdy uvolnily velké zásoby bazických kationtů (Ca²⁺, Mg²⁺, K⁺), které se navázaly na půdní sorpční komplex a vytěsnily z něj kyselé ionty H⁺ a Al³⁺.</p>
+        <p class="prose tight" style="margin-top:10px;">Výsledek: bazická saturace půdy se ve svrchních horizontech zdvojnásobila a výměnný hliník klesl o cca 30 % (2000–2015) — kůrovcová kalamita tak paradoxně <b>urychlila</b> zotavení půdy z dřívější atmosférické acidifikace.</p>
+      </div>
+      <aside class="notes">Zdroj: Kaňa a kol. (2019); Kaňa, Porcal, Choma (2020), s. 17–19. Klíčový „twist" příběhu — připravte studenty na to, že v další sekci uvidí totéž i na úrovni jezera.</aside>
+    </section>
+
+    <!-- 21 data lake ph -->
+    <section>
+      <div class="tag-label data">Práce s daty</div>
+      <h3 style="font-size:32px; margin-bottom:10px;">Zotavení jezera z acidifikace</h3>
+      <div class="row middle">
+        <div class="col" style="flex:1.2">
+          <div class="diagram-wrap">
+            <svg viewBox="0 0 560 340" role="img" aria-label="Graf pH jezera a přítoků, Plešné jezero 2000-2020">
+              <line x1="60" y1="20" x2="60" y2="290" stroke="var(--line)" stroke-width="2"/>
+              <line x1="60" y1="290" x2="530" y2="290" stroke="var(--line)" stroke-width="2"/>
+              <text x="50" y="296" text-anchor="end" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">4,2</text>
+              <text x="50" y="158" text-anchor="end" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">4,8</text>
+              <text x="50" y="26" text-anchor="end" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">5,5</text>
+              <text x="60" y="313" text-anchor="middle" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">2000</text>
+              <text x="295" y="313" text-anchor="middle" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">2010</text>
+              <text x="530" y="313" text-anchor="middle" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">2020</text>
+              <polyline points="60,150 138,161 216,201 295,120 373,45 452,95 530,72" fill="none" stroke="var(--primary)" stroke-width="4"/>
+              <polyline points="60,183 138,190 216,242 295,202 373,192 452,183 530,172" fill="none" stroke="var(--water)" stroke-width="4"/>
+            </svg>
+          </div>
+        </div>
+        <div class="col">
+          <div class="diagram-legend">
+            <div class="row2"><span class="badge" style="background:var(--primary)">J</span><span>Jezero — pH roste rychleji než přítoky, od 2011 se drží v pásmu 5,0–5,5</span></div>
+            <div class="row2"><span class="badge" style="background:var(--water)">P</span><span>Přítoky — propad na pH 4,3 kolem roku 2007, pak pomalé zotavení</span></div>
+          </div>
+          <div class="data-task" style="margin-top:16px;">
+            <ol>
+              <li>Proč pH jezera rostlo rychleji než pH jeho vlastních přítoků?</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <aside class="notes">Orientační hodnoty podle Obr. 9 a 13 a textových údajů (Kaňa, Porcal, Choma, 2020), s. 19, 23–25. Řešení: zvýšený přísun dusičnanů a fosforu podpořil v jezeře denitrifikaci a mikrobiální/fotochemický rozklad organických látek — procesy, které kyselost vody naopak snižují; navíc se v jezeře díky vyššímu pH sráží toxický Al³⁺ jako nerozpustný hydroxid a klesá do sedimentu. V roce 2011 se v jezeře poprvé od 60. let obnovil uhličitanový tlumivý systém.</aside>
+    </section>
+
+    <!-- 22 example lesson -->
+    <section>
+      <div class="tag-label example">Příklad z praxe</div>
+      <h3 style="font-size:32px; margin-bottom:12px;">Co si z toho odnese manažer udržitelnosti</h3>
+      <div class="example-panel">
+        <p class="prose tight">Autoři studie výslovně nedoporučují šíření kůrovce jako „lék" na acidifikaci — jde o pozorování z bezzásahové zóny národního parku, ne návod pro hospodářský les. Přesto ukazuje obecně platnou lekci: <b>dopad zásahu (nebo nezásahu) do ekosystému může mít protichůdné krátkodobé a dlouhodobé efekty</b>, které se navíc projeví v jiné časové škále, než by se čekalo (roky až desetiletí).</p>
+        <p class="prose tight" style="margin-top:12px;">Pro firmu spravující přírodní aktivum (les, povodí, půdu) je tak dlouhodobý monitoring dat — ne jen jednorázové posouzení — jediný způsob, jak podobné zpožděné efekty vůbec odhalit.</p>
+      </div>
+      <aside class="notes">Zdroj: Kaňa, Porcal, Choma (2020), Závěr, s. 26. Dobrý moment připomenout propojení s Redfieldovým poměrem, EUDR i water risk — celý blok se zde uzavírá do jednoho příběhu.</aside>
+    </section>
+
+    <!-- 23 think -->
+    <section class="think-slide">
+      <div class="tag-label think">Zamyšlení</div>
+      <p class="question">Správce lesa po polomu váhá: mrtvé dřevo odtěžit, nebo nechat rozpadu jako u Plešného jezera? Co by mělo rozhodnutí ovlivnit — a proč tento případ nelze prostě zobecnit na hospodářský les?</p>
+      <aside class="notes">Vede k rozlišení mezi národním parkem (bezzásahovost jako záměr) a hospodářským lesem (ekonomická funkce, riziko šíření kůrovce do sousedních porostů) — případová studie je popis jevu v konkrétních podmínkách, ne univerzální doporučení.</aside>
+    </section>
+
+    <!-- 24 shrnuti -->
+    <section>
+      <div class="kicker">Shrnutí</div>
+      <div class="prose">
+        <p>Dusík, síra a fosfor doplňují vodu a uhlík do plné mozaiky biogeochemických cyklů. Případová studie Plešného jezera ukázala, že tyto cykly nefungují izolovaně — odumření lesa (biotika) změnilo chemismus půdy (N, S, Ca, Al), a ten se promítl do kvality vody (acidifikace, pH).</p>
+        <p style="margin-top:14px;"><b>Příště: Seminář 4 — Toky látek a energie v praxi II.</b></p>
+      </div>
+      <aside class="notes">Konec přednášky — pokračujte na seminar-4.html.</aside>
+    </section>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/notes/notes.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    width: 1280,
+    height: 720,
+    margin: 0.04,
+    minScale: 0.2,
+    maxScale: 2,
+    controls: true,
+    progress: true,
+    slideNumber: 'c/t',
+    plugins: [ RevealNotes ]
+  });
+</script>
+</body>
+</html>

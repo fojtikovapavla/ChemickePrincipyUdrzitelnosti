@@ -95,6 +95,8 @@ html, body { background: var(--bg); max-width: 100%; overflow-x: hidden; }
 /* ---------- Goal / agenda list ---------- */
 .goal-list { display:flex; flex-direction:column; gap: 16px; margin-top: 10px; }
 .goal-list .item { display:flex; gap: 16px; align-items:flex-start; font-size: 30px; }
+.goal-list.tight .item { font-size: 23px; line-height: 1.35; }
+.goal-list.tight .dot { margin-top: 7px; }
 .goal-list .dot { flex:none; width: 14px; height: 14px; border-radius: 3px; background: var(--primary); margin-top: 10px; }
 .goal-list .item span:last-child { flex: 1; min-width: 0; }
 
@@ -110,6 +112,11 @@ html, body { background: var(--bg); max-width: 100%; overflow-x: hidden; }
 .tag-label.example { color: var(--primary-strong); }
 .tag-label.calc { color: var(--water); }
 .tag-label.think { color: var(--primary); }
+.tag-label.data { color: var(--accent); }
+
+.data-task { background: var(--accent-soft); border-radius: 18px; padding: 30px 38px; }
+.data-task ol { font-size: 28px; }
+.data-task li { margin-bottom: 10px; }
 
 .chem-slide-panel { border-left: 8px solid var(--water); background: var(--surface); border-radius: 0 18px 18px 0; padding: 30px 38px; }
 .example-panel { background: var(--surface-2); border-radius: 18px; padding: 30px 38px; }
@@ -156,9 +163,9 @@ html, body { background: var(--bg); max-width: 100%; overflow-x: hidden; }
 .diagram-legend { display:flex; flex-direction:column; gap: 12px; margin-top: 6px; }
 .diagram-legend .row2 { display:flex; align-items:flex-start; gap: 16px; font-size: 26px; line-height: 1.4; }
 .diagram-legend .row2 span:last-child { flex: 1; min-width: 0; }
-.diagram-legend .badge {
-  flex:none; width: 34px; height: 34px; border-radius: 50%; display:flex; align-items:center; justify-content:center;
-  font-family: var(--font-mono); font-size: 20px; font-weight: 700; color: #fff; margin-top: 2px;
+.diagram-legend .badge, .badge-dot {
+  flex:none; width: 34px; height: 34px; border-radius: 50%; display:inline-flex; align-items:center; justify-content:center;
+  font-family: var(--font-mono); font-size: 20px; font-weight: 700; color: #fff; margin-top: 2px; vertical-align: middle;
 }
 .caption { font-size: 22px; color: var(--ink-muted); margin-top: 10px; }
 
@@ -180,12 +187,41 @@ table.data-table { width: 100%; border-collapse: collapse; font-size: 24px; }
 table.data-table th, table.data-table td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); }
 table.data-table th { color: var(--ink-muted); font-family: var(--font-mono); font-size: 20px; text-transform: uppercase; }
 
+/* ---------- Flip cards (click to reveal answer) ---------- */
+.flip-row { display: flex; gap: 24px; }
+.flip-card { flex: 1; min-width: 0; perspective: 1200px; cursor: pointer; height: 240px; }
+.flip-card-inner { position: relative; width: 100%; height: 100%; transition: transform .5s; transform-style: preserve-3d; }
+.flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
+.flip-card-front, .flip-card-back {
+  position: absolute; inset: 0; backface-visibility: hidden; border-radius: 18px;
+  padding: 26px 26px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;
+}
+.flip-card-front { background: var(--surface-2); border: 1px solid var(--line); }
+.flip-card-back { background: var(--water-soft); border: 1px solid var(--water); transform: rotateY(180deg); }
+.flip-card-front p, .flip-card-back p { font-size: 22px; line-height: 1.4; margin: 0; color: var(--ink); }
+.flip-card-front .hint, .flip-card-back .hint {
+  font-family: var(--font-mono); font-size: 20px; letter-spacing: .04em; text-transform: uppercase;
+  color: var(--ink-muted); margin-top: 14px;
+}
+
 /* ---------- Quiz slides ---------- */
 .quiz-q { font-size: 34px; margin-bottom: 26px; }
 .quiz-q .qn { font-family: var(--font-mono); color: var(--accent); margin-right: 12px; }
 .quiz-opt2 { font-size: 28px; color: var(--ink-soft); padding: 14px 20px; border-radius: 12px; margin-bottom: 12px; background: var(--surface); border: 1px solid var(--line); }
 .quiz-opt2.correct { background: var(--water-soft); color: var(--ink); font-weight: 700; border-color: var(--water); }
 .quiz-why2 { font-size: 24px; color: var(--ink-muted); margin-top: 16px; padding-top: 16px; border-top: 1px dashed var(--line); }
+
+/* ---------- Quiz v2 (click-to-answer) ---------- */
+.quiz-opt3 {
+  display: block; width: 100%; text-align: left; font-family: var(--font-body); font-size: 28px;
+  color: var(--ink-soft); padding: 16px 22px; border-radius: 12px; margin-bottom: 12px;
+  background: var(--surface); border: 1px solid var(--line); cursor: pointer;
+}
+.quiz-opt3:hover:not(:disabled) { border-color: var(--primary); }
+.quiz-opt3.correct { background: var(--water-soft); color: var(--ink); font-weight: 700; border-color: var(--water); }
+.quiz-opt3.incorrect { background: #F6DCD6; color: var(--ink); border-color: var(--danger); }
+.quiz-opt3.dim { opacity: .55; }
+.quiz-feedback3 { font-size: 24px; color: var(--ink-muted); margin-top: 16px; padding-top: 16px; border-top: 1px dashed var(--line); }
 
 /* ---------- Task slides ---------- */
 .task-slide-head { display:flex; align-items:center; gap: 18px; margin-bottom: 18px; }

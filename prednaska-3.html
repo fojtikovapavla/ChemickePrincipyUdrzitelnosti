@@ -1,0 +1,1204 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Přednáška 3 — Toky látek a energie I</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <!-- 1 cover -->
+    <section class="cover-slide">
+      <div>
+        <div class="eyebrow">Chemické principy a udržitelnost</div>
+        <h1>Toky látek a energie I</h1>
+        <p class="sub">Trofické úrovně · geologické cykly · hydrologický cyklus · uhlíkový cyklus</p>
+      </div>
+      <div class="foot"><div class="bar"></div><span>Přednáška 3 · Blok 1</span></div>
+      <aside class="notes">
+        Navazuje na Přednášky 1–2 (abiotické a biotické složky). Dnešní téma spojuje obojí: ukazuje, jak energie a chemické prvky proudí ekosystémem jako celkem — energie jedním směrem ?!? (od Slunce k teplu), látky v uzavřených cyklech. Zdroje: Miller/Spoolman, Environmental Science; Introduction to Environmental Science (Dartmouth); Keeling et al. (1979, 2017); Graven (2015).
+      </aside>
+    </section>
+
+    <!-- 2 goals -->
+    <section>
+      <div class="kicker">Cíle přednášky</div>
+      <div class="goal-list">
+        <div class="item"><span class="dot"></span><span>Porozumět rozdílu mezi jednosměrným tokem energie a cyklickým oběhem látek v ekosystému a vysvětlit jejich vzájemnou provázanost</span></div>
+        <div class="item"><span class="dot"></span><span>Popsat čtyři hlavní sféry Země a roli gravitace v koloběhu látek</span></div>
+        <div class="item"><span class="dot"></span><span>Popsat hydrologický cyklus a sestavit jednoduchou vodní bilanci</span></div>
+        <div class="item"><span class="dot"></span><span>Vysvětlit uhlíkový cyklus — biotické i abiotické procesy — a jeho narušení člověkem</span></div>
+        <div class="item"><span class="dot"></span><span>Propojit oba cykly s konkrétní manažerskou praxí (vodní riziko, uhlíková stopa)</span></div>
+      </div>
+      <aside class="notes">Signalizujte hned na začátku, že se dnes budeme opakovaně vracet k jednomu obrázku: tok energie „skrz" systém vs. cyklus látek „v kruhu".</aside>
+    </section>
+
+    <!-- 3 divider 01 -->
+    <section class="divider-slide">
+      <div class="num">01</div>
+      <h2>Přírodní kapitál</h2>
+      <p>Sféry Země, tok energie a koloběh látek</p>
+      <aside class="notes">Čas na téma: cca 20 minut.</aside>
+    </section>
+
+    <!-- 4 four spheres -->
+    <section>
+      <div class="kicker">Systém Země · čtyři sféry</div>
+      <div class="prose">
+        <p>Systém Země tvoří čtyři hlavní vzájemně propojené sféry: <b>atmosféra</b> (vzduch), <b>hydrosféra</b> (voda), <b>geosféra</b> (horniny, půda, sedimenty) a <b>biosféra</b> (živé organismy) — tenká vrstva při povrchu, silná jako slupka jablka, kdyby bylo Zemí.</p>
+      </div>
+      <div class="flip-row" style="margin-top:18px;">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><p>Kde leží ozonová vrstva a k čemu slouží?</p><div class="hint">klikněte ↻</div></div>
+            <div class="flip-card-back"><p>Ve <b>stratosféře</b> (17–50 km). Pohlcuje ~95 % škodlivého UV záření Slunce — bez ní by byl povrch Země pro život nehostinný.</p></div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><p>Co se stane se slunečním zářením při průchodu atmosférou?</p><div class="hint">klikněte ↻</div></div>
+            <div class="flip-card-back"><p>Část se odrazí zpět do vesmíru, většina krátkovlnného záření projde až na povrch, který se ohřeje a vyzařuje teplo jako dlouhovlnné IR — to zachytí skleníkové plyny.</p></div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><p>Z čeho je troposféra a jak je silná?</p><div class="hint">klikněte ↻</div></div>
+            <div class="flip-card-back"><p>Spodní vrstva atmosféry — vzduch, který dýcháme (78 % N₂, 21 % O₂). Sahá ~17 km nad tropy, jen ~7 km nad póly.</p></div>
+          </div>
+        </div>
+      </div>
+      <aside class="notes">Hydrosféra: oceány ~71 % povrchu, ~97 % vody na Zemi. Geosféra: jádro–plášť–kůra, kůra obsahuje živiny i fosilní paliva. Zdroj: Miller/Spoolman, Environmental Science. Karty slouží jako rychlé opakování — nechte studenty nejdřív hádat nahlas, pak klikněte na odhalení.</aside>
+    </section>
+
+    <!-- 5 energy vs matter -->
+    <section>
+      <div class="kicker">Tok energie × koloběh látek</div>
+      <div class="row middle">
+        <div class="col" style="flex:1.15">
+          <div class="diagram-wrap">
+            <svg viewBox="0 0 620 380" role="img" aria-label="Schéma toku energie a koloběhu látek ekosystémem">
+              <defs>
+                <marker id="e1" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="var(--accent)"/></marker>
+                <marker id="e2" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="var(--primary)"/></marker>
+              </defs>
+              <circle cx="70" cy="50" r="34" fill="var(--accent)"/>
+              <text x="70" y="105" text-anchor="middle" font-size="20" fill="var(--ink-soft)" font-family="var(--font-body)">Slunce</text>
+              <rect x="220" y="20" width="180" height="60" rx="12" fill="var(--water-soft)" stroke="var(--water)" stroke-width="2"/>
+              <text x="310" y="55" text-anchor="middle" font-size="20" fill="var(--ink)" font-family="var(--font-body)">Producenti</text>
+              <rect x="220" y="150" width="180" height="60" rx="12" fill="var(--surface-2)" stroke="var(--line)" stroke-width="2"/>
+              <text x="310" y="185" text-anchor="middle" font-size="20" fill="var(--ink)" font-family="var(--font-body)">Konzumenti</text>
+              <rect x="220" y="280" width="180" height="60" rx="12" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2"/>
+              <text x="310" y="315" text-anchor="middle" font-size="20" fill="var(--ink)" font-family="var(--font-body)">Rozkladači</text>
+              <path d="M104,50 L215,50" stroke="var(--accent)" stroke-width="3.5" fill="none" marker-end="url(#e1)"/>
+              <path d="M310,80 L310,145" stroke="var(--primary)" stroke-width="3.5" fill="none" marker-end="url(#e2)"/>
+              <path d="M310,210 L310,275" stroke="var(--primary)" stroke-width="3.5" fill="none" marker-end="url(#e2)"/>
+              <path d="M400,50 C 470,50 470,15 540,15" stroke="var(--accent)" stroke-width="2.5" opacity=".6" fill="none" marker-end="url(#e1)"/>
+              <path d="M400,180 C 470,180 470,150 540,150" stroke="var(--accent)" stroke-width="2.5" opacity=".6" fill="none" marker-end="url(#e1)"/>
+              <path d="M400,310 C 470,310 470,345 540,345" stroke="var(--accent)" stroke-width="2.5" opacity=".6" fill="none" marker-end="url(#e1)"/>
+              <text x="568" y="20" text-anchor="middle" font-size="20" fill="var(--ink-muted)" font-family="var(--font-body)">teplo</text>
+              <text x="568" y="155" text-anchor="middle" font-size="20" fill="var(--ink-muted)" font-family="var(--font-body)">teplo</text>
+              <text x="568" y="350" text-anchor="middle" font-size="20" fill="var(--ink-muted)" font-family="var(--font-body)">teplo</text>
+              <path d="M220,320 C 140,320 120,120 220,50" stroke="var(--water)" stroke-width="3" stroke-dasharray="7 6" fill="none" marker-end="url(#e2)"/>
+              <text x="90" y="185" text-anchor="middle" font-size="20" fill="var(--water)" font-family="var(--font-body)">chemické</text>
+              <text x="90" y="206" text-anchor="middle" font-size="20" fill="var(--water)" font-family="var(--font-body)">látky</text>
+            </svg>
+          </div>
+        </div>
+        <div class="col">
+          <p class="prose">Energie ze Slunce prochází ekosystémem <b>jedním směrem</b> a nakonec uniká jako teplo nízké kvality — musí neustále přitékat nová.</p>
+          <p class="prose" style="margin-top:16px; color:var(--ink-soft)">Chemické látky (živiny) naproti tomu <b>obíhají v uzavřeném cyklu</b> mezi organismy a prostředím — Země prakticky nezískává hmotu z&nbsp;vesmíru, takže musí být recyklovány.</p>
+        </div>
+      </div>
+      <aside class="notes">Klíčová myšlenka celé přednášky: energie „teče skrz", látky „obíhají v kruhu". Toto rozlišení je jádrem chemického principu udržitelnosti — recyklace je fyzikální nutnost, ne jen ekologické gesto.</aside>
+    </section>
+
+    <!-- 6 gravity -->
+    <section>
+      <div class="tag-label chem">Rozšíření</div>
+      <h3 style="font-size:34px; margin-bottom:14px;">Role gravitace</h3>
+      <div class="chem-slide-panel">
+        <p class="prose tight">Gravitace umožňuje planetě udržet si atmosféru a zároveň napomáhá pohybu a koloběhu chemických látek ve vzduchu, vodě, půdě i organismech — srážky padají dolů, sedimenty klesají ke dnu, voda odtéká z hor do moří.</p>
+        <p class="prose tight" style="margin-top:12px;">Spolu se sluneční energií jde o druhou hlavní hnací sílu všech biogeochemických cyklů.</p>
+      </div>
+      <aside class="notes">Volitelné prohloubení. Zdroj: Miller/Spoolman, Environmental Science.</aside>
+    </section>
+
+    <!-- 7 example natural capital -->
+    <section>
+      <div class="tag-label example">Příklad z praxe</div>
+      <h3 style="font-size:34px; margin-bottom:14px;">Přírodní kapitál v manažerském jazyce</h3>
+      <div class="example-panel">
+        <p class="prose tight">Toky energie a látek, které dnes probíráme chemicky, se ve firemním prostředí označují jako <b>ekosystémové služby</b> — čištění vody, koloběh živin, ukládání uhlíku — tedy „přírodní kapitál", který podnik obvykle nevlastní, ale plně na něm závisí.</p>
+        <p class="prose tight" style="margin-top:12px;">Rámce jako TNFD (Taskforce on Nature-related Financial Disclosures) žádají firmy, aby tuto závislost a svůj dopad na ni vykazovaly podobně jako finanční kapitál.</p>
+      </div>
+      <aside class="notes">Most k tématu ESG reportingu — přírodní kapitál přestává být jen ekologickým pojmem a stává se položkou v nefinančním výkaznictví.</aside>
+    </section>
+
+    <!-- 7b activity real documents -->
+    <section>
+      <div class="tag-label data">Krátká aktivita</div>
+      <h3 style="font-size:32px; margin-bottom:10px;">Přírodní kapitál v reálném výkaznictví</h3>
+      <div class="data-task">
+        <p class="prose tight" style="margin-bottom:10px;">Ve dvojici otevřete dva skutečné, aktuální zdroje:</p>
+        <p class="prose tight">1. Nestlé — stránka o lesích: <a href="https://www.nestle.com/sustainability/nature-environment/forests" target="_blank" rel="noopener">nestle.com/sustainability/nature-environment/forests</a></p>
+        <p class="prose tight" style="margin-top:6px;">2. CDP — tisková zpráva A List 2024: <a href="https://www.cdp.net/en/press-releases/cdp-a-list-2024" target="_blank" rel="noopener">cdp.net/en/press-releases/cdp-a-list-2024</a></p>
+        <ol style="font-size:24px; margin-top:14px;">
+          <li>Na stránce Nestlé najděte konkrétní % dodavatelských řetězců bez odlesňování. Co přesně znamená „deforestation-free" podle jejich definice?</li>
+          <li>Na stránce CDP zjistěte, kolik firem z více než 22 000 hodnocených dostalo v roce 2024 nejvyšší hodnocení A v kategorii lesy.</li>
+          <li>Nestlé svůj výsledek reportuje samo, CDP hodnotí firmy nezávisle. Co to znamená pro důvěryhodnost samo-reportovaných čísel?</li>
+        </ol>
+      </div>
+      <aside class="notes">Řešení: Nestlé uvádí 96,9 % primárních dodavatelských řetězců (maso, palmový olej, buničina a papír, sója, cukr, kakao, káva) posouzených jako bez odlesňování po referenčním datu (nejpozději 31. 12. 2020). CDP: jen 26 firem z 22 777 hodnocených dostalo A v kategorii lesy (2024), celkově A ve všech kategoriích jen 2 % firem. Diskuse k bodu 3: samo-reportované firemní ukazatele a nezávislé hodnocení (CDP, TNFD-aligned audit) se mohou výrazně lišit — dobrý moment na pojem „greenwashing" a na to, proč investoři a regulace (CSRD) čím dál víc vyžadují externí ověření (assurance) nefinančních dat. Ověřeno WebFetch 2026-10-01, oba odkazy funkční.</aside>
+    </section>
+
+    <!-- 9 divider 02 -->
+    <section class="divider-slide">
+      <div class="num">02</div>
+      <h2>Hydrologický cyklus</h2>
+      <p>Koloběh vody a vodní bilance</p>
+      <aside class="notes">Čas na téma: cca 25 minut.</aside>
+    </section>
+
+    <!-- 10 hydro diagram -->
+    <section>
+      <div class="kicker">Hydrologický cyklus</div>
+      <div class="diagram-wrap" style="margin-bottom:0;">
+        <svg viewBox="0 0 1000 460" role="img" aria-label="Schéma hydrologického cyklu">
+          <defs>
+            <marker id="hh1" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="var(--water)"/></marker>
+            <marker id="hh2" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="var(--primary)"/></marker>
+          </defs>
+          <rect x="0" y="300" width="260" height="140" rx="12" fill="var(--water-soft)"/>
+          <text x="130" y="376" text-anchor="middle" font-size="20" fill="var(--ink-soft)" font-family="var(--font-body)">oceán</text>
+          <ellipse cx="600" cy="90" rx="160" ry="55" fill="var(--surface-3)"/>
+          <text x="600" y="96" text-anchor="middle" font-size="20" fill="var(--ink-soft)" font-family="var(--font-body)">kondenzace</text>
+          <polygon points="660,440 830,170 980,440" fill="var(--surface-3)" opacity=".6"/>
+          <text x="830" y="410" text-anchor="middle" font-size="20" fill="var(--ink-soft)" font-family="var(--font-body)">půda</text>
+          <path d="M190,310 L540,150" stroke="var(--water)" stroke-width="4" fill="none" marker-end="url(#hh1)"/>
+          <circle cx="360" cy="234" r="23" fill="var(--water)"/><text x="360" y="241" text-anchor="middle" font-size="20" fill="#fff" font-weight="700" font-family="var(--font-body)">1</text>
+          <path d="M640,155 L790,260" stroke="var(--water)" stroke-width="4" stroke-dasharray="7 6" fill="none" marker-end="url(#hh1)"/>
+          <circle cx="680" cy="200" r="23" fill="var(--water)"/><text x="680" y="207" text-anchor="middle" font-size="20" fill="#fff" font-weight="700" font-family="var(--font-body)">2</text>
+          <path d="M820,280 L300,350" stroke="var(--primary)" stroke-width="4" fill="none" marker-end="url(#hh2)"/>
+          <circle cx="540" cy="308" r="23" fill="var(--primary)"/><text x="540" y="315" text-anchor="middle" font-size="20" fill="#fff" font-weight="700" font-family="var(--font-body)">3</text>
+          <path d="M900,280 Q 950,390 870,440" stroke="var(--accent)" stroke-width="3.5" stroke-dasharray="5 5" fill="none" marker-end="url(#e1)"/>
+          <circle cx="900" cy="380" r="23" fill="var(--accent)"/><text x="900" y="387" text-anchor="middle" font-size="20" fill="#fff" font-weight="700" font-family="var(--font-body)">4</text>
+        </svg>
+      </div>
+      <aside class="notes">Diagram bez popisků uvnitř drah — čísla se vysvětlují na dalším slidu, aby se text nepřekrýval s křivkami.</aside>
+    </section>
+
+    <!-- 11 hydro legend -->
+    <section>
+      <div class="kicker">Hydrologický cyklus · vysvětlení</div>
+      <div class="diagram-legend">
+        <div class="row2"><span class="badge" style="background:var(--water)">1</span><span><b>Evapotranspirace</b> — výpar (evaporace) z oceánů, řek a půdy plus transpirace rostlin, poháněné sluneční energií.</span></div>
+        <div class="row2"><span class="badge" style="background:var(--water)">2</span><span><b>Kondenzace a srážky</b> — vodní pára kondenzuje v mraky a vrací se jako déšť nebo sníh.</span></div>
+        <div class="row2"><span class="badge" style="background:var(--primary)">3</span><span><b>Infiltrace a odtok (runoff)</b> — srážky se vsakují do půdy k podzemní vodě, nebo odtékají po povrchu zpět do oceánu.</span></div>
+        <div class="row2"><span class="badge" style="background:var(--accent)">4</span><span><b>Lidský zásah</b> — zpevňování povrchu, zavlažování a odlesňování mění poměr odtoku, výparu a infiltrace.</span></div>
+      </div>
+      <aside class="notes">Zdůrazněte: Země je z hlediska hmoty uzavřený systém — voda ji neopouští, jen mění formu a místo. Zdroj: Materiál přednáška 3 (Miller/Spoolman).</aside>
+    </section>
+
+    <!-- 12 chem water balance -->
+   <section>
+  <div class="tag-label chem">Rozšíření</div>
+  <h3 style="font-size:34px; margin-bottom:14px;">
+    Hydrologická rovnice: vodní bilance
+  </h3>
+
+  <div class="chem-slide-panel">
+
+    <p class="prose tight">
+      Oběh vody lze popsat pomocí <strong>vodní bilance</strong>:
+      množství vody, které do systému vstoupí, musí odpovídat množství,
+      které ze systému odejde, případně změně zásoby vody.
+    </p>
+
+    <p class="prose tight">
+      Pro dlouhodobou bilanci pevniny lze zjednodušeně označit:
+      <strong>E<sub>p</sub></strong> – výpar z pevniny,
+      <strong>S<sub>p</sub></strong> – srážky na pevninu,
+      <strong>O</strong> – odtok z pevniny do oceánu.
+    </p>
+
+    <p class="formula">
+      <strong>S<sub>p</sub> = E<sub>p</sub> + O</strong>
+    </p>
+
+    <p class="prose tight">
+      Pokud sledujeme delší časové období, lze změnu zásoby vody zanedbat.
+      V kratších časových intervalech je nutné zahrnout také změnu zásoby
+      vody v půdě, podzemní vodě, jezerech, nádržích nebo sněhu.
+    </p>
+
+  </div>
+
+  <aside class="notes">
+    Základní bilanční vztah: P = ET + R + ΔS.
+    Pro dlouhodobou průměrnou bilanci, kdy ΔS ≈ 0, dostáváme P = ET + R.
+    Pro jednoduchý globální model lze následně rozlišit oceánskou a pevninskou
+    část hydrologického cyklu. Zdroj: hydrologické učebnice / materiály přednášky.
+    Zdůraznit, že jde o bilanční rovnici, nikoli o tvrzení, že okamžitá měření
+    jsou „nespolehlivá“.
+  </aside>
+</section>
+
+    <!-- 12b example water balance -->
+<section>
+  <div class="tag-label chem">Příklad z praxe</div>
+  <h3 style="font-size:34px; margin-bottom:14px;">
+    Kolik vody má podnik skutečně k dispozici?
+  </h3>
+
+  <div class="chem-slide-panel">
+
+    <p class="prose tight">
+      Výrobní podnik odebere z vodního zdroje
+      <strong>1 000 m³ vody denně</strong>.
+      Část vody se vrací zpět do prostředí, část se spotřebuje
+      a část může zůstat v produktech nebo odpadech.
+    </p>
+
+    <div class="grid-2">
+
+      <div class="card">
+        <h4>Vodní bilance podniku</h4>
+        <p>
+          <strong>odběr → využití → návrat / spotřeba</strong>
+        </p>
+        <p class="prose tight">
+          Samotný objem odběru ale neříká, jak velký je skutečný
+          tlak podniku na místní vodní zdroj.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4>Úkol pro vás</h4>
+        <p class="prose tight">
+          Jaké údaje potřebujete znát, abyste mohli posoudit
+          <strong>vodní riziko</strong> tohoto podniku?
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <aside class="notes">
+    Formát: 3–5 min diskuse ve dvojicích, poté cca 5 min společné shrnutí na tabuli.
+
+    Studentům nejprve NEDÁVAT seznam údajů. Nechat je navrhovat samostatně
+    a teprve následně doplnit, co chybělo. Cílem není naučit se checklist,
+    ale pochopit, že vodní riziko je strukturovatelný problém závislý
+    na podniku i jeho okolí.
+
+    Klíčová myšlenka: odběr 1 000 m³/den sám o sobě nestačí.
+    Stejný odběr může znamenat velmi odlišné riziko v povodí s vysokou
+    dostupností vody a v povodí během sucha.
+
+    Propojení s hydrologickou bilancí:
+    odběr vody = část vody vrácená do systému + část vody, která se
+    z daného systému v daném čase nevrací (spotřebované množství).
+
+    Pozor na pojem „spotřebované množství“ (consumptive use):
+    pro účely tohoto příkladu jde o část odběru, která se nevrací
+    do zdroje/povodí v relevantním časovém a prostorovém měřítku.
+    Návrat vody navíc neznamená automaticky nulový dopad – záleží
+    také na místě návratu, načasování, množství a kvalitě vody.
+
+    Očekávané oblasti odpovědí:
+    A) provozní data podniku
+    B) dostupnost a stav zdroje/povodí
+    C) ostatní uživatelé a ekosystémy
+    D) regulace a omezení odběru/vypouštění
+  </aside>
+</section>
+
+ <!-- 12b-ii expected answer grid -->
+<section>
+  <div class="kicker">Kolik vody má podnik skutečně k dispozici? · odpověď</div>
+  <h3 style="font-size:30px; margin-bottom:14px;">
+    Co potřebujeme vědět o vodním riziku?
+  </h3>
+
+  <div class="row" style="align-items:stretch; gap:22px;">
+
+    <div class="col">
+      <div class="compare-panel">
+        <h4>
+          <span class="badge-dot" style="background:var(--water); margin-right:10px;">A</span>
+          Provoz podniku
+        </h4>
+        <p style="font-size:21px; line-height:1.4; margin:0;">
+          odběr a sezónnost · vrácená vs. spotřebovaná voda ·
+          kvalita a teplota vypouštěné vody · zdroj vody
+        </p>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="compare-panel">
+        <h4>
+          <span class="badge-dot" style="background:var(--primary); margin-right:10px;">B</span>
+          Zdroj a povodí
+        </h4>
+        <p style="font-size:21px; line-height:1.4; margin:0;">
+          dostupnost vody · průtok a sezónnost ·
+          stav podzemních vod · sucho a povodně · budoucí trend
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row" style="align-items:stretch; gap:22px; margin-top:22px;">
+
+    <div class="col">
+      <div class="compare-panel">
+        <h4>
+          <span class="badge-dot" style="background:var(--accent); margin-right:10px;">C</span>
+          Sdílený kontext
+        </h4>
+        <p style="font-size:21px; line-height:1.4; margin:0;">
+          ostatní odběratelé · konkurence o vodu ·
+          citlivost ekosystémů · konflikty o vodu
+        </p>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="compare-panel">
+        <h4>
+          <span class="badge-dot" style="background:var(--danger); margin-right:10px;">D</span>
+          Regulace
+        </h4>
+        <p style="font-size:21px; line-height:1.4; margin:0;">
+          povolené odběry · limity vypouštění ·
+          omezení v období sucha · další požadavky
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <aside class="notes">
+    Promítnout až po samostatné práci studentů.
+
+    Typicky studenti dobře identifikují A a B, ale zapomínají na C:
+    vodní zdroj je sdílený s dalšími uživateli a ekosystémy.
+
+    Důležitá otázka: „Je 1 000 m³/den hodně, nebo málo?“
+    Správná odpověď: bez znalosti zdroje, období a ostatních odběrů
+    to nelze rozhodnout.
+  </aside>
+</section>
+
+<!-- 12b-iii bridge resources -->
+<section>
+  <div class="tag-label data">Krátká aktivita · můstek dál</div>
+  <h3 style="font-size:30px; margin-bottom:10px;">
+    Kde tato data najít?
+  </h3>
+
+  <div class="data-task">
+
+    <p class="prose tight" style="margin-bottom:10px;">
+      Vodní riziko nelze určit z jednoho čísla.
+      Potřebujeme kombinovat <strong>data o podniku, lokalitě a vodním zdroji</strong>.
+    </p>
+
+    <p class="prose tight">
+      <strong>1. WRI Aqueduct Water Risk Atlas</strong> —
+      globální mapa současných a budoucích vodních rizik:
+      <a href="https://www.wri.org/aqueduct" target="_blank" rel="noopener">
+        wri.org/aqueduct
+      </a>
+    </p>
+
+    <p class="prose tight" style="margin-top:6px;">
+      <strong>2. CDP Water Security</strong> —
+      příklad firemního rámce pro vykazování vodních závislostí,
+      rizik a opatření:
+      <a href="https://www.cdp.net/en/disclose/question-bank/water-security"
+         target="_blank" rel="noopener">
+        cdp.net · Water Security
+      </a>
+    </p>
+
+    <p class="prose tight" style="margin-top:6px;">
+      <strong>3. ČHMÚ</strong> —
+      informace o stavu povrchových a podzemních vod a hydrologickém suchu:
+      <a href="https://www.chmi.cz/predpoved-pocasi/rizika/hydrologicke-sucho"
+         target="_blank" rel="noopener">
+        chmi.cz · hydrologické sucho
+      </a>
+    </p>
+
+    <p class="prose tight" style="margin-top:6px;">
+      <strong>4. Správce povodí</strong> —
+      lokální informace o vodních zdrojích, vodním hospodářství
+      a plánování v konkrétním povodí.
+    </p>
+
+  </div>
+
+  <p class="formula" style="margin-top:10px;">
+    <strong>Úkol:</strong>
+    Vyberte lokalitu podniku a zjistěte, jaké vodní riziko jí hrozí.
+  </p>
+
+  <aside class="notes">
+    Pokud zbyde čas, nechte studenty ve dvojicích otevřít WRI Aqueduct
+    a vyhledat konkrétní lokalitu. Nemají hodnotit „celkové skóre“ bez
+    kontextu – mají najít alespoň jeden relevantní indikátor a vysvětlit,
+    co znamená.
+
+    WRI uvádí, že Aqueduct je především nástroj pro prioritizaci
+    a lokální hodnocení je vhodné doplnit podrobnějšími regionálními daty.
+
+    Pro českou lokalitu lze následně porovnat výsledek s informacemi ČHMÚ.
+
+    Navazující otázka:
+    „Co se stane s vodní bilancí podniku, pokud snížíme spotřebované
+    množství při stejném hrubém odběru?“
+
+    Například vyšší podíl recyklace může snížit množství vody, které
+    se z daného systému nevrací, ale samo o sobě nemusí odstranit
+    všechna vodní rizika.
+  </aside>
+</section>
+
+    <!-- 12c example water balance -->
+    <section>
+  <div class="tag-label chem">Chemická pointa</div>
+  <h3 style="font-size:34px; margin-bottom:14px;">
+    Voda přenáší i chemické látky
+  </h3>
+
+  <div class="chem-slide-panel">
+
+    <p class="prose tight">
+      Hydrologický cyklus není pouze cyklem <strong>H<sub>2</sub>O</strong>.
+      Voda přenáší rozpuštěné i suspendované látky mezi atmosférou,
+      půdou, povrchovou a podzemní vodou a oceánem.
+    </p>
+
+    <div class="card" style="margin-top:14px;">
+      <h4>Co voda přenáší?</h4>
+      <p class="prose tight">
+        <strong>živiny</strong> (N, P, S) ·
+        <strong>minerální ionty</strong> ·
+        <strong>organickou hmotu</strong> ·
+        <strong>znečišťující látky</strong> ·
+        <strong>sedimenty a částice</strong>
+      </p>
+    </div>
+
+    <div class="card" style="margin-top:12px;">
+      <h4>Co rozhoduje o jejich osudu?</h4>
+      <p class="prose tight">
+        <strong>rozpustnost a sorpce</strong> ·
+        <strong>pH a redoxní podmínky</strong> ·
+        <strong>teplota</strong> ·
+        <strong>mikrobiální transformace</strong> ·
+        <strong>doba zdržení</strong>
+      </p>
+    </div>
+
+    <p class="prose tight" style="margin-top:14px;">
+      <strong>Klíčová myšlenka:</strong>
+      změna hydrologického režimu může změnit nejen množství vody,
+      ale také <strong>transport a osud chemických látek</strong>.
+    </p>
+
+  </div>
+
+  <aside class="notes">
+    Propojit hydrologický cyklus s biogeochemickými cykly.
+    Příklad: přívalový déšť může zvýšit odnos fosforu a sedimentů z půdy.
+    Při suchu může při stejném vypouštění látky klesnout průtok recipientu
+    a vzrůst její koncentrace.
+    Zdůraznit: hydrologie ovlivňuje nejen dostupnost vody, ale také transport,
+    ředění, sorpci a transformaci chemických látek v prostředí.
+  </aside>
+</section>
+
+    <!-- 13 calc scarce water -->
+    <section>
+  <div class="tag-label calc">Klíčové číslo</div>
+  <div class="calc-panel">
+    <p class="prose tight">
+      Přestože voda pokrývá přibližně <strong>71 % povrchu Země</strong>,
+      naprostá většina jejích zásob je <strong>slaná</strong>.
+    </p>
+
+    <p class="formula" style="text-align:center; font-size:1.4em;">
+      ≈ 2,5 % sladká voda
+    </p>
+
+    <p class="prose tight">
+      Z této sladké vody je většina uložena v
+      <strong>ledovcích a sněhové pokrývce</strong> a v
+      <strong>podzemních vodách</strong>.
+      V řekách a jezerech se nachází jen malá část.
+    </p>
+
+    <div class="card" style="margin-top:14px;">
+      <p class="prose tight" style="margin-bottom:0;">
+        <strong>Co to znamená?</strong>
+        Celkové zásoby vody ≠ voda dostupná pro ekosystémy,
+        zemědělství, průmysl a zásobování obyvatel.
+        <strong>Dostupnost vody je proto nejen otázkou množství,
+        ale také jejího umístění, kvality a obnovitelnosti.</strong>
+      </p>
+    </div>
+  </div>
+
+  <aside class="notes">
+    Přibližně 96,5 % veškeré vody na Zemi je v oceánech a mořích;
+    asi 2,5 % tvoří sladká voda. Zásoby sladké vody jsou nerovnoměrně
+    rozloženy – převážně v ledovcích a sněhu a v podzemních vodách.
+    Povrchová voda v jezerech a řekách představuje jen malou část.
+    
+    Důležitá didaktická pointa: „sladká voda“ neznamená automaticky
+    „dostupná voda“. Dostupnost závisí také na lokalitě, kvalitě,
+    hloubce, rychlosti obnovy a technické/ekonomické dostupnosti.
+    V jezerech a řekách je pouze řádově desetiny procenta sladké vody
+    
+    Zdroj: USGS, Water Science School; údaje jsou přibližné a mohou
+    se mírně lišit podle použité klasifikace a zdroje.
+  </aside>
+</section>
+
+    <!-- 14 example human impact hydro -->
+    <section>
+  <div class="tag-label example">Příklad z praxe</div>
+  <h3 style="font-size:34px; margin-bottom:14px;">
+    Tři způsoby, jak člověk mění vodní cyklus
+  </h3>
+
+  <div class="example-panel">
+    <p class="prose tight">
+      <b>1. Odběr vody</b> — nadměrné čerpání může převýšit přirozené
+      doplňování zásob a vést k <strong>poklesu hladiny podzemní vody</strong>
+      nebo ke snížení průtoků v řekách.
+    </p>
+  </div>
+
+  <div class="example-panel" style="margin-top:14px;">
+    <p class="prose tight">
+      <b>2. Zpevňování půdy a změny vegetace</b> — asfalt a beton
+      <strong>omezují infiltraci</strong> a zvyšují povrchový odtok;
+      odlesňování mění <strong>výpar, transpiraci i odtok</strong>.
+    </p>
+  </div>
+
+  <div class="example-panel" style="margin-top:14px;">
+    <p class="prose tight">
+      <b>3. Odvodňování mokřadů</b> — ztráta mokřadů snižuje schopnost
+      krajiny <strong>zadržovat vodu</strong> a může zvyšovat rychlost
+      odtoku a povodňové špičky.
+    </p>
+  </div>
+
+  <aside class="notes">
+    Člověk vodní cyklus nejen využívá, ale také mění jeho rychlost a prostorové
+    rozložení. U odběrů zdůraznit rozdíl mezi obnovitelným využíváním vody
+    a dlouhodobým čerpáním nad úroveň přirozeného doplňování zásob.
+    U urbanizace: méně infiltrace → rychlejší povrchový odtok → menší doplňování
+    podzemní vody. U změn vegetace je účinek závislý na typu vegetace, půdě
+    a klimatických podmínkách.
+    
+    Most k praxi: změny vodního cyklu vytvářejí pro firmy různá vodní rizika –
+    např. omezení odběrů během sucha, vyšší náklady na úpravu vody,
+    nebo naopak riziko povodní v místě provozu.
+  </aside>
+</section>
+
+    <!-- 15 think hydro -->
+    <section class="think-slide">
+      <div class="tag-label think">Zamyšlení</div>
+      <p class="question">Firma plánuje novou halu v povodí, kde místní zemědělci už dnes hlásí pokles hladiny podzemní vody. Jaké otázky by si měl manažer udržitelnosti položit ještě před výběrem lokality?</p>
+      <aside class="notes">
+        Formát: 3–4 min samostatné zamyšlení nebo diskuse ve dvojicích, bez nutnosti zapojovat celou skupinu — jde o rychlé přemostění, ne plnohodnotnou úlohu (ta přijde v semináři). Nechte studenty nejdřív navrhnout otázky sami, pak doplňte, co chybí.
+
+        Smysl slidu: ukázat, že vodní riziko se neřeší až ve chvíli, kdy hala stojí a dojde voda — klíčové rozhodnutí je právě <b>výběr lokality</b>. V tuto chvíli má firma ještě plnou volnost (jiné místo, jiný zdroj, jiný design procesu); po zahájení výstavby už prakticky žádnou. To je obecný princip due diligence: čím dřív se otázka položí, tím levnější jsou všechny varianty odpovědi.
+
+        Očekávané okruhy otázek (lze přímo navázat na schéma „4 okruhy údajů" z dřívějšího slidu, ale aplikované dopředu, ne na už běžící provoz):
+
+        (1) Je pokles hladiny dlouhodobý trend, nebo výkyv? Jde o roky sucha, nebo o systematické přečerpávání zvodně rychleji, než se doplňuje? Bez této odpovědi nelze odhadnout, zda bude voda dostupná i za 10–20 let provozu haly. Zdroj dat: dlouhé časové řady ČHMÚ/InterSucho, ne jen aktuální stav.
+
+        (2) Kolik vody se z téhož zdroje odebírá už dnes a kým? Zemědělci jsou zmínění v zadání přímo — kolik dalších odběratelů (obce, jiné firmy) sdílí stejnou zvodeň? Součet všech nároků, ne jen nárok firmy samotné, určuje, zda je území vůbec „v bilanci".
+
+        (3) Dostane firma vůbec povolení k odběru — a za jakých podmínek? Vodoprávní úřad může v oblasti s klesající hladinou nové povolení omezit, podmínit, nebo v krajním případě zamítnout. To je otázka, kterou je nutné ověřit PŘED nákupem pozemku, ne až po něm.
+
+        (4) Jaký je vztah s místní komunitou, která na stejném zdroji už hospodaří? Nový velký odběratel v regionu s napjatou vodní bilancí nese reputační riziko („firma bere vodu zemědělcům") bez ohledu na to, zda je odběr formálně v limitu — to je přesně plocha, kde se protíná „license to operate" s čistě technickým posouzením.
+
+        (5) Dá se potřeba vody snížit už v návrhu haly? Uzavřený okruh chlazení, recyklace procesní vody, volba technologie s nižší vodní náročností — čím méně firma na lokálním zdroji závisí, tím menší je celé riziko bez ohledu na vývoj hladiny.
+
+        (6) Existuje alternativa k lokalitě nebo zdroji? Jiné umístění ve stejném regionu mimo nejvíc vytížené povodí, napojení na veřejný vodovod místo vlastního vrtu, případně (u menší spotřeby) dovoz/úprava vody — i tyto možnosti by měly zaznít dřív, než padne rozhodnutí.
+
+        (7) Jak se promítne vodní riziko do financování? Banky a investoři čím dál častěji vyžadují u průmyslových investic posouzení klimatických a vodních rizik (v duchu TCFD/TNFD) jako podmínku financování nebo pojištění — špatně zdůvodněná volba lokality tak může zdražit nebo zkomplikovat i samotné financování projektu.
+
+        Typická chyba studentů: zůstanou jen u otázky „kolik vody hala spotřebuje" (bod technický) a přeskočí body 2–4 a 7 (sdílený zdroj, povolení, komunita, financování) — právě tyto bývají v realitě rozhodující a objeví se až jako nepříjemné překvapení, pokud se neřeší včas.
+
+        Přímo navazuje na plný úkol v Semináři 3 („Nová hala v povodí se sníženou hladinou podzemní vody") — tam se stejné téma rozpracovává do konkrétního postupu (sestavení orientační vodní bilance, konkrétní opatření). Lze také odkázat zpět na nástroje z předchozích slidů (WRI Aqueduct, CDP Water Security, InterSucho, Povodí Vltavy) jako na to, ČÍM by se tyto otázky v praxi zodpovídaly.
+      </aside>
+    </section>
+
+    <!-- 15b think hydro answer -->
+    <section>
+      <div class="kicker">Firma v povodí se sníženou hladinou · odpověď</div>
+      <h3 style="font-size:30px; margin-bottom:14px;">Sedm otázek k výběru lokality</h3>
+      <div class="row" style="align-items:flex-start; gap:36px;">
+        <div class="col">
+          <div class="goal-list tight">
+            <div class="item"><span class="dot" style="background:var(--water)"></span><span><b>1. Trend, nebo výkyv?</b> Dlouhodobé řady ČHMÚ/InterSucho, ne jen aktuální stav.</span></div>
+            <div class="item"><span class="dot" style="background:var(--water)"></span><span><b>2. Kdo další odebírá?</b> Součet všech nároků na zvodeň, ne jen nárok firmy.</span></div>
+            <div class="item"><span class="dot" style="background:var(--danger)"></span><span><b>3. Dostane firma povolení?</b> Ověřit u vodoprávního úřadu před nákupem pozemku.</span></div>
+            <div class="item"><span class="dot" style="background:var(--accent)"></span><span><b>4. Vztah s komunitou.</b> Reputační riziko i při formálně „legálním" odběru.</span></div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="goal-list tight">
+            <div class="item"><span class="dot" style="background:var(--primary)"></span><span><b>5. Jde snížit spotřeba v návrhu?</b> Uzavřený okruh, recyklace, jiná technologie.</span></div>
+            <div class="item"><span class="dot" style="background:var(--primary)"></span><span><b>6. Existuje alternativa?</b> Jiná lokalita, nebo veřejný vodovod místo vlastního vrtu.</span></div>
+            <div class="item"><span class="dot" style="background:var(--danger)"></span><span><b>7. Dopad na financování.</b> Banky čím dál víc vyžadují posouzení dle TCFD/TNFD.</span></div>
+          </div>
+          <p class="prose tight" style="margin-top:18px; color:var(--ink-soft);">Typická chyba: zůstat jen u otázky „kolik vody hala spotřebuje" (bod 5) a přeskočit sdílený zdroj, povolení, komunitu i financování.</p>
+        </div>
+      </div>
+      <p class="caption" style="margin-top:16px;"><b>TCFD</b> (Task Force on Climate-related Financial Disclosures) a <b>TNFD</b> (Taskforce on Nature-related Financial Disclosures) jsou mezinárodní rámce, podle kterých firmy vykazují klimatická a přírodní rizika investorům a bankám — viz aktivita o Nestlé/CDP dříve v přednášce.</p>
+      <aside class="notes">Shrnutí diskuse z předchozího slidu — promítněte až po té, co studenti navrhli vlastní otázky. Barvy odpovídají typu rizika: modrá = data/hydrologie, červená = regulace/finance, oranžová = reputace, zelená = opatření na straně firmy.</aside>
+    </section>
+
+    <!-- 16 divider 03 -->
+    <section class="divider-slide">
+      <div class="num">03</div>
+      <h2>Uhlíkový cyklus</h2>
+      <p>Biotické a abiotické procesy, izotopy, narušení člověkem</p>
+      <aside class="notes">Čas na téma: cca 30 minut.</aside>
+    </section>
+
+<!-- 17 carbon intro -->
+<section>
+  <div class="kicker">Uhlíkový cyklus · úvod</div>
+  <div class="prose">
+    <p>
+      Uhlík je základním stavebním prvkem
+      <b>sacharidů, lipidů, bílkovin, DNA</b> a dalších organických molekul.
+      Klíčovým rezervoárem v atmosféře je plynný <b>CO₂</b>, který dnes tvoří
+      přibližně <b>0,04 %</b> objemu suchého vzduchu, ale jako skleníkový plyn
+      významně ovlivňuje energetickou bilanci a klima Země.
+    </p>
+    <p style="margin-top:14px;">
+      CO₂ nemá jednotnou dobu setrvání v atmosféře.
+      Po emisi se část odstraní během let až desetiletí, ale část uhlíku
+      zůstává v systému <b>stovky až tisíce let</b> a ovlivňuje klima
+      po velmi dlouhou dobu.
+    </p>
+  </div>
+  <aside class="notes">
+    Propojte se skleníkovým jevem probraným v Bloku 1 — dnes se soustředíme
+    na to, KUDY uhlík mezi jednotlivými rezervoáry putuje, nikoli na samotný
+    mechanismus skleníkového efektu.
+    
+    Důležitá poznámka: u CO₂ nelze mluvit o jediné době setrvání jako
+    u některých jiných plynů. Uhlík se mezi atmosférou, oceánem, biosférou
+    a geologickými rezervoáry redistribuuje v různých časových měřítcích.
+  </aside>
+</section>
+
+<!-- 18 carbon processes -->
+<section>
+  <div class="kicker">Uhlíkový cyklus · procesy</div>
+  <div class="row" style="align-items:stretch; gap:28px;">
+    <div class="col">
+      <div class="compare-panel">
+        <h4>Biotické procesy</h4>
+        <p class="prose tight">
+          <b>Fotosyntéza</b> — producenti fixují CO₂ do organické hmoty
+          pomocí energie světla.
+        </p>
+        <p class="prose tight" style="margin-top:10px;">
+          <b>Dýchání a rozklad</b> — organismy oxidují organickou hmotu;
+          uhlík se při aerobních procesech uvolňuje převážně jako CO₂.
+        </p>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="compare-panel">
+        <h4>Abiotické a geologické procesy</h4>
+        <p class="prose tight">
+          <b>Výměna</b> CO₂ mezi atmosférou a oceánem,
+          <b>rozpouštění a srážení karbonátů</b>,
+          <b>sedimentace</b> a dlouhodobé ukládání uhlíku v sedimentech.
+        </p>
+        <p class="prose tight" style="margin-top:10px;">
+          <b>Spalování fosilních paliv</b> a změny využití půdy
+          představují významné <b>antropogenní zásahy</b> do cyklu.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="formula" style="margin-top:18px;">
+    fotosyntéza:
+    6 CO₂ + 6 H₂O + světlo → C₆H₁₂O₆ + 6 O₂
+    &nbsp;·&nbsp;
+    aerobní dýchání: opačná bilance
+  </p>
+
+  <aside class="notes">
+    Zdůrazněte, že dělení na „biotické“ a „abiotické“ je didaktické zjednodušení.
+    Některé procesy jsou propojené — například tvorba karbonátových sedimentů
+    může být biologicky zprostředkovaná, ale výsledné ukládání uhlíku probíhá
+    v geologickém rezervoáru.
+    
+    U dýchání není vhodné říkat pouze „opačně“, protože fotosyntéza a dýchání
+    nejsou jeden jediný reverzibilní proces. Chemická sumární rovnice je však
+    za daných podmínek přibližně opačná.
+  </aside>
+</section>
+
+<!-- 19 chem ocean acidification link -->
+<section>
+  <div class="tag-label chem">Rozšíření</div>
+  <h3 style="font-size:34px; margin-bottom:14px;">
+    CO₂ ve vodě — výměna s oceánem
+  </h3>
+
+  <div class="chem-slide-panel">
+    <p class="prose tight">
+      CO₂ se mezi atmosférou a oceánem neustále vyměňuje.
+      Po rozpuštění vstupuje do systému
+      <b>CO₂(aq) ⇌ H₂CO₃ ⇌ HCO₃⁻ ⇌ CO₃²⁻</b>,
+      který určuje acidobazickou rovnováhu mořské vody.
+    </p>
+
+    <p class="prose tight" style="margin-top:10px;">
+      Vyšší koncentrace CO₂ posouvá tuto rovnováhu směrem k vyšší koncentraci
+      H⁺, a tím <b>snižuje pH oceánu a dostupnost CO₃²⁻</b> pro tvorbu
+      schránek a skeletů organismů využívajících uhličitan vápenatý.
+    </p>
+
+    <p class="prose tight" style="margin-top:10px;">
+      Část uhlíku se v dlouhém časovém měřítku ukládá v
+      <b>mořských sedimentech</b> jako karbonáty — jde o významný dlouhodobý
+      rezervoár uhlíku.
+    </p>
+  </div>
+
+  <aside class="notes">
+    Krátké připomenutí propojení s tématem okyselování oceánů z Bloku 1.
+    Není potřeba znovu podrobně probírat chemii uhličitanového systému.
+    
+    Zdůrazněte ale důležitou vazbu:
+    více atmosférického CO₂ → více rozpuštěného CO₂ v oceánu →
+    změna uhličitanového systému → pokles pH a koncentrace CO₃²⁻.
+    
+    Pozor na formulaci „CO₂ tvoří kyselinu uhličitou“ — ve vodě jde o celý
+    rovnovážný systém a většina anorganického uhlíku v mořské vodě je ve formě
+    hydrogenuhličitanů.
+  </aside>
+</section>
+
+<!-- 20 chem isotopes -->
+<section>
+  <div class="tag-label chem">Rozšíření</div>
+  <h3 style="font-size:32px; margin-bottom:12px;">
+    Izotopy uhlíku a Suessův efekt
+  </h3>
+
+  <div class="chem-slide-panel">
+    <p class="prose tight">
+      Fosilní paliva vznikla z dávné biomasy. Rostliny při fotosyntéze
+      preferenčně přijímají lehčí <b>¹²C</b> před <b>¹³C</b>.
+      Fosilní uhlík je proto ve srovnání s atmosférickým CO₂ relativně
+      <b>ochuzen o ¹³C</b>.
+    </p>
+
+    <p class="prose tight" style="margin-top:10px;">
+      Protože fosilní paliva jsou miliony let stará, obsahují jen
+      <b>zanedbatelné množství ¹⁴C</b> — radioaktivního izotopu s poločasem
+      přibližně <b>5 730 let</b>.
+    </p>
+
+    <p class="prose tight" style="margin-top:10px;">
+      Spalování fosilních paliv proto přidává do atmosféry CO₂ ochuzený
+      o <b>¹³C a ¹⁴C</b>. Pokles poměru <b>¹³C/¹²C</b> a současné „ředění“
+      atmosférického <b>¹⁴C</b> je známé jako <b>Suessův efekt</b>.
+      Izotopová data poskytují silný důkaz o významném podílu fosilního
+      uhlíku na současném nárůstu atmosférického CO₂.
+    </p>
+  </div>
+
+  <aside class="notes">
+    Volitelné prohloubení pro pokročilejší skupinu.
+    
+    Suessův efekt se původně týká především poklesu poměru ¹⁴C/¹²C
+    v důsledku přidávání „mrtvého“ fosilního uhlíku. Pokles δ¹³C
+    atmosférického CO₂ poskytuje další izotopovou stopu spalování fosilního
+    uhlíku.
+    
+    Izotopové metody se dnes používají k rozlišování fosilního a biogenního
+    uhlíku například při sledování emisí CO₂ nebo při analýze uhlíku
+    v různých environmentálních matricích.
+    
+    Zdroje: Keeling et al. (1979); Graven (2015).
+  </aside>
+</section>
+
+    <!-- 21 data mauna loa -->
+    <section>
+      <div class="tag-label data">Práce s daty</div>
+      <h3 style="font-size:32px; margin-bottom:10px;">Mauna Loa: koncentrace CO₂ v atmosféře</h3>
+      <div class="row middle">
+        <div class="col" style="flex:1.3">
+          <div class="diagram-wrap">
+            <svg viewBox="0 0 640 360" role="img" aria-label="Graf koncentrace CO2 na observatoři Mauna Loa 1960-2024">
+              <line x1="70" y1="20" x2="70" y2="320" stroke="var(--line)" stroke-width="2"/>
+              <line x1="70" y1="320" x2="610" y2="320" stroke="var(--line)" stroke-width="2"/>
+              <text x="60" y="326" text-anchor="end" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">310</text>
+              <text x="60" y="176" text-anchor="end" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">370</text>
+              <text x="60" y="26" text-anchor="end" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">430</text>
+              <text x="70" y="345" text-anchor="middle" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">1960</text>
+              <text x="340" y="345" text-anchor="middle" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">1992</text>
+              <text x="610" y="345" text-anchor="middle" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">2024</text>
+              <polyline points="70,309 145,297 220,278 295,247 370,213 445,172 520,120 595,60" fill="none" stroke="var(--danger)" stroke-width="4"/>
+            </svg>
+          </div>
+          <p class="caption">Schematizovaná křivka (bez sezónního kolísání) podle Keeling Curve, Scripps Institution of Oceanography / UC San Diego.</p>
+        </div>
+        <div class="col">
+          <div class="data-task">
+            <ol>
+              <li>Odhadněte z grafu průměrný nárůst CO₂ v ppm za desetiletí.</li>
+              <li>Porovnejte tempo nárůstu v první a poslední třetině grafu.</li>
+              <li>Co tento trend znamená pro firmu, která plánuje investici s 30letou životností?</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <aside class="notes">
+        Řešení bodů 1–2 (orientačně): nárůst zrychluje — v 60. letech ~0,8 ppm/rok, dnes přes 2 ppm/rok. Křivka je konvexní (zrychlující se), ne lineární — to je klíčové pro bod 3.
+
+        Rozšířená odpověď na otázku 3 („co trend znamená pro firmu s 30letou investicí"): bod je záměrně otevřený, ale diskuse by měla dojít alespoň k těmto rovinám:
+
+        (A) Fyzické klimatické riziko po dobu životnosti aktiva. 30 let je dost dlouho na to, aby se provozní podmínky změnily: vyšší průměrné i špičkové teploty (nároky na chlazení, viz dřívější slide o vodní bilanci a chladicích věžích), změna srážkových vzorců a dostupnosti vody v lokalitě, četnější extrémy (sucho, přívalové srážky). Investice navržená na dnešní klimatické normály může být za 15–20 let poddimenzovaná nebo zranitelnější, než se počítalo při schvalování projektu.
+
+        (B) Tranzitní (regulatorní) riziko. Zrychlující se nárůst CO₂ zvyšuje tlak na přísnější klimatickou politiku — rozšiřování a zpřísňování systémů zpoplatnění emisí (např. EU ETS), nové reportingové povinnosti (CSRD), hraniční uhlíkové mechanismy (CBAM) u dovážených materiálů. Pokud je investice emisně náročná, náklady spojené s uhlíkem se mohou v průběhu životnosti aktiva zvyšovat, a to nelineárně — stejně jako sama křivka CO₂.
+
+        (C) Chyba lineární extrapolace. Protože křivka zrychluje, odhad založený na „dosavadním průměrném tempu" bude systematicky podceňovat budoucí koncentraci CO₂ i pravděpodobnou přísnost regulace. Finanční analogie: počítat s rovnoměrnou (lineární) mírou růstu nákladů na uhlík je stejná chyba, jako ignorovat složené úročení — v praxi to znamená podhodnocení rizika u projektů s dlouhým horizontem.
+
+        (D) Důsledek pro investiční rozhodování. Správný postup není použít jeden „nejpravděpodobnější" scénář, ale otestovat návratnost investice (NPV, payback) proti více klimatickým/regulatorním scénářům najednou (tzv. scénářová analýza v duchu TCFD — viz pozdější slide) — např. scénář mírného a scénář přísného zpřísnění cen uhlíku. Pokud projekt dává finanční smysl jen v optimistickém scénáři, jde o rizikovou (potenciálně „uvízlou" / stranded) investici.
+
+        (E) Propojení s tématy dříve v přednášce: totéž napětí mezi „hrubou" a „čistou" expozicí jako u vodní bilance (slide dříve) — zde je to mezi dnešní emisní náročností projektu a budoucí cenou/regulací uhlíku. Lze také odkázat na scope 1–3 účetnictví (další slide) jako na nástroj, kterým firma svou expozici vůbec kvantifikuje.
+
+        Zdroj dat ke grafu: keelingcurve.ucsd.edu (Scripps Institution of Oceanography, UC San Diego).
+      </aside>
+    </section>
+
+    <!-- 21b two risk examples -->
+    <section>
+      <div class="tag-label data">Otázka 3 · na příkladu</div>
+      <h3 style="font-size:30px; margin-bottom:12px;">Dva typy klimatického rizika u 30leté investice</h3>
+      <div class="row" style="align-items:stretch; gap:26px;">
+        <div class="col">
+          <div class="compare-panel">
+            <h4>🔥 ZEVO (spalovna odpadu)</h4>
+            <p style="font-family:var(--font-mono); font-size:20px; letter-spacing:.04em; text-transform:uppercase; color:var(--danger); margin:0 0 10px 0;">tranzitní (regulatorní) riziko</p>
+            <p style="font-size:20px; line-height:1.35; margin:0;"><b>Dnes:</b> od 2024 jen monitoring emisí, zatím bez odevzdávání povolenek EU ETS.</p>
+            <p style="font-size:20px; line-height:1.35; margin:8px 0 0 0;"><b>Riziko:</b> EU do poloviny 2026 rozhoduje o povinných povolenkách od 2028; počítá se jen fosilní podíl uhlíku (plasty), ne biogenní (papír, bioodpad).</p>
+            <p style="font-size:20px; line-height:1.35; margin:8px 0 0 0;"><b>Důsledek:</b> skokové náklady od 2028 a zároveň úbytek odpadu ke spálení vlivem oběhového hospodářství.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="compare-panel">
+            <h4>💧 Závod chlazený říční vodou</h4>
+            <p style="font-family:var(--font-mono); font-size:20px; letter-spacing:.04em; text-transform:uppercase; color:var(--water); margin:0 0 10px 0;">fyzické riziko</p>
+            <p style="font-size:20px; line-height:1.35; margin:0;"><b>Dnes:</b> chladicí systém navržený na dnešní teploty a dnešní průtok řeky.</p>
+            <p style="font-size:20px; line-height:1.35; margin:8px 0 0 0;"><b>Riziko:</b> vyšší teploty a sezónní sucho snižují dostupnost chladicí vody (viz vodní bilance, slide dříve).</p>
+            <p style="font-size:20px; line-height:1.35; margin:8px 0 0 0;"><b>Důsledek:</b> nucené odstávky v létě a dodatečná investice do chlazení/alternativního zdroje — mimo původní rozpočet.</p>
+          </div>
+        </div>
+      </div>
+      <p class="formula" style="margin-top:16px;">Společný jmenovatel: dnešní podmínky ≠ podmínky za 30 let → nutná scénářová analýza (TCFD), ne jeden odhad</p>
+      <aside class="notes">Tyto dva příklady ilustrují body (A) a (B) z předchozího slidu na konkrétních, kontrastních typech investic — záměrně jeden emisně náročný (tranzitní riziko) a jeden vodně náročný (fyzické riziko), aby bylo vidět, že „klimatické riziko" není jen o emisích. Lze se zeptat studentů, zda umí navrhnout třetí příklad z jiného odvětví a zařadit ho do jedné nebo druhé kategorie (případně do obou najednou).
+
+        ZEVO je zvoleno záměrně i jako most ke slidu „Zamyšlení" o fosilním vs. biogenním uhlíku o pár slidů dál: spalovaný komunální odpad je směs biogenního uhlíku (papír, bioodpad — recentně fixovaný z atmosféry) a fosilního uhlíku (plasty vyrobené z ropy) — proto se v rámci EU ETS metodiky počítá do emisí jen fosilní podíl, ne celkové spálené množství CO₂. To je přesně stejné rozlišení, které se za chvíli objeví u fosilního zemního plynu vs. bioplynu. Zdroj k regulatorní části: veřejná konzultace EU ETS k zahrnutí spaloven komunálního odpadu (konzultace do 8. 7. 2025, legislativní revize Komise do července 2026, cílené zahrnutí od 2028 s možností odkladu pro členské státy do konce 2030).</aside>
+    </section>
+
+<!-- 22 example carbon business -->
+<section>
+  <div class="tag-label example">Příklad z praxe</div>
+  <h3 style="font-size:34px; margin-bottom:14px;">
+    Uhlíkový cyklus a firemní uhlíková stopa
+  </h3>
+
+  <div class="example-panel">
+    <p class="prose tight">
+      Těžba a spalování fosilních paliv přesouvá uhlík z
+      <b>dlouhodobého geologického rezervoáru</b> do aktivního uhlíkového
+      cyklu. Uhlík uložený miliony let se tak během desetiletí dostává
+      především do atmosféry jako <b>CO₂</b>.
+    </p>
+
+    <p class="prose tight" style="margin-top:12px;">
+      Přirozené procesy část tohoto CO₂ pohlcují — zejména oceán a pevninská
+      biosféra — ale <b>nestačí absorbovat veškeré antropogenní emise</b>.
+      Výsledkem je růst koncentrace CO₂ v atmosféře.
+    </p>
+
+    <p class="prose tight" style="margin-top:12px;">
+      <b>Firemní uhlíková stopa</b> proto zachycuje emise skleníkových plynů
+      spojené s činností firmy a jejím hodnotovým řetězcem:
+      <b>Scope 1, 2 a 3</b>. Emise se obvykle vyjadřují jako
+      <b>CO₂ ekvivalent (CO₂e)</b>.
+    </p>
+  </div>
+
+  <aside class="notes">
+    Důležitý most mezi přírodním cyklem a podnikovým pohledem.
+
+    Neříkat, že firma „uvolňuje uhlík z propadu“ přímo ve všech Scope 1–3.
+    Scope 1–3 je účetní rámec pro emise skleníkových plynů v celém
+    hodnotovém řetězci, nikoli pouze pro tok uhlíku z fosilních zásob.
+
+    Zdůraznit časový nesoulad:
+    fosilní uhlík byl uložen miliony let, ale jeho spalováním se do
+    atmosféry dostává během velmi krátké doby.
+
+    Uhlíkový cyklus přitom pokračuje — část antropogenního CO₂ je přijímána
+    oceánem a pevninskou biosférou. Tyto přirozené sinky však neodstraňují
+    všechny současné emise a zároveň mají vlastní limity a zpětné vazby.
+
+    Scope 1 = přímé emise ze zdrojů vlastněných nebo kontrolovaných firmou.
+    Scope 2 = nepřímé emise spojené s nakoupenou energií.
+    Scope 3 = ostatní nepřímé emise v hodnotovém řetězci.
+  </aside>
+</section>
+
+
+<!-- 22b carbon types -->
+<section>
+  <div class="tag-label chem">Chemická pointa</div>
+  <h3 style="font-size:34px; margin-bottom:14px;">
+    Fosilní × biogenní uhlík
+  </h3>
+
+  <div class="row" style="align-items:stretch; gap:28px;">
+
+    <div class="col">
+      <div class="compare-panel">
+        <h4>Fosilní uhlík</h4>
+        <p class="prose tight">
+          Uhlík uložený v geologických rezervoárech po
+          <b>miliony let</b>.
+        </p>
+        <p class="prose tight" style="margin-top:10px;">
+          Spalováním se přesouvá do aktivního cyklu a zvyšuje množství
+          atmosférického CO₂.
+        </p>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="compare-panel">
+        <h4>Biogenní uhlík</h4>
+        <p class="prose tight">
+          Uhlík, který byl relativně nedávno fixován z atmosférického CO₂
+          do biomasy.
+        </p>
+        <p class="prose tight" style="margin-top:10px;">
+          Jeho spalování je součástí <b>rychlého uhlíkového cyklu</b> —
+          neznamená však automaticky nulový klimatický dopad.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="formula" style="margin-top:18px;">
+    Klíčový rozdíl: <b>odkud uhlík pochází a v jakém časovém měřítku
+    mezi rezervoáry cirkuluje</b>.
+  </p>
+
+  <aside class="notes">
+    Tento slide je důležitý pro pochopení následující otázky.
+
+    Biogenní CO₂ ze spalování biomasy je součástí krátkého uhlíkového cyklu:
+    uhlík byl předtím odebrán z atmosféry fotosyntézou. U fosilních paliv
+    dochází k přesunu uhlíku z geologického rezervoáru do aktivního systému.
+
+    Pozor: „biogenní“ neznamená automaticky „klimaticky neutrální“.
+    Záleží například na obnovitelnosti biomasy, změně využití půdy,
+    době obnovy zásoby uhlíku a souvisejících emisích CH₄ a N₂O.
+
+    U odpadu z biomasy může být argument pro biogenní původ velmi silný,
+    protože jde o uhlík, který již byl součástí krátkého cyklu.
+    I zde je však nutné posuzovat celý systém a časové hranice hodnocení.
+  </aside>
+</section>
+
+
+<!-- 23 think carbon -->
+<section class="think-slide">
+  <div class="tag-label think">Zamyšlení</div>
+
+  <p class="question">
+    Dvě firmy vykazují stejné množství emisí CO₂ ze spalování:
+    jedna spaluje <b>fosilní zemní plyn</b>, druhá
+    <b>bioplyn z odpadní biomasy</b>.
+    Jsou jejich účinky na uhlíkový cyklus stejné?
+    A proč na tom může záležet při hodnocení firmy?
+  </p>
+
+  <aside class="notes">
+    Nechte studenty nejprve argumentovat bez nápovědy.
+
+    Očekávaná úvaha:
+    - fosilní zemní plyn přesouvá geologický uhlík do aktivního cyklu,
+    - uhlík v bioplynu z biomasy je součástí rychlého biologického cyklu,
+    - samotné množství CO₂ na výstupu proto nevystihuje celý příběh.
+
+    Následně otevřete otázku:
+    „Znamená to, že bioplyn má nulový dopad?“
+
+    Ne. Je třeba zohlednit původ biomasy, alternativní využití odpadu,
+    úniky CH₄, emise při produkci a zpracování, dopravu a případné změny
+    využití půdy.
+
+    Tím lze přirozeně přejít od samotného uhlíkového cyklu k
+    životnímu cyklu produktu a k principu, že uhlíková stopa není totéž
+    co množství CO₂ vzniklé při jednom konkrétním procesu.
+  </aside>
+</section>
+
+<!-- 23b think carbon answer -->
+<section>
+  <div class="kicker">Fosilní plyn × bioplyn · odpověď</div>
+  <h3 style="font-size:30px; margin-bottom:10px;">Stejné CO₂ na výstupu, jiná cesta uhlíku</h3>
+  <div class="row" style="align-items:stretch; gap:26px;">
+    <div class="col">
+      <div class="diagram-wrap" style="padding:10px;">
+        <svg viewBox="0 0 420 150" role="img" aria-label="Schéma uzavřeného cyklu uhlíku u bioplynu">
+          <defs>
+            <marker id="b1" markerWidth="11" markerHeight="11" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="var(--primary)"/></marker>
+          </defs>
+          <rect x="15" y="45" width="155" height="60" rx="12" fill="var(--water-soft)" stroke="var(--water)" stroke-width="2"/>
+          <text x="92" y="80" text-anchor="middle" font-size="20" fill="var(--ink)" font-family="var(--font-body)">Atmosféra CO₂</text>
+          <rect x="250" y="45" width="155" height="60" rx="12" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2"/>
+          <text x="327" y="73" text-anchor="middle" font-size="20" fill="var(--ink)" font-family="var(--font-body)">Biomasa</text>
+          <text x="327" y="95" text-anchor="middle" font-size="20" fill="var(--ink)" font-family="var(--font-body)">(rostliny, odpad)</text>
+          <path d="M175,55 C 220,15 250,15 262,42" stroke="var(--primary)" stroke-width="3.5" fill="none" marker-end="url(#b1)"/>
+          <path d="M250,108 C 220,145 200,145 168,112" stroke="var(--primary)" stroke-width="3.5" fill="none" marker-end="url(#b1)"/>
+        </svg>
+      </div>
+      <p class="caption" style="text-align:center; margin-top:6px;">Uzavřená smyčka — uhlík byl před nedávnem z atmosféry odebrán fotosyntézou.</p>
+      <div class="compare-panel" style="margin-top:8px; padding:14px 20px;">
+        <h4 style="font-size:23px; margin-bottom:6px;">🌱 Bioplyn z odpadní biomasy</h4>
+        <p style="font-size:20px; line-height:1.3; margin:0;">Uhlík patří do <b>rychlého biologického cyklu</b> — spalováním se vrací tam, odkud byl nedávno vzat. Čistý dopad na CO₂ v atmosféře je blízký nule.</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="diagram-wrap" style="padding:10px;">
+        <svg viewBox="0 0 420 150" role="img" aria-label="Schéma otevřeného přísunu uhlíku u fosilního plynu">
+          <defs>
+            <marker id="f1" markerWidth="11" markerHeight="11" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="var(--danger)"/></marker>
+          </defs>
+          <rect x="15" y="45" width="175" height="60" rx="12" fill="var(--surface-3)" stroke="var(--ink-muted)" stroke-width="2" stroke-dasharray="6 5"/>
+          <text x="102" y="73" text-anchor="middle" font-size="20" fill="var(--ink)" font-family="var(--font-body)">Geologický</text>
+          <text x="102" y="95" text-anchor="middle" font-size="20" fill="var(--ink)" font-family="var(--font-body)">rezervoár</text>
+          <rect x="250" y="45" width="155" height="60" rx="12" fill="var(--water-soft)" stroke="var(--water)" stroke-width="2"/>
+          <text x="327" y="80" text-anchor="middle" font-size="20" fill="var(--ink)" font-family="var(--font-body)">Atmosféra CO₂</text>
+          <path d="M194,66 L246,66" stroke="var(--danger)" stroke-width="4" fill="none" marker-end="url(#f1)"/>
+          <path d="M246,100 L194,100" stroke="var(--ink-muted)" stroke-width="2.5" fill="none" stroke-dasharray="4 5"/>
+          <text x="220" y="126" text-anchor="middle" font-size="20" fill="var(--ink-muted)" font-family="var(--font-body)">✕ bez návratu</text>
+        </svg>
+      </div>
+      <p class="caption" style="text-align:center; margin-top:6px;">Jednosměrná cesta — žádný tok uhlík zpátky „pod zem" neodvádí.</p>
+      <div class="compare-panel" style="margin-top:8px; padding:14px 20px;">
+        <h4 style="font-size:23px; margin-bottom:6px;">⛽ Fosilní zemní plyn</h4>
+        <p style="font-size:20px; line-height:1.3; margin:0;">Uhlík pochází z <b>geologického propadu</b> izolovaného miliony let. Spalováním se přidává <b>nový</b> uhlík — čistý nárůst CO₂ v atmosféře.</p>
+      </div>
+    </div>
+  </div>
+  <p class="formula" style="margin-top:12px;">Stejné číslo na komíně ≠ stejný dopad na uhlíkový cyklus → GHG Protocol proto účtuje biogenní a fosilní CO₂ odděleně</p>
+  <aside class="notes">
+    Pozor na mylný závěr „bioplyn = nulový dopad" — nechte zaznít i druhou polovinu diskuse z předchozího slidu: je potřeba zohlednit původ biomasy, alternativní využití odpadu, úniky CH₄ při skladování/výrobě, emise z dopravy a zpracování a případnou změnu využití půdy. Diagram zjednodušuje jádro principu (rychlý vs. pomalý cyklus), ne celý životní cyklus produktu.
+
+    Přímé propojení s dřívějším slidem o ZEVO: tatáž logika (fosilní vs. biogenní podíl uhlíku) je důvod, proč se v EU ETS u spaloven odpadu počítá jen fosilní část (plasty), ne biogenní (papír, bioodpad).
+  </aside>
+</section>
+
+<!-- 24 shrnuti -->
+<section>
+  <div class="kicker">Shrnutí</div>
+
+  <div class="prose">
+    <p>
+      <b>Energie ekosystémem proudí jednosměrně, zatímco chemické prvky mezi jeho rezervoáry cyklicky obíhají.</b>
+      Hydrologický a uhlíkový cyklus propojují atmosféru, hydrosféru,
+      biosféru a geosféru — každý z nich má však vlastní procesy
+      a časová měřítka.
+    </p>
+
+    <p style="margin-top:14px;">
+      Člověk mění rychlost a směr některých toků:
+      odebírá vodu, mění její odtok a dostupnost a u uhlíkového cyklu
+      především <b>urychluje přesun uhlíku z dlouhodobých geologických
+      rezervoárů do aktivního cyklu</b>.
+    </p>
+
+    <p style="margin-top:14px;">
+      <b>Příště: Toky látek a energie II</b> —
+      cykly dusíku, síry a fosforu a případová studie
+      <b>Plešné jezero</b>.
+    </p>
+  </div>
+
+  <aside class="notes">
+    Závěrečná otázka pro studenty:
+    „Která část dnešní přednášky vám nejlépe ukázala, že voda a uhlík
+    nejsou jen izolované cykly, ale propojené systémy?“
+
+    Připomeňte studentům, že v semináři budou pracovat s reálnými daty
+    a aplikovat koncept bilance na konkrétní environmentální problém.
+
+    Pokračování: seminar-3.html.
+  </aside>
+</section>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/notes/notes.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    width: 1280,
+    height: 720,
+    margin: 0.04,
+    minScale: 0.2,
+    maxScale: 2,
+    controls: true,
+    progress: true,
+    slideNumber: 'c/t',
+    plugins: [ RevealNotes ]
+  });
+
+  document.querySelectorAll('.flip-card').forEach(function (card) {
+    card.addEventListener('click', function () { card.classList.toggle('flipped'); });
+  });
+</script>
+</body>
+</html>

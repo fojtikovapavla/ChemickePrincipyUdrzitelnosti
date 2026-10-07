@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seminář 3 — Toky látek a energie I</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <!-- 1 cover -->
+    <section class="cover-slide">
+      <div>
+        <div class="eyebrow">Chemické principy a udržitelnost</div>
+        <h1>Toky látek a energie v praxi I</h1>
+        <p class="sub">Kvíz k opakování, práce s daty a čtyři skupinové úlohy</p>
+      </div>
+      <div class="foot"><div class="bar"></div><span>Seminář 3 · Blok 1</span></div>
+      <aside class="notes">Navazuje na prednaska-3.html. Rozvržení: 10 min kvíz, 15 min práce s daty (výpočet + graf), 55 min skupinová práce, 30 min prezentace, 10 min shrnutí.</aside>
+    </section>
+
+    <!-- 2 quiz1 -->
+    <section>
+      <div class="quiz-block" data-answer="b">
+        <div class="quiz-q"><span class="qn">1</span>Které čtyři hlavní sféry tvoří systém Země?</div>
+        <div class="quiz-options">
+          <button class="quiz-opt3" data-key="a">Atmosféra, hydrosféra, biosféra, litosféra</button>
+          <button class="quiz-opt3" data-key="b">Atmosféra, hydrosféra, geosféra, biosféra</button>
+          <button class="quiz-opt3" data-key="c">Atmosféra, hydrosféra, magnetosféra, biosféra</button>
+        </div>
+        <div class="quiz-feedback3" hidden>Geosféra zahrnuje horniny, půdu a sedimenty — magnetosféra ani litosféra samotná nejsou v tomto základním čtyřdílném dělení.</div>
+      </div>
+    </section>
+
+    <!-- 3 quiz2 -->
+    <section>
+      <div class="quiz-block" data-answer="c">
+        <div class="quiz-q"><span class="qn">2</span>Jaká je hlavní složka atmosféry podle objemu?</div>
+        <div class="quiz-options">
+          <button class="quiz-opt3" data-key="a">Kyslík</button>
+          <button class="quiz-opt3" data-key="b">Oxid uhličitý</button>
+          <button class="quiz-opt3" data-key="c">Dusík</button>
+        </div>
+        <div class="quiz-feedback3" hidden>Dusík tvoří 78 % objemu atmosféry, kyslík 21 %, CO₂ jen asi 0,04 %.</div>
+      </div>
+    </section>
+
+    <!-- 4 quiz3 -->
+    <section>
+      <div class="quiz-block" data-answer="b">
+        <div class="quiz-q"><span class="qn">3</span>Který proces kombinuje odpařování vody z povrchů a transpiraci rostlin?</div>
+        <div class="quiz-options">
+          <button class="quiz-opt3" data-key="a">Kondenzace</button>
+          <button class="quiz-opt3" data-key="b">Evapotranspirace</button>
+          <button class="quiz-opt3" data-key="c">Precipitace (srážky)</button>
+        </div>
+        <div class="quiz-feedback3" hidden>Evapotranspirace = evaporace (výpar z povrchů) + transpirace (výdej vody rostlinami).</div>
+      </div>
+    </section>
+
+    <!-- 5 quiz4 -->
+    <section>
+      <div class="quiz-block" data-answer="c">
+        <div class="quiz-q"><span class="qn">4</span>Jaký podíl světových zásob vody je člověku přímo dostupný jako tekutá sladká voda?</div>
+        <div class="quiz-options">
+          <button class="quiz-opt3" data-key="a">Přibližně 24 %</button>
+          <button class="quiz-opt3" data-key="b">Přibližně 2,4 %</button>
+          <button class="quiz-opt3" data-key="c">Přibližně 0,024 %</button>
+        </div>
+        <div class="quiz-feedback3" hidden>Zbytek je slaný, zamrzlý, nebo příliš hluboko pod zemí na dostupnou těžbu.</div>
+      </div>
+    </section>
+
+    <!-- 6 quiz5 -->
+    <section>
+      <div class="quiz-block" data-answer="b">
+        <div class="quiz-q"><span class="qn">5</span>Který biotický proces je klíčový pro fixaci uhlíku v biomase?</div>
+        <div class="quiz-options">
+          <button class="quiz-opt3" data-key="a">Dýchání</button>
+          <button class="quiz-opt3" data-key="b">Fotosyntéza</button>
+          <button class="quiz-opt3" data-key="c">Spalování</button>
+        </div>
+        <div class="quiz-feedback3" hidden>Fotosyntéza váže atmosférický CO₂ do organické hmoty; dýchání a spalování ho naopak uvolňují zpět.</div>
+      </div>
+    </section>
+
+    <!-- 7 quiz6 true/false -->
+    <section>
+      <div class="quiz-block" data-answer="ne">
+        <div class="quiz-q"><span class="qn">6</span>Tvrzení: „Fotosyntéza je abiotický proces, při kterém se uhlík uvolňuje do atmosféry."</div>
+        <div class="quiz-options">
+          <button class="quiz-opt3" data-key="ano">Pravda</button>
+          <button class="quiz-opt3" data-key="ne">Nepravda</button>
+        </div>
+        <div class="quiz-feedback3" hidden>Nepravda ve dvou bodech: fotosyntéza je biotický proces (provádí ji živé organismy) a uhlík jím naopak z atmosféry odebírá, nikoli uvolňuje.</div>
+      </div>
+    </section>
+
+    <!-- 8 quiz7 true/false -->
+    <section>
+      <div class="quiz-block" data-answer="ne">
+        <div class="quiz-q"><span class="qn">7</span>Tvrzení: „Atmosféra obsahuje více než 70 % kyslíku."</div>
+        <div class="quiz-options">
+          <button class="quiz-opt3" data-key="ano">Pravda</button>
+          <button class="quiz-opt3" data-key="ne">Nepravda</button>
+        </div>
+        <div class="quiz-feedback3" hidden>Nepravda — přes 70 % tvoří dusík (78 %), kyslíku je jen 21 %.</div>
+      </div>
+    </section>
+
+    <!-- 9 calc water balance -->
+    <section>
+      <div class="tag-label calc">Krátký výpočet</div>
+      <h3 style="font-size:34px; margin-bottom:14px;">Vodní bilance povodí</h3>
+      <div class="calc-panel">
+        <p class="prose tight">Povodí, kde firma plánuje odběr vody, přijme ročně v průměru 900 mm srážek (S<sub>p</sub>). Výpar a transpirace (E<sub>p</sub>) odpovídají 500 mm.</p>
+        <p class="formula">O = S<sub>p</sub> − E<sub>p</sub> = 900 − 500 = 400 mm/rok</p>
+        <p class="prose tight">Po odlesnění části povodí klesne transpirace a výpar na 420 mm — přepočítejte nový odtok O a vysvětlete, proč se zvýšil, přestože srážky zůstaly stejné.</p>
+      </div>
+      <aside class="notes">Řešení: nový odtok O = 900 − 420 = 480 mm/rok, tedy +80 mm/rok (+20 %). Odlesnění snižuje transpirační ztrátu vody, takže víc srážek odtéká povrchově místo aby se vrátilo do atmosféry — to zvyšuje riziko lokálních povodní a snižuje doplňování podzemní vody. Vazba na formuli z přednášky (E<sub>p</sub> = S<sub>p</sub> − O).</aside>
+    </section>
+
+    <!-- 10 data mauna loa seminar -->
+    <section>
+      <div class="tag-label data">Práce s daty</div>
+      <h3 style="font-size:32px; margin-bottom:10px;">Uhlíkový rozpočet firmy a trend CO₂</h3>
+      <div class="row middle">
+        <div class="col" style="flex:1.3">
+          <div class="diagram-wrap">
+            <svg viewBox="0 0 640 340" role="img" aria-label="Graf koncentrace CO2 na observatoři Mauna Loa 1960-2024">
+              <line x1="70" y1="20" x2="70" y2="300" stroke="var(--line)" stroke-width="2"/>
+              <line x1="70" y1="300" x2="610" y2="300" stroke="var(--line)" stroke-width="2"/>
+              <text x="60" y="306" text-anchor="end" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">310</text>
+              <text x="60" y="166" text-anchor="end" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">370</text>
+              <text x="60" y="26" text-anchor="end" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">430</text>
+              <text x="70" y="325" text-anchor="middle" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">1960</text>
+              <text x="340" y="325" text-anchor="middle" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">1992</text>
+              <text x="610" y="325" text-anchor="middle" font-size="20" fill="var(--ink-muted)" font-family="var(--font-mono)">2024</text>
+              <polyline points="70,289 145,278 220,260 295,231 370,199 445,161 520,113 595,56" fill="none" stroke="var(--danger)" stroke-width="4"/>
+            </svg>
+          </div>
+          <p class="caption">Schematizovaná Keeling Curve (Scripps/UCSD) — stejný graf jako v přednášce.</p>
+        </div>
+        <div class="col">
+          <p class="prose tight" style="margin-bottom:10px;">Firma se zavázala snižovat emise v souladu s cílem udržet oteplení pod 1,5–2 °C (Paříž).</p>
+          <div class="data-task" style="padding:20px 26px;">
+            <ol style="font-size:24px;">
+              <li>Z tvaru křivky odhadněte, zda tempo nárůstu CO₂ zrychluje, zpomaluje, nebo je konstantní.</li>
+              <li>Co to znamená pro strmost snižovací trajektorie firmy?</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <aside class="notes">Řešení: křivka zrychluje (konvexní tvar) — pokud globální emise stále rostou, dostupný „uhlíkový rozpočet" se vyčerpává rychleji, než lineární extrapolace napovídá, takže firemní snižovací trajektorie musí být strmější, čím déle se start odkládá. Dobrý most k tématu science-based targets (SBTi).</aside>
+    </section>
+
+    <!-- 11 group work intro -->
+    <section class="divider-slide">
+      <div class="num">→</div>
+      <h2>Skupinová práce</h2>
+      <p>1 scénář na skupinu</p>
+      <aside class="notes">Časté úskalí: studenti zůstávají u obecných odpovědí. Ptejte se cíleně na mechanismus a na to, odkud by data pocházela.</aside>
+    </section>
+
+    <!-- 12 task water risk -->
+    <section>
+      <div class="task-slide-head">
+        <div class="task-swatch" style="background:var(--water)"></div>
+        <div><div class="task-kind">Skupina · Hydrologický cyklus</div><h3 style="font-size:34px;">Nová hala v povodí se sníženou hladinou podzemní vody</h3></div>
+      </div>
+      <p class="scenario-text">Firma plánuje novou výrobní halu v povodí, kde místní zemědělci už dnes hlásí pokles hladiny podzemní vody. Provoz haly bude vyžadovat trvalý odběr vody na chlazení.</p>
+      <ol class="task-steps">
+        <li>Vyjmenujte alespoň tři způsoby, jakými hala sama může vodní cyklus v povodí dál narušit (zpevněné plochy, odběr, odpadní voda…).</li>
+        <li>Popište, jak byste sestavili orientační vodní bilanci lokality ještě před výstavbou.</li>
+        <li>Navrhněte alespoň dvě opatření, která by snížila konflikt se zemědělci o vodu.</li>
+      </ol>
+      <div class="data-hint2">Podklad: hydrologická rovnice E = S − O z přednášky; data o vodním stresu regionu lze najít např. v nástroji WRI Aqueduct Water Risk Atlas nebo v datech ČHMÚ.</div>
+      <aside class="notes">
+        Vzorové řešení (orientačně, 15–20 min na skupinu):
+
+        Bod 1 — tři (a více) způsoby narušení cyklu: (a) zpevněné plochy (parkoviště, střechy, přístupové komunikace) zvyšují povrchový odtok a snižují infiltraci do podzemní vody — přesně mechanismus z dřívějšího slidu „tři způsoby, jak člověk mění vodní cyklus"; (b) trvalý odběr vody na chlazení dál snižuje hladinu už tak podtékané zvodně; (c) vypouštění ohřáté/znečištěné chladicí vody mění teplotu a kvalitu vody v recipientu po proudu; (d) volitelně — odstranění vegetace při výstavbě snižuje transpiraci a mění místní mikroklima.
+
+        Bod 2 — postup orientační vodní bilance lokality: (i) odhadnout hrubý odběr (m³/den) podle technologie; (ii) rozdělit na vrácenou vodu (po čištění zpět do recipientu), odpařenou (chladicí věže) a vázanou (v produktu/odpadu) — jen (ii)+(iii) je skutečná zátěž povodí, ne celý hrubý odběr; (iii) porovnat s dlouhodobým průtokem/doplňováním zdroje a se součtem všech ostatních odběratelů (zemědělci, obec); (iv) zohlednit sezónnost — kritický je stav v nejsušším období, ne roční průměr. Toto přesně kopíruje schéma „4 okruhy údajů" z přednášky (provoz, zdroj/povodí, sdílený kontext, regulace).
+
+        Bod 3 — opatření ke snížení konfliktu: uzavřený okruh chlazení nebo recyklace procesní vody (snižuje spotřebované množství při stejném hrubém odběru — viz navazující otázka z přednášky), posun/omezení odběru mimo nejsušší měsíce, alternativní zdroj (dešťová voda, napojení na veřejný vodovod místo vlastního vrtu), a transparentní sdílení dat o odběru s místní komunitou/zemědělci jako prevence reputačního rizika.
+
+        Časté mezery v odpovědích skupin: zapomínají na rozdíl hrubý odběr vs. spotřebované množství (bod 2) a na reputační/sociální rozměr (bod 3) — soustředí se jen na technické řešení.
+      </aside>
+    </section>
+
+    <!-- 13 task carbon land use -->
+    <section>
+      <div class="task-slide-head">
+        <div class="task-swatch" style="background:var(--danger)"></div>
+        <div><div class="task-kind">Skupina · Uhlíkový cyklus</div><h3 style="font-size:34px;">Změna využití půdy v dodavatelském řetězci</h3></div>
+      </div>
+      <p class="scenario-text">Potravinářská firma zjistí, že část její sóji pochází z oblasti, kde byl před pěti lety vykácen původní les kvůli rozšíření polí.</p>
+      <ol class="task-steps">
+        <li>Vysvětlete, proč se odlesnění počítá jako emise CO₂, i když se nic „nespálilo" přímo ve firmě.</li>
+        <li>Popište rozdíl mezi „rychlým" biosférickým cyklem uhlíku a „pomalým" geologickým propadem — kam patří tento případ?</li>
+        <li>Navrhněte, jak by firma mohla podobné riziko v dodavatelském řetězci odhalit dřív, než k odlesnění dojde.</li>
+      </ol>
+      <div class="data-hint2">Podklad: nařízení EU o odlesňování (EUDR) a jeho požadavky na geolokaci pozemků; databáze změn lesního pokryvu (např. Global Forest Watch).</div>
+      <aside class="notes">
+        Vzorové řešení (orientačně, 15–20 min na skupinu):
+
+        Bod 1 — proč se odlesnění počítá jako emise, i když se „nic nespálilo" u firmy: kácení uvolňuje uhlík uložený v biomase a půdě (ať už spálením, nebo postupným rozkladem), a zároveň natrvalo odstraňuje budoucí kapacitu fotosyntézy daný uhlík znovu zachytávat. Obojí se účtuje jako emise v okamžiku změny využití půdy — v GHG Protokolu jde o nepřímou (scope 3) emisi v dodavatelském řetězci, konkrétně kategorii změny využití půdy (land-use change / FLAG).
+
+        Bod 2 — rychlý biosférický cyklus vs. pomalý geologický propad: tento případ patří do rychlého biosférického cyklu, ne do geologického propadu jako fosilní paliva (viz slide dříve v přednášce). Rozdíl je zásadní pro „reverzibilitu": les může teoreticky dorůst a uhlík znovu zachytit během desetiletí, zatímco uhlík uvolněný spálením fosilních paliv se vrací do pomalého geologického cyklu prakticky nevratně (v lidském časovém měřítku). To ale neznamená, že odlesnění je „v pořádku" — jen že má jinou dynamiku a jiné možnosti nápravy (zalesňování, regenerativní zemědělství) než fosilní emise.
+
+        Bod 3 — jak riziko odhalit dřív: geolokace pozemků dodavatelů a porovnání se satelitními daty o změnách lesního pokryvu (Global Forest Watch, umožňuje i automatická upozornění/alerts na nové odlesnění v okolí farem dodavatele); požadavek na doložení řetězce původu (traceability) až na úroveň pozemku, ne jen země/regionu; stanovení jasného cut-off data v nákupní politice (po tomto datu odlesněná půda = nepřijatelný zdroj) — přesně princip, na kterém je postavené EUDR; případně certifikační schémata (např. RTRS pro sóju).
+
+        Most k přednášce: toto je stejná logika jako u příkladu ZEVO a biogenní/fosilní uhlík — rozlišujeme, ODKUD uhlík pochází a jak rychle se může vrátit, ne jen kolik ho je na výstupu.
+      </aside>
+    </section>
+
+    <!-- 14 task natural capital -->
+    <section>
+      <div class="task-slide-head">
+        <div class="task-swatch" style="background:var(--primary)"></div>
+        <div><div class="task-kind">Skupina · Přírodní kapitál</div><h3 style="font-size:34px;">Na čem firma závisí, aniž by to vlastnila</h3></div>
+      </div>
+      <p class="scenario-text">Zemědělský podnik pěstující ovoce zjišťuje, že výnosy v posledních letech kolísají, a chce poprvé zmapovat svou závislost na „přírodním kapitálu" pro interní ESG report.</p>
+      <ol class="task-steps">
+        <li>Vyjmenujte alespoň tři ekosystémové služby (toky energie/látek), na kterých je podnik přímo závislý.</li>
+        <li>Pro každou navrhněte jeden jednoduchý ukazatel, kterým by šlo její stav sledovat v čase.</li>
+        <li>Vysvětlete, proč je pro investora rozdíl mezi „firma vlastní pozemek" a „firma vlastní/kontroluje přírodní kapitál, na kterém pozemek stojí".</li>
+      </ol>
+      <div class="data-hint2">Podklad: rámec TNFD (Taskforce on Nature-related Financial Disclosures), koncept ekosystémových služeb (opylení, koloběh živin, retence vody).</div>
+      <aside class="notes">
+        Vzorové řešení (orientačně, 15–20 min na skupinu):
+
+        Bod 1 — tři ekosystémové služby, na kterých ovocný sad přímo závisí: (a) opylení (hmyzí opylovači — bez nich výrazně nižší nasazení plodů u většiny ovocných dřevin); (b) koloběh živin a kvalita půdy (půdní mikroorganismy a organická hmota drží úrodnost a schopnost zadržet vodu); (c) regulace mikroklimatu a vodní režim (okolní vegetace/mokřady tlumí teplotní extrémy a pozdní mrazy, ovlivňují dostupnost vody pro zavlažování). Volitelně lze zmínit i přirozenou regulaci škůdců predátory.
+
+        Bod 2 — jednoduché ukazatele ke sledování v čase: pro opylení — početnost/diverzita opylovačů v sadu (např. jednoduché transektové sčítání, nebo podíl květů s úspěšným nasazením plodu); pro půdu — obsah organické hmoty v půdě a infiltrace vody (lze měřit opakovaně na stejných místech v čase); pro mikroklima/vodu — počet mrazových dní, vlhkost půdy v kritických obdobích, nebo jen jednoduše výnos na hektar v čase jako souhrnný (ale méně diagnostický) ukazatel. Důležité je, aby ukazatel šlo sledovat opakovaně stejnou metodou — jinak není srovnatelný rok od roku.
+
+        Bod 3 — proč je pro investora rozdíl mezi vlastnictvím pozemku a vlastnictvím/kontrolou přírodního kapitálu: pozemek jako fyzické aktivum zůstává v účetnictví stejný bez ohledu na to, co se děje s opylovači nebo půdní úrodností v okolí — ale hodnota/výnosnost podniku na tomto pozemku na těchto službách přímo závisí, a firma je zpravidla NEKONTROLUJE (opylovači se pohybují i mimo pozemek, kvalita půdy se může zhoršovat vlivem okolního hospodaření). Jde tedy o riziko neviditelné v běžné rozvaze — přesně typ závislosti, který má podle TNFD firma identifikovat a vykazovat, protože bez něj investor podstatnou část rizika byznysu nevidí.
+
+        Navazuje na slide „Přírodní kapitál v manažerském jazyce" a na aktivitu s Nestlé/CDP z přednášky — zde je stejný princip aplikovaný na malý podnik, ne nadnárodní korporaci.
+      </aside>
+    </section>
+
+    <!-- 15 task carbon budget data -->
+    <section>
+      <div class="task-slide-head">
+        <div class="task-swatch" style="background:var(--accent)"></div>
+        <div><div class="task-kind">Skupina · Práce s daty</div><h3 style="font-size:34px;">Čtení dlouhodobého trendu</h3></div>
+      </div>
+      <p class="scenario-text">Investiční výbor firmy má rozhodnout o 25leté investici do zařízení závislého na klimaticky stabilních podmínkách (např. zavlažovací systém navržený na dnešní srážkové normály).</p>
+      <ol class="task-steps">
+        <li>Na základě grafu Mauna Loa z předchozího slidu odhadněte, o kolik ppm CO₂ pravděpodobně vzroste do konce životnosti investice.</li>
+        <li>Diskutujte, proč samotné ppm CO₂ výboru nestačí — jaká další data by potřeboval (teplota, srážkové scénáře, extrémy)?</li>
+        <li>Navrhněte, jak by se dalo rozhodnutí „otestovat" proti víc než jednomu klimatickému scénáři.</li>
+      </ol>
+      <div class="data-hint2">Podklad: IPCC scénáře (SSP/RCP), Keeling Curve (keelingcurve.ucsd.edu), národní klimatické projekce (např. ČHMÚ, CHMI klimatická služba).</div>
+      <aside class="notes">
+        Vzorové řešení (orientačně, 15–20 min na skupinu):
+
+        Bod 1 — odhad nárůstu ppm za 25 let: současné tempo je přes 2 ppm/rok a dál zrychluje (viz graf — konvexní, ne lineární tvar). Hrubý lineární odhad „25 let × ~2,5 ppm" dává cca 60–65 ppm, ale protože křivka zrychluje, realistický odhad je spíš vyšší — klíčové je, aby skupina sama došla k tomu, že lineární extrapolace podceňuje výsledek (stejný bod jako v rozšířené odpovědi na otázku 3 z přednášky).
+
+        Bod 2 — proč samotné ppm nestačí: koncentrace CO₂ je globální číslo, ale dopad na konkrétní investici je lokální a mnohorozměrný — potřeba je (a) lokální/regionální teplotní projekce (ne globální průměr), (b) změna SEZÓNNOSTI a rozložení srážek, ne jen roční úhrn (zavlažovací systém navržený na „stejný roční úhrn, ale jinak rozložený" může za sucha selhat), (c) četnost a intenzita extrémů (přívalové srážky, vlny sucha) — infrastruktura obvykle selhává na špičkách, ne na průměru. Dobré srovnání s kalkulací vodní bilance ze slidu dříve v semináři: tam šlo o rozdíl hrubý/spotřebovaný tok, tady o rozdíl průměr/extrém.
+
+        Bod 3 — jak otestovat rozhodnutí proti více scénářům: spočítat návratnost (NPV, payback) investice zvlášť pro minimálně dva–tři klimatické scénáře (např. IPCC SSP1-2.6 „mírný" vs. SSP5-8.5 „vysoké emise"), místo jednoho „nejpravděpodobnějšího" čísla; navrhnout zařízení s rezervou/modularitou (např. zavlažovací systém dimenzovaný i na sušší scénář, s možností dodatečného rozšíření) místo pevného řešení na jeden odhad; prakticky jde o stejnou „scénářovou analýzu v duchu TCFD", která se zavádí na slidu se dvěma příklady rizika (ZEVO a závod chlazený říční vodou) v přednášce.
+
+        Cíl úlohy: ukázat, že práce s dlouhodobým fyzikálním trendem (graf CO₂) se dá přímo propojit s konkrétním investičním rozhodováním — ne jen s obecnou obavou o „klima".
+      </aside>
+    </section>
+
+    <!-- 16 presentations -->
+    <section>
+      <div class="kicker">Prezentace a diskuse</div>
+      <div class="prose">
+        <p>Každá skupina představí své řešení v cca 6 minutách, včetně toho, odkud čerpala data/podklady.</p>
+        <p style="margin-top:14px;">V diskusi propojte scénáře: všechny čtyři ukazují, že firma nikdy nepůsobí mimo tok energie a koloběh látek — jen se liší, ve kterém bodě cyklu do něj vstupuje.</p>
+      </div>
+    </section>
+
+    <!-- 17 shrnuti -->
+    <section>
+      <div class="kicker">Shrnutí semináře 3</div>
+      <div class="prose">
+        <p>Hydrologický i uhlíkový cyklus jsou měřitelné, mají svou bilanční rovnici a dají se — alespoň orientačně — počítat. To z nich dělá nástroj pro konkrétní manažerské rozhodování, ne jen popisný rámec.</p>
+        <p style="margin-top:14px;"><b>Příště: Toky látek a energie II — dusík, síra, fosfor a případová studie Plešné jezero.</b></p>
+      </div>
+      <aside class="notes">Konec přednášky a semináře 3.</aside>
+    </section>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/notes/notes.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    width: 1280,
+    height: 720,
+    margin: 0.04,
+    minScale: 0.2,
+    maxScale: 2,
+    controls: true,
+    progress: true,
+    slideNumber: 'c/t',
+    plugins: [ RevealNotes ]
+  });
+
+  // ---- Quiz v2: click-to-answer, instant feedback, no fragments ----
+  document.querySelectorAll('.quiz-block').forEach(function (block) {
+    var answer = block.dataset.answer;
+    var feedback = block.querySelector('.quiz-feedback3');
+    var buttons = block.querySelectorAll('.quiz-opt3');
+    buttons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        if (block.classList.contains('answered')) return;
+        block.classList.add('answered');
+        var chosen = btn.dataset.key;
+        buttons.forEach(function (b) {
+          b.disabled = true;
+          if (b.dataset.key === answer) b.classList.add('correct');
+          else if (b.dataset.key === chosen) b.classList.add('incorrect');
+          else b.classList.add('dim');
+        });
+        if (feedback) feedback.hidden = false;
+      });
+    });
+  });
+</script>
+</body>
+</html>
