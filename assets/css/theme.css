@@ -145,6 +145,16 @@ html, body { background: var(--bg); max-width: 100%; overflow-x: hidden; }
 .compare-panel .plus { color: var(--primary-strong); }
 .compare-panel .minus { color: var(--danger); }
 
+/* ---------- Generic cards / grids (inside panels) ---------- */
+.grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; box-sizing: border-box; }
+.card h4 { font-family: var(--font-display); font-size: 22px; margin: 0 0 8px 0; }
+.card p.prose.tight { font-size: 21px; margin: 0; }
+.card p.prose.tight + p.prose.tight { margin-top: 8px; }
+.card ol, .card ul { font-size: 21px; line-height: 1.4; margin: 0; padding-left: 1.2em; }
+.card li { margin-bottom: 6px; }
+.card .formula { font-size: 22px; padding: 10px 14px; margin: 8px 0; }
+
 /* ---------- Think / discussion slides ---------- */
 .reveal .slides section.think-slide {
   background: var(--surface-2); display:flex; flex-direction:column; justify-content:center;
